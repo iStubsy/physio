@@ -87,7 +87,7 @@
     }
 
     #header-leftSide {
-        background-color: rgba(23, 46, 96, 0.90);
+        background-color: rgba(23, 46, 96, 0.95);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -222,7 +222,7 @@
     .thirdSection_inner,
     .fourthSection_inner,
     #testSection {
-        padding: 50px 40px;
+        padding: 50px 20px;
     }
 
     .text {
