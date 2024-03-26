@@ -2,11 +2,6 @@
 
     /****** TYPOGRAPHY *********/
 
-    body {
-        background-color: blue;
-        height: 3000px;
-    }
-
     h1 {
         font-family: var(--mainFont);
         font-family: 'Taviraj', serif;
@@ -220,6 +215,7 @@
 
     .firstSection_inner {
         margin: 0 auto;
+        height: 2000px;
     }
 
     .firstSection_inner,
