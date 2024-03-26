@@ -68,8 +68,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        max-height: 500px;
+        //height: 100vh;
+        height: 500px;
         background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
         background-size: cover;
         //background-attachment: fixed;
@@ -215,7 +215,6 @@
 
     .firstSection_inner {
         margin: 0 auto;
-        height: 2000px;
     }
 
     .firstSection_inner,
