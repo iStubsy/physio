@@ -2,6 +2,11 @@
 
     /****** TYPOGRAPHY *********/
 
+    body {
+        background-color: blue;
+        height: 3000px;
+    }
+
     h1 {
         font-family: var(--mainFont);
         font-family: 'Taviraj', serif;
@@ -222,11 +227,11 @@
     .thirdSection_inner,
     .fourthSection_inner,
     #testSection {
-        padding: 50px 20px;
+        padding: 50px 35px;
     }
 
     .text {
-        line-height: 1.4rem;
+        line-height: 1.5rem;
         font-family: var(--mainFont);
     }
 
