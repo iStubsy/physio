@@ -488,7 +488,9 @@
         font-family: var(--mainFont);
     }
 
-    .footerBox {}
+    .footerBox {
+        height: 70px;
+    }
 
     .footerLogo {
         background-color: white;
@@ -496,12 +498,13 @@
         width: fit-content;
         padding: 5px 12px 5px 2px;
         display: flex;
-
+        height: 100%;
     }
 
     .footerLogo-logobox {
         display: flex;
         align-items: center;
+        height: 100%;
     }
 
     .footerLogo-textbox {
