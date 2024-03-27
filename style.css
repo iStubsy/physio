@@ -371,7 +371,9 @@
         width: 90%;
     }
 
-    #thirdSection {}
+    #thirdSection {
+        display: none;
+    }
 
     .thirdSection_inner {
         width: var(--contentWidth);
@@ -488,9 +490,7 @@
         font-family: var(--mainFont);
     }
 
-    .footerBox {
-        height: 70px;
-    }
+    .footerBox {}
 
     .footerLogo {
         background-color: white;
@@ -498,7 +498,7 @@
         width: fit-content;
         padding: 5px 12px 5px 2px;
         display: flex;
-        height: 100%;
+        height: 70px;
     }
 
     .footerLogo-logobox {
@@ -609,6 +609,10 @@
     }
 
     .hamburgerMenu {
+        display: none;
+    }
+
+    .backToTop {
         display: none;
     }
 }
