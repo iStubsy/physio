@@ -131,8 +131,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top: 0;
+
+        background-color: rgba(2, 16, 47, 0.82);
     }
 
     .overlayLogo {
