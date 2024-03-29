@@ -17,8 +17,11 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1299px) {
+@media (min-width: 1301px) {
 
+    .overlay {
+        display: none;
+    }
 
     .navigationBar {
         font-family: var(--mainFont);
@@ -291,8 +294,7 @@
     }
 
     .aboutMeWrapper {
-        width: var(--contentWidth);
-        max-width: var(--maxWidth);
+        width: 1000px;
         border-radius: 20px;
         display: flex;
         border-radius: 20px;
@@ -338,24 +340,25 @@
 
     .image1 {
         position: absolute;
-        height: 50%;
-        top: -5%;
-        left: 270px;
+        height: 60%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     .image2 {
         position: absolute;
         height: 50%;
-        bottom: -5%;
-        left: 270px
+        top: 0;
+        bottom: 0;
+        left: 250px;
+        margin: auto;
     }
 
     .image3 {
         position: absolute;
         height: 50%;
-        bottom: 60px;
-        left: 0px;
-        top: 25%;
+        display: none;
     }
 
 
@@ -615,4 +618,5 @@
     .backToTop {
         display: none;
     }
+
 }
