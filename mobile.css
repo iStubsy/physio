@@ -133,8 +133,6 @@
         align-items: center;
         position: absolute;
         top: 0;
-
-        background-color: rgba(2, 16, 47, 0.82);
     }
 
     .overlayLogo {
@@ -148,13 +146,17 @@
     .overlayNavigation {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        justify-content: center;
+        gap: 30px;
         padding: 50px;
+
+        background-color: rgba(2, 16, 47, 0.80);
+        height: 100vh;
     }
 
     .overlayNavigation-item {
         font-family: var(--mainFont);
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         font-weight: 800;
         color: white;
     }
