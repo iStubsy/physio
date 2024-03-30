@@ -292,7 +292,9 @@
     }
 
     .hamburgerMenu:active {
-        background-color: red;
+        background-color: transparent;
+        outline: none;
+        border: none;
     }
 
     .hamburgerMenuScrolled {
