@@ -121,9 +121,9 @@
     .overlayInner {
         height: 100vh;
         min-height: 600px;
-
         background-color: rgba(2, 16, 47, 0.79);
-
+        display: flex;
+        flex-direction: column;
     }
 
     .overlayShow {
