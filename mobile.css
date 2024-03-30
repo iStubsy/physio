@@ -125,14 +125,13 @@
         overflow-x: hidden;
     }
 
-    .overlayHeader {
-        height: 100px;
+    .overlayInner {
+        background-color: rgba(2, 16, 47, 0.80);
+        height: 100%;
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .overlayLogo {
@@ -148,10 +147,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 30px;
-        padding: 50px;
-
-        background-color: rgba(2, 16, 47, 0.80);
-        height: 100vh;
+        padding: 180px 50px;
     }
 
     .overlayNavigation-item {
@@ -162,6 +158,33 @@
 
         opacity: 0;
         transform: translateY(100px);
+    }
+
+    .overlayFooter {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .overlayFooter-line {
+        height: 1px;
+        width: 50%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.84);
+    }
+
+    .overlayFooter-social {
+        color: white;
+        font-size: 2.5rem;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .overlayFooter-social a {
+        cursor: pointer;
     }
 
     /*********** HEADER ************/
@@ -229,7 +252,6 @@
         z-index: 1;
         display: flex;
         align-items: center;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
         background-color: white;
     }
 
