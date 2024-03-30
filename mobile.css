@@ -156,7 +156,7 @@
 
     .overlayNavigation-item {
         font-family: var(--mainFont);
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: 800;
         color: white;
     }
@@ -289,13 +289,15 @@
         border-radius: 3px;
         height: 50px;
         transition: .2s;
+
+        background: transparent;
+        border: none;
     }
 
     .hamburgerMenu:active {
-        background-color: transparent;
+        background: transparent;
         outline: none;
         border: none;
-        background: no-background;
     }
 
     .hamburgerMenuScrolled {
