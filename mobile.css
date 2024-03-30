@@ -127,7 +127,7 @@
     }
 
     .overlayShow {
-        width: 90% !important;
+        width: 100% !important;
         overflow-y: scroll;
         overflow-x: hidden;
     }

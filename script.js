@@ -40,7 +40,7 @@ document.querySelector(".closeButton").onclick = function () {
 
 
 window.onscroll = function () {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
         document.querySelector(".navigationBar_inner").classList.add("navigationBar-innerScrolled");
         document.querySelector(".navigationBar_logoText").classList.add("navigationBar_logoText-scrolled");
@@ -58,6 +58,6 @@ window.onscroll = function () {
 
 document.querySelector(".backToTop").onclick = function () {
     document.querySelector("html").style.scrollBehavior = "smooth";
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = -5; // For Safari
+    document.documentElement.scrollTop = -5;
 }
