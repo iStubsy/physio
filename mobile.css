@@ -116,29 +116,17 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .overlayShow {
         width: 100% !important;
         overflow-y: scroll;
         overflow-x: hidden;
-    }
-
-    .overlayInner {
-        background-color: rgba(2, 16, 47, 0.80);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        height: 100vh;
         min-height: 600px;
     }
 
     .overlayHeader {
-        height: 15%;
+        height: 20%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -155,10 +143,10 @@
     .overlayNavigation {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 30px;
         padding: 50px 50px;
-        height: 70%;
+        height: 65%;
     }
 
     .overlayNavigation-item {
@@ -172,14 +160,14 @@
     }
 
     .overlayFooter {
-        position: absolute;
-        bottom: 0;
+        position: relative;
         margin: 0 auto;
-        width: 100%;
+        width: 80%;
         height: 15%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        border-top: solid 1px white;
     }
 
     .overlayFooter-line {
