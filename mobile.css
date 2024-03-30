@@ -293,12 +293,12 @@
         height: 50px;
         transition: .2s;
 
-        background: transparent;
+        background-color: transparent;
         border: none;
     }
 
     .hamburgerMenu:active {
-        background: transparent;
+        background-color: transparent;
         outline: none;
         border: none;
     }
