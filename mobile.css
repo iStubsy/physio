@@ -67,13 +67,13 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: fit-content;
         padding: 20px;
         cursor: pointer;
+        margin: 18px;
     }
 
     .closeButton_line1 {
@@ -137,6 +137,13 @@
         min-height: 600px;
     }
 
+    .overlayHeader {
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .overlayLogo {
         height: 70%;
         width: fit-content;
@@ -150,7 +157,8 @@
         flex-direction: column;
         justify-content: center;
         gap: 30px;
-        padding: 180px 50px;
+        padding: 50px 50px;
+        height: 70%;
     }
 
     .overlayNavigation-item {
@@ -168,11 +176,15 @@
         bottom: 0;
         margin: 0 auto;
         width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .overlayFooter-line {
         height: 1px;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.84);
     }
@@ -180,14 +192,18 @@
     .overlayFooter-social {
         color: white;
         font-size: 2.5rem;
-        padding: 30px;
         display: flex;
         justify-content: center;
         gap: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
     }
 
     .overlayFooter-social a {
         cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 
     /*********** HEADER ************/
@@ -228,7 +244,6 @@
     #header-emptyTop {
         width: 100%;
         height: 110px;
-        background-color: red;
         display: none;
     }
 
