@@ -159,6 +159,9 @@
         font-size: 2.2rem;
         font-weight: 800;
         color: white;
+
+        opacity: 0;
+        transform: translateY(100px);
     }
 
     /*********** HEADER ************/
@@ -571,6 +574,14 @@
 
     .backToTopScrolled {
         right: 20px;
+    }
+
+
+
+    .tro {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: 1s;
     }
 
 }

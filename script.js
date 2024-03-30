@@ -1,37 +1,41 @@
 /***************** OVERLAY *****************/
 
 document.querySelector(".hamburgerMenu").onclick = function () {
+
     document.querySelector(".overlay").classList.add("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
 
-    //document.querySelector(".hmlTransform1").style.transform = "rotate(45deg)";
-    //document.querySelector(".hmlTransform2").style.transform = "rotate(-45deg)";
-
-    //moveUpRevealFunOverlay();
-    /* for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
+    for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
         for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
             //document.querySelectorAll(".overlayAnimation")[x].getElementsByTagName("*")[x].style.opacity = "1";
             //console.log(document.querySelectorAll(".overlayAnimation")[y].getElementsByTagName("*").length);
 
-            //document.querySelectorAll(".overlayAnimation")[y].children[x].classList.add("tro");
+            document.querySelectorAll(".overlayAnimation")[y].children[x].classList.add("tro");
             //document.querySelectorAll(".overlayAnimation")[y].getElementsByTagName("*")[x].style.transition = "1s";
-            //document.querySelectorAll(".overlayAnimation")[y].children[x].style.transitionDelay = x / 4 + "s";
+            document.querySelectorAll(".overlayAnimation")[y].children[x].style.transitionDelay = x / 4 + "s";
 
             //document.querySelectorAll(".overlayAnimation")[y].getElementsByTagName("*")[x].style.border = "solid 2px green";
             //console.log(document.querySelectorAll(".overlayAnimation")[y].getElementsByTagName("*").length);
         }
-
-    } */
-
-
-    for (var i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
-        //document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "8px auto";
     }
 }
 
 document.querySelector(".closeButton").onclick = function () {
     document.querySelector(".overlay").classList.remove("overlayShow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
+
+    for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
+        for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
+            document.querySelectorAll(".overlayAnimation")[y].children[x].classList.remove("tro");
+            document.querySelectorAll(".overlayAnimation")[y].children[x].style.transitionDelay = "0s";
+        }
+    }
+
+
+    for (var i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
+        document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "4px auto";
+    }
+
 }
 
 
