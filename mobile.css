@@ -120,14 +120,14 @@
 
     .overlayInner {
         height: 100vh;
-        min-height: 600px;
+        min-height: 500px;
         background-color: rgba(2, 16, 47, 0.79);
         display: flex;
         flex-direction: column;
     }
 
     .overlayShow {
-        width: 100% !important;
+        width: 90% !important;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -158,8 +158,8 @@
 
     .overlayNavigation-item {
         font-family: var(--mainFont);
-        font-size: 2.2rem;
-        font-weight: 800;
+        font-size: 2rem;
+        font-weight: 600;
         color: white;
 
         opacity: 0;
@@ -173,15 +173,8 @@
         height: 15%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         border-top: solid 1px white;
-    }
-
-    .overlayFooter-line {
-        height: 1px;
-        width: 70%;
-        margin: 0 auto;
-        background-color: rgba(255, 255, 255, 0.84);
     }
 
     .overlayFooter-social {
@@ -192,7 +185,6 @@
         gap: 30px;
         display: flex;
         justify-content: center;
-        margin: 30px;
     }
 
     .overlayFooter-social a {
