@@ -112,7 +112,7 @@
         border: outline 4px white;
         transition: ease-out .2s;
 
-        //background-image: url("src/logo.png");
+        background-image: url("src/logo.png");
 
         display: flex;
         flex-direction: column;
@@ -295,6 +295,7 @@
         background-color: transparent;
         outline: none;
         border: none;
+        background: no-background;
     }
 
     .hamburgerMenuScrolled {
