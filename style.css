@@ -1,6 +1,7 @@
 :root {
     --mainColour: #0071C7;
-    --darkColour: #02102F;
+    --darkColour: #172E60;
+    --ultraDarkColour: #0b214f;
     --lightColour: #4598F1;
     --verylightColour: #E6F1FA;
     --mainFont: 'Josefin Sans', sans-serif;
@@ -480,7 +481,7 @@
     }
 
     #footer {
-        background-color: var(--darkColour);
+        background-color: var(--ultraDarkColour);
         width: 100%;
     }
 
