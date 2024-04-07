@@ -380,6 +380,7 @@
 
     .text {
         line-height: 1.8rem;
+        font-size: 1rem;
         font-family: var(--mainFont);
     }
 
