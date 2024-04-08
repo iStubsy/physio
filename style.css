@@ -58,7 +58,7 @@ html {
         display: flex;
         justify-content: space-between;
         transition: .4s;
-        height: 60px;
+        height: 80px;
         padding: 0 5px;
     }
 
@@ -90,13 +90,16 @@ html {
     }
 
     .navigationBar_logoTextItem1 {
-        color: var(--lightColour);
+        color: var(--darkColour);
         overflow: hidden;
+        font-weight: 900;
+        font-family: arial;
     }
 
     .navigationBar_logoTextItem2 {
-        color: var(--darkColour);
+        color: black;
         overflow: hidden;
+
     }
 
     #navigationBar_menu {
@@ -118,7 +121,7 @@ html {
         display: flex;
         flex-direction: column;
         height: 100vh;
-        max-height: 800px;
+        //max-height: 800px;
         background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
         background-size: cover;
         background-attachment: fixed;
@@ -568,7 +571,15 @@ html {
     .footerText {
         color: white;
         font-size: 1rem;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .footerText .fa-solid {
+        font-size: 1.4rem;
+        width: 30px;
+        margin: 5px 0;
     }
 
     .testSection_inner {
