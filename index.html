@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="mobile.css">
+    <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css">
-
+    <link rel="stylesheet" href="desktop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -24,6 +24,11 @@
 
     <script src="https://kit.fontawesome.com/8fc67f8040.js" crossorigin="anonymous"></script>
 
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Praxis Weber</title>
 </head>
 
@@ -94,12 +99,12 @@
     <div id="content">
         <section id="firstSection">
             <div class="firstSection_inner">
-                <div class="sectionLeft">
+                <div data-aos="fade-right" data-aos-duration="900" class="sectionLeft">
                     <h5>Was ist Physiotherapie?</h5>
                     <div class="text">Die Physiotherapie behandelt Einschränkungen der Bewegungs- und Funktionsfähigkeit des Körpers und ist ein ärztlich verordnetes Heilmittel. Sie stellt eine sinnvolle Ergänzung und manchmal auch Alternative zu Operationen oder Medikamenten dar. Zur Physiotherapie zählen neben krankengymnastischen Übungen auch physikalische Maßnahmen, Massagen und manuelle Lymphdrainagen.</div>
                 </div>
                 <div class="sectionRight">
-                    <img src="src/4.png" width="600px">
+                    <img src="src/4.png" height="100%">
                 </div>
             </div>
         </section>
@@ -159,44 +164,47 @@
             </div>
         </section>
         <section id="testSection">
-            <h5>Unsere Leistungen</h5>
+
             <div class="testSection_inner">
-                <div class="testSection_sub">
-                    <div class="testSection_subPicSection">
-                        <div class="testSection_subPic">
-                            <i class="fa-solid fa-staff-snake"></i>
+                <h5>Unsere Leistungen</h5>
+                <div class="testSection_subWrapper">
+                    <div class="testSection_sub">
+                        <div class="testSection_subPicSection">
+                            <div class="testSection_subPic">
+                                <i class="fa-solid fa-staff-snake"></i>
+                            </div>
+                            <div class="blueStuff"></div>
                         </div>
-                        <div class="blueStuff"></div>
-                    </div>
-                    <div class="testSection_subText">
-                        <h2>Vielseitige<br>Therapieverfahren</h2>
-                        <div class="description">Kombination aus Physiotherapie, manueller Therapie, Lymphdrainage und neurologischen Konzepten (bereits ab dem Baby-/Kleinkindalter)</div>
-                    </div>
-                </div>
-                <div class="testSection_sub">
-                    <div class="testSection_subPicSection">
-                        <div class="testSection_subPic">
-                            <i class="fa-solid fa-handshake-angle"></i>
+                        <div class="testSection_subText">
+                            <h2>Vielseitige<br>Therapieverfahren</h2>
+                            <div class="description">Kombination aus Physiotherapie, manueller Therapie, Lymphdrainage und neurologischen Konzepten (bereits ab dem Baby-/Kleinkindalter)</div>
                         </div>
-                        <div class="blueStuff"></div>
                     </div>
-                    <div class="testSection_subText">
-                        <h2>Effektives Coaching</h2>
-                        <div class="description">im Bereich Schmerzpsychologie und Wahrnehmung</div>
-                    </div>
-                </div>
-                <div class="testSection_sub">
-                    <div class="testSection_subPicSection">
-                        <div class="testSection_subPic">
-                            <i class="fa-solid fa-dumbbell"></i>
+                    <div class="testSection_sub">
+                        <div class="testSection_subPicSection">
+                            <div class="testSection_subPic">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div class="blueStuff"></div>
                         </div>
-                        <div class="blueStuff"></div>
+                        <div class="testSection_subText">
+                            <h2>Effektives Coaching</h2>
+                            <div class="description">im Bereich Schmerzpsychologie und Wahrnehmung</div>
+                        </div>
                     </div>
-                    <div class="testSection_subText">
-                        <h2>Professionnelle Fitnessberatung</h2>
-                        <div class="description">• Erstellung von Fitnessplänen<br>
-                            • gemeinsames Training<br>
-                            • Personal Training</div>
+                    <div class="testSection_sub">
+                        <div class="testSection_subPicSection">
+                            <div class="testSection_subPic">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <div class="blueStuff"></div>
+                        </div>
+                        <div class="testSection_subText">
+                            <h2>Professionnelle Fitnessberatung</h2>
+                            <div class="description">• Erstellung von Fitnessplänen<br>
+                                • gemeinsames Training<br>
+                                • Personal Training</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,11 +283,14 @@
                 </div>
                 <div class="footerBox">
                     <div class="footerLogo">
+                        <!--
                         <div class="footerLogo-logobox"><img src="src/logo.png" height="100%"></div>
                         <div class="footerLogo-textbox">
                             <div class="footerLogo-textbox-1">Physiotherapie</div>
                             <div class="footerLogo-textbox-2">Praxis Weber</div>
                         </div>
+                        -->
+                        <img src="src/logoText.png" height="100%">
                     </div>
                 </div>
             </div>
@@ -288,6 +299,14 @@
     </div>
     <div class="backToTop"><i class="fa-solid fa-angle-up"></i></div>
     <script src="script.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
 </body>
 
 </html>
