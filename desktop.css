@@ -195,7 +195,7 @@
     .secondSection_inner {
         height: 100vh;
         min-height: 500px;
-        max-height: 700px;
+        max-height: 600px;
         margin: 0 auto;
         background-color: var(--verylightColour);
         background-color: #f7f7f7;
@@ -264,7 +264,14 @@
         bottom: 0;
         left: 250px;
         margin: auto;
+    }
+
+    .image2 img {
+        height: 50%;
+        left: 250px;
+        margin: auto;
         width: 200px;
+        height: 100%;
     }
 
     .image3 {
@@ -393,7 +400,7 @@
         justify-content: center;
         max-width: var(--maxWidth);
         margin: 0 auto 60px auto;
-        gap: 0;
+        gap: 15px;
     }
 
     .testSection_subWrapper {
