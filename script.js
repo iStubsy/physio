@@ -43,13 +43,18 @@ window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.querySelector(".navigationBar").classList.add("navigationBarScrolled");
         document.querySelector(".navigationBar_inner").classList.add("navigationBar-innerScrolled");
-        document.querySelector(".navigationBar_logoText").classList.add("navigationBar_logoText-scrolled");
+        //document.querySelector(".navigationBar_logoText").classList.add("navigationBar_logoText-scrolled");
+        document.querySelector(".navigationBar_logoTextItem1").classList.add("navigationBar_logoTextItem1-scrolled");
+        document.querySelector(".navigationBar_logoTextItem2").classList.add("navigationBar_logoTextItem2-scrolled");
+
 
         document.querySelector(".backToTop").classList.add("backToTopScrolled");
     } else {
         document.querySelector(".navigationBar").classList.remove("navigationBarScrolled");
         document.querySelector(".navigationBar_inner").classList.remove("navigationBar-innerScrolled");
         document.querySelector(".navigationBar_logoText").classList.remove("navigationBar_logoText-scrolled");
+        document.querySelector(".navigationBar_logoTextItem1").classList.remove("navigationBar_logoTextItem1-scrolled");
+        document.querySelector(".navigationBar_logoTextItem2").classList.remove("navigationBar_logoTextItem2-scrolled");
 
         document.querySelector(".backToTop").classList.remove("backToTopScrolled");
     }
