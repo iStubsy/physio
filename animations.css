@@ -1,0 +1,17 @@
+.moveUpRevealOverlay {
+    //opacity: .3;
+    //transition: opacity 2s;
+    //transform: translateY(200px);
+}
+
+.moveRight {
+    opacity: 0;
+    transform: translateX(-220px);
+}
+
+.active {
+    opacity: 1;
+    transition: opacity .6s ease-out, transform .8s ease-out;
+    transition-delay: opacity 1s;
+    transform: translateX(0);
+}

@@ -38,7 +38,7 @@ h1 {
     color: white;
     line-height: 3.2rem;
     color: white;
-    //text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -73,6 +73,13 @@ h5 {
     line-height: 2.5rem;
     font-weight: 400;
     margin: 12px 0;
+}
+
+.smallText {
+    font-family: "Poppins", sans-serif;
+    font-size: .9rem;
+    color: var(--darkColour);
+    font-weight: 300;
 }
 
 /********* MISC ************/
@@ -340,7 +347,7 @@ h5 {
 }
 
 .navigationBar_logoTextItem1 {
-    color: var(--lightColour);
+    color: var(--darkColour);
     overflow: hidden;
 }
 
@@ -395,14 +402,7 @@ h5 {
 
 .firstSection_inner {
     margin: 0 auto;
-}
-
-.firstSection_inner,
-.secondSection_inner,
-.thirdSection_inner,
-.fourthSection_inner,
-#testSection {
-    padding: 50px 25px;
+    padding: 40px 25px;
 }
 
 .text {
@@ -418,6 +418,7 @@ h5 {
 .secondSection_inner {
     background-color: var(--verylightColour);
     background-color: #f7f7f7;
+    padding: 40px 25px;
 }
 
 .sectionRight {
@@ -489,6 +490,7 @@ h5 {
     max-width: var(--maxWidth);
     margin-top: 35px;
     margin: 40px 0;
+    padding: 40px 25px;
 }
 
 .testSection_subWrapper {

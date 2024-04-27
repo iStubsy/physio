@@ -66,3 +66,74 @@ document.querySelector(".backToTop").onclick = function () {
     document.body.scrollTop = -5; // For Safari
     document.documentElement.scrollTop = -5;
 }
+
+
+/************* SCROLL ANIMATIONS ************/
+
+function moveUpRevealFun() {
+    var moveUpReveals = document.querySelectorAll(".fromLeftWrapper");
+    for (var i = 0; i < moveUpReveals.length; i++) {
+        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveRight");
+        }
+
+        var windowHeight = window.innerHeight;
+        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 3 + "s";
+                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            }
+        }
+    }
+}
+
+
+function moveUpRevealFunOverlay() {
+    var moveUpReveals = document.querySelectorAll(".moveUpRevealOverlay");
+    for (var i = 0; i < moveUpReveals.length; i++) {
+        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveUpReveals");
+
+        }
+        var windowHeight = window.innerHeight;
+        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementVisible = 80;
+        if (elementTop < windowHeight - elementVisible) {
+            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 4 + "s";
+                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            }
+        }
+    }
+}
+
+function moveUpRevealOverlay() {
+    var moveUpReveals = document.querySelectorAll(".moveUpRevealOverlay");
+    for (var i = 0; i < moveUpReveals.length; i++) {
+        /*for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveUpReveals");
+        }*/
+
+        //moveUpReveals[i].classList.add("moveUpReveals");
+
+        var windowHeight = window.innerHeight;
+        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementVisible = 180;
+        if (elementTop < windowHeight - elementVisible) {
+            //for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
+            //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+            //moveUpReveals[i].getElementsByTagName("*")[x].style.display = "none
+            //moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            //   moveUpReveals[i].classList.add("test");
+            // }
+            moveUpReveals[i].classList.add("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", moveUpRevealOverlay);
+window.addEventListener("scroll", moveUpRevealFun);
