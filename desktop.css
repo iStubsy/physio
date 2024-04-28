@@ -6,7 +6,7 @@
 
     .navigationBar {
         font-family: var(--mainFont);
-        background-color: rgba(255, 255, 255, 0.90);
+        background-color: rgba(255, 255, 255, 1.0);
         position: fixed;
         top: 0;
         width: 100%;
@@ -48,7 +48,7 @@
 
     #headerWrapper {
         background-position: 0 -200px;
-        max-height: 1000px;
+        max-height: 850px;
     }
 
     #header-emptyTop {
@@ -127,7 +127,7 @@
         color: var(--darkColour);
         font-size: 1.1rem;
         font-weight: 500;
-        line-height: 1.8rem;
+        line-height: 2rem;
         width: 90%;
         max-width: 550px;
     }
@@ -201,9 +201,26 @@
 
     #secondSection {}
 
+    .secondSection-overlay {
+        background-color: var(--ultraDarkColour);
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    }
+
+    .firstSection-overlay {
+        background-color: var(--ultraDarkColour);
+        position: absolute;
+        width: 70%;
+        height: 8%;
+        top: -8%;
+        clip-path: polygon(0 65%, 0% 100%, 100% 100%);
+    }
+
     .secondSection_inner {
         //height: 100vh;
-        min-height: 500px;
+        min-height: 700px;
         //max-height: 600px;
         margin: 0 auto;
         background-color: var(--verylightColour);
@@ -236,8 +253,14 @@
 
     .aboutMeTextBox {
         position: sticky;
-        top: 22%;
+        top: 25vh;
         width: 50%;
+    }
+
+    .aboutMeTextBox h4,
+    .aboutMeTextBox h5,
+    .aboutMeTextBox .text {
+        color: #e0e0e0;
     }
 
     .aboutMeImageBox {
@@ -565,7 +588,6 @@
 
         border-top: solid 5px #f7f7f7;
     }
-
 
 
 }
