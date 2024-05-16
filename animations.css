@@ -1,16 +1,25 @@
 .moveUpRevealOverlay {
     opacity: 0;
     transition: opacity 2s;
-    transform: translateX(-200px);
+    transform: translateX(-500px);
+    transition: opacity .6s ease-out, transform 1s ease-out;
+    transition-delay: 0s;
 }
 
-.moveRight {
+.moveTop {
     opacity: 0;
-    transform: translateX(-220px);
+    transform: translateY(120px);
+
+    transition: opacity .2s ease-out, transform .5s ease-out;
+    transition-delay: 0s;
+}
+
+.opacityReveal {
+    opacity: 0;
 }
 
 .active {
     opacity: 1;
-    transition: opacity .6s ease-out, transform .8s ease-out;
+    transition: opacity .6s ease-out, transform .6s ease-out;
     transform: translateX(0);
 }

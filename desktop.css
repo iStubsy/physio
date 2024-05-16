@@ -48,7 +48,8 @@
 
     #headerWrapper {
         background-position: 0 -200px;
-        max-height: 850px;
+        height: 100vh;
+        min-height: 500px;
     }
 
     #header-emptyTop {
@@ -109,10 +110,38 @@
         font-size: .9rem;
     }
 
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     #header_inner {
-        height: 100vh;
         display: flex;
         align-items: center;
+    }
+
+    .headerContactWrapper {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: var(--mainFont);
+        gap: 160px;
+    }
+
+    .headerContact {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerContactContent {
+        color: rgba(255, 255, 255, 0.76);
     }
 
     .phone,
@@ -162,9 +191,9 @@
     }
 
     #firstSection {
-        height: 100vh;
-        max-height: 700px;
-        min-height: 500px;
+        //height: 100vh;
+        max-height: 100vh;
+        min-height: 800px;
 
         display: flex;
         align-items: center;
@@ -199,45 +228,50 @@
         height: 150%;
     }
 
-    #secondSection {}
+    #secondSection {
+        height: 100vh;
+        max-height: 800px;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
 
     .secondSection-overlay {
         background-color: var(--ultraDarkColour);
         position: absolute;
+        top: 0;
         width: 70%;
         height: 100%;
         clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     }
 
     .firstSection-overlay {
-        background-color: var(--ultraDarkColour);
+        //background-color: #f8f8f8;
         position: absolute;
         width: 70%;
-        height: 8%;
-        top: -8%;
-        clip-path: polygon(0 65%, 0% 100%, 100% 100%);
+        height: 100%;
+        //clip-path: polygon(0 0, 78% 0, 69% 100%, 0% 100%);
     }
 
     .secondSection_inner {
-        //height: 100vh;
-        min-height: 700px;
-        //max-height: 600px;
         margin: 0 auto;
         background-color: var(--verylightColour);
-        background-color: #f7f7f7;
+        background-color: var(--lightGrey);
         width: 100%;
     }
 
     .aboutMeWrapper {
-        width: var(--contentWidth);
-        max-width: var(--maxWidth);
+        width: 90%;
+        max-width: 1400px;
         border-radius: 20px;
         display: flex;
         border-radius: 20px;
         justify-content: space-between;
-        margin: 50px auto;
+        margin: 0px auto;
         height: 100%;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .aboutMeWrapperBG {
@@ -253,8 +287,13 @@
 
     .aboutMeTextBox {
         position: sticky;
-        top: 25vh;
         width: 50%;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //padding-top: 71px;
     }
 
     .aboutMeTextBox h4,
@@ -264,13 +303,53 @@
     }
 
     .aboutMeImageBox {
-        position: relative;
-        height: 100%;
-        //max-height: 700px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        //background-color: #2196F3;
+        padding: 10px;
         width: 50%;
         max-width: 100%;
-        margin: 0 auto;
     }
+
+    .aboutMeImageBox-image1,
+    .aboutMeImageBox-image2,
+    .aboutMeImageBox-image3,
+    .aboutMeImageBox-image4 {
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutMeImageBox-image1 img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+    }
+
+    .aboutMeImageBox-image2 img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+    }
+
+    .aboutMeImageBox-image3 img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+
+    .aboutMeImageBox-image4 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+    }
+
+
 
     .image1,
     .image2,
@@ -313,7 +392,12 @@
     }
 
     #thirdSection {
-        display: none;
+        height: 100vh;
+        max-height: 800px;
+        min-height: 400px;
+        background-color: var(--lightGrey);
+        display: flex;
+        align-items: center;
     }
 
     .thirdSection_inner {
@@ -373,10 +457,6 @@
         text-align: center;
     }
 
-    #fourthSection {
-        display: none;
-    }
-
     .fourthSection_inner {
         background-color: var(--verylightColour);
         padding: 50px;
@@ -419,7 +499,7 @@
     #testSection {
         height: 100vh;
         min-height: 500px;
-        max-height: 600px;
+        max-height: 700px;
         display: flex;
         align-items: center;
     }
@@ -431,7 +511,7 @@
         flex-direction: column;
         justify-content: center;
         max-width: var(--maxWidth);
-        margin: 0 auto 60px auto;
+        margin: 0 auto;
         gap: 15px;
     }
 
@@ -587,6 +667,19 @@
         top: 335px;
 
         border-top: solid 5px #f7f7f7;
+    }
+
+
+
+    /************** TEST ***********/
+
+    .imagerino1 {
+        background-image: url("src/training.jpg");
+        width: 100%;
+        height: 170px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
 

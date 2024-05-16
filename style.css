@@ -4,12 +4,13 @@
     --ultraDarkColour: #0b214f;
     --lightColour: #4598F1;
     --verylightColour: #E6F1FA;
+    --lightGrey: rgba(0, 0, 0, 0.02);
     --mainFont: 'Josefin Sans', sans-serif;
     --mainFont: 'Taviraj', serif;
     --mainFont: 'Montserrat', sans-serif;
     --maintFont: "Poppins", sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1200px;
+    --maxWidth: 1300px;
 }
 
 * {
@@ -302,6 +303,10 @@ h5 {
     overflow: hidden;
 }
 
+.headerContactWrapper {
+    display: none;
+}
+
 .navigationBar {
     font-family: var(--mainFont);
     background-color: white;
@@ -311,6 +316,7 @@ h5 {
     display: flex;
     align-items: center;
     background-color: white;
+    border-bottom: solid 4px rgba(0, 0, 0, 0.11);
 }
 
 .navigationBar_inner {
@@ -432,9 +438,8 @@ h5 {
     position: relative;
     height: 250px;
     padding: 0 20px;
-    max-width: 360px;
-    margin: 60px auto 80px auto;
     z-index: 0;
+    display: none;
 }
 
 .aboutMeImageBox img {
@@ -470,13 +475,11 @@ h5 {
 }
 
 
-.fourthSection_inner {
+#fourthSection {
     display: none;
 }
 
-#thirdSection {
-    display: none;
-}
+#thirdSection {}
 
 #testSection h5 {
     text-align: center;
@@ -504,7 +507,7 @@ h5 {
     gap: 25px;
 
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: var(--lightGrey);
     padding: 10px;
 }
 
