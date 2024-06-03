@@ -119,6 +119,7 @@
     .secondSection_inner {
         width: 90%;
         margin: 0 auto;
+        padding: 0;
     }
 
     .aboutMeTextBox {
@@ -146,14 +147,22 @@
 
     .sectionLeft {
         position: relative;
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0px;
+        gap: 10px;
         position: relative;
 
         border-radius: 10px;
+    }
+
+    .sectionLeft h5 {
+        text-align: right;
+    }
+
+    .sectionLeft .text {
+        text-align: right;
     }
 
     .sectionRight {
@@ -188,7 +197,7 @@
 
     .footerSocialTabs {
         color: white;
-        font-size: 2.6rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         gap: 15px;

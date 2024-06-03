@@ -79,11 +79,11 @@ function moveUpRevealFun() {
 
         var windowHeight = window.innerHeight;
         var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-        var elementVisible = 180;
+        var elementVisible = 120;
         if (elementTop < windowHeight - elementVisible) {
             for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
                 //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 4 + "s";
+                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 6 + "s";
                 moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
             }
         } else {
@@ -128,7 +128,7 @@ function moveUpRevealOverlay() {
 
         var windowHeight = window.innerHeight;
         var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-        var elementVisible = 180;
+        var elementVisible = 120;
         if (elementTop < windowHeight - elementVisible) {
 
             moveUpReveals[i].classList.add("active");
@@ -152,6 +152,52 @@ function opacityReveal() {
     }
 }
 
+function rotateOpacity() {
+    var rotateOpacitySel = document.querySelectorAll(".rotateOpacitySel");
+    for (var i = 0; i < rotateOpacitySel.length; i++) {
+
+        var windowHeight = window.innerHeight;
+        var elementTop = rotateOpacitySel[i].getBoundingClientRect().top;
+        var elementVisible = 120;
+        if (elementTop < windowHeight - elementVisible) {
+
+            rotateOpacitySel[i].classList.add("rotateOpacity");
+
+        } else {
+            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+        }
+    }
+}
+
+function borderReveal() {
+    var borderRevealWrapper = document.querySelectorAll(".borderRevealWrapper");
+
+    for (var i = 0; i < borderRevealWrapper.length; i++) {
+
+        var windowHeight = window.innerHeight;
+        var elementTop = borderRevealWrapper[i].getBoundingClientRect().top;
+        var elementVisible = 120;
+        if (elementTop < windowHeight - elementVisible) {
+            for (var x = 0; x < borderRevealWrapper[i].getElementsByTagName("*").length; x++) {
+                //borderRevealWrapper[i].childNodes[3].classList.add("showBorder");
+                //borderRevealWrapper[i].childNodes[x].style.display = "none";
+                //borderRevealWrapper[i].getElementsByTagName("*")[x].classList.add("showBorder");
+                borderRevealWrapper[i].querySelector(".lineRight").classList.add("lineRightShow");
+                borderRevealWrapper[i].querySelector(".lineLeft").classList.add("lineLeftShow");
+                borderRevealWrapper[i].querySelector(".lineBottom").classList.add("lineBottomShow");
+                borderRevealWrapper[i].querySelector(".lineTop").classList.add("lineTopShow");
+            }
+        } else {
+            borderRevealWrapper[i].classList.remove("showBorder");
+        }
+    }
+
+}
+
+window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveUpRevealOverlay);
-//window.addEventListener("scroll", moveUpRevealFun);
-//window.addEventListener("scroll", opacityReveal);
+window.addEventListener("scroll", moveUpRevealFun);
+window.addEventListener("scroll", borderReveal);
+window.addEventListener("scroll", opacityReveal);
+window.addEventListener("load", moveUpRevealOverlay);
+window.addEventListener("load", moveUpRevealFun);

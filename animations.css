@@ -16,10 +16,22 @@
 
 .opacityReveal {
     opacity: 0;
+    transition: 0.5s;
 }
 
 .active {
     opacity: 1;
-    transition: opacity .6s ease-out, transform .6s ease-out;
+    transition: opacity .5s ease-out, transform .5s ease-out;
     transform: translateX(0);
+}
+
+.rotateOpacitySel {
+    opacity: 0;
+    transition: transform ease-out 1500ms, opacity ease-out 1s;
+}
+
+.rotateOpacity {
+    opacity: 1;
+    transform: rotate(60deg);
+    transition-delay: .6s;
 }
