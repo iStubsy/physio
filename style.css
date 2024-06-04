@@ -132,6 +132,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .overlayLogo {
@@ -218,7 +219,6 @@ h5 {
 }
 
 .closeButton {
-    position: absolute;
     top: 0;
     right: 0;
     display: flex;
@@ -234,7 +234,6 @@ h5 {
 .closeButton_line1 {
     height: 2px;
     background-color: white;
-    background-color: red;
     width: 30px;
     transform: rotate(45deg);
     position: absolute;
@@ -245,7 +244,6 @@ h5 {
     position: absolute;
     height: 2px;
     background-color: white;
-    background-color: red;
     width: 30px;
     transform: rotate(-45deg);
 }
