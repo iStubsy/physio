@@ -86,62 +86,6 @@ h5 {
     font-weight: 300;
 }
 
-/********* MISC ************/
-
-.cta-button {
-    background-color: var(--lightColour);
-    background-color: #0072c9;
-    color: white;
-    border-radius: 5px;
-    padding: 12px 18px;
-    outline: none;
-    border: none;
-    width: fit-content;
-    margin: 80px auto 80px auto;
-    display: block;
-    font-size: .8rem;
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: 40px auto;
-}
-
-.closeButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    padding: 35px;
-    cursor: pointer;
-    background-color: black;
-    border-bottom-left-radius: 50%;
-}
-
-.closeButton_line1 {
-    height: 2px;
-    background-color: white;
-    background-color: red;
-    width: 30px;
-    transform: rotate(45deg);
-    position: absolute;
-
-}
-
-.closeButton_line2 {
-    height: 2px;
-    background-color: white;
-    background-color: red;
-    width: 30px;
-    transform: rotate(-45deg);
-    position: absolute;
-
-}
-
 /*********** OVERLAY ***********/
 
 .overlay {
@@ -249,6 +193,61 @@ h5 {
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+/********* MISC ************/
+
+.cta-button {
+    background-color: var(--lightColour);
+    background-color: #0072c9;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 18px;
+    outline: none;
+    border: none;
+    width: fit-content;
+    margin: 80px auto 80px auto;
+    display: block;
+    font-size: .8rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 40px auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 35px;
+    cursor: pointer;
+    background-color: black;
+    border-bottom-left-radius: 50%;
+}
+
+.closeButton_line1 {
+    height: 2px;
+    background-color: white;
+    background-color: red;
+    width: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+
+}
+
+.closeButton_line2 {
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    background-color: red;
+    width: 30px;
+    transform: rotate(-45deg);
 }
 
 /*********** HEADER ************/
@@ -748,7 +747,7 @@ h5 {
     background-color: var(--borderColour);
     position: absolute;
     transition: 2s;
-    border: solid 1px white;
+    border: solid .75px #e3e3e3;
     z-index: 0;
 }
 
@@ -756,20 +755,25 @@ h5 {
     width: 0;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: opacity 0s, width 1s;
 }
 
 .lineTopShow {
     width: 100%;
+    opacity: 1;
 }
 
 .lineRight {
     height: 0;
     right: 0;
-    opacity: 1;
+    opacity: 0;
+    transition: opacity 0s, height 1s;
 }
 
 .lineRightShow {
     height: 100%;
+    opacity: 1;
 }
 
 .lineLeft {
@@ -777,20 +781,27 @@ h5 {
     width: 1px;
 
     left: 0;
+
+    opacity: 0;
+    transition: opacity 0s, height 1s;
 }
 
 .lineLeftShow {
     height: 100%;
+    opacity: 1;
 }
 
 .lineBottom {
     width: 0;
     left: 0;
     bottom: 0;
+    opacity: 0;
+    transition: opacity 0s, width 1s;
 }
 
 .lineBottomShow {
     width: 100%;
+    opacity: 1;
 }
 
 .showBorder {
