@@ -79,7 +79,7 @@ function moveUpRevealFun() {
 
         var windowHeight = window.innerHeight;
         var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-        var elementVisible = 120;
+        var elementVisible = 100;
         if (elementTop < windowHeight - elementVisible) {
             for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
                 //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
@@ -128,7 +128,7 @@ function moveUpRevealOverlay() {
 
         var windowHeight = window.innerHeight;
         var elementTop = moveUpReveals[i].getBoundingClientRect().top;
-        var elementVisible = 120;
+        var elementVisible = 180;
         if (elementTop < windowHeight - elementVisible) {
 
             moveUpReveals[i].classList.add("active");
