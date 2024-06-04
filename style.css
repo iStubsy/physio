@@ -234,8 +234,6 @@ h5 {
 .closeButton_line1 {
     height: 2px;
     background-color: white;
-
-    background-color: red;
     width: 30px;
     transform: rotate(45deg);
     position: absolute;
