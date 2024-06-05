@@ -88,9 +88,8 @@ function moveUpRevealFun() {
             }
         } else {
             for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = 0 + "s";
-                moveUpReveals[i].getElementsByTagName("*")[x].classList.remove("active");
+                //moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = 0 + "s";
+                //moveUpReveals[i].getElementsByTagName("*")[x].classList.remove("active");
             }
         }
     }
@@ -158,7 +157,7 @@ function rotateOpacity() {
 
         var windowHeight = window.innerHeight;
         var elementTop = rotateOpacitySel[i].getBoundingClientRect().top;
-        var elementVisible = 120;
+        var elementVisible = 220;
         if (elementTop < windowHeight - elementVisible) {
 
             rotateOpacitySel[i].classList.add("rotateOpacity");

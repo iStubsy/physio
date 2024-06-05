@@ -76,7 +76,7 @@ h5 {
     font-size: 2.2rem;
     line-height: 2.5rem;
     font-weight: 400;
-    margin: 12px 0;
+    margin: 12px 0 22px 0;
 }
 
 .smallText {
@@ -98,6 +98,7 @@ h5 {
     background-color: #02102F;
     z-index: 1001;
     overflow-x: hidden;
+    overflow: hidden;
 
     border: outline 4px white;
     transition: ease-out .2s;
@@ -410,7 +411,7 @@ h5 {
 
 .firstSection_inner {
     margin: 0 auto;
-    padding: 40px 25px;
+    padding: 60px 25px;
 }
 
 .text {
@@ -678,12 +679,12 @@ h5 {
 
 .yPhysioWrapper {
     background-color: var(--ultraDarkColour);
-    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    //background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
     width: 100%;
     //border-radius: 15px;
     margin: 0 auto;
     box-shadow: 3px 3px 10px #a3a3a3;
-    padding: 50px 10px;
+    padding: 80px 10px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -696,6 +697,8 @@ h5 {
     color: white;
     font-size: 2rem;
     text-align: center;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .yPhysioInner {
@@ -745,7 +748,7 @@ h5 {
     background-color: var(--borderColour);
     position: absolute;
     transition: 2s;
-    border: solid .75px #e3e3e3;
+    border: solid .75px #d4d4d4;
     z-index: 0;
 }
 

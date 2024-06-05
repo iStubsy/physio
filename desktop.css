@@ -294,6 +294,7 @@
         flex-direction: column;
         justify-content: center;
         //padding-top: 71px;
+        gap: 10px;
     }
 
     .aboutMeTextBox h4,
@@ -630,7 +631,6 @@
     .lineRight {
         height: 0;
         right: 0;
-        opacity: 1;
     }
 
     .lineRightShow {

@@ -21,7 +21,7 @@
 
 .active {
     opacity: 1;
-    transition: opacity .5s ease-out, transform .5s ease-out;
+    transition: opacity .5s ease-out, transform .6s ease-out;
     transform: translateX(0);
 }
 
@@ -33,5 +33,4 @@
 .rotateOpacity {
     opacity: 1;
     transform: rotate(60deg);
-    transition-delay: .6s;
 }
