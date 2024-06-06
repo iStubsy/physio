@@ -132,7 +132,7 @@ function moveUpRevealOverlay() {
 
             moveUpReveals[i].classList.add("active");
         } else {
-            moveUpReveals[i].classList.remove("active");
+            //moveUpReveals[i].classList.remove("active");
         }
     }
 }

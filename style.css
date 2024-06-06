@@ -683,33 +683,39 @@ h5 {
     width: 100%;
     //border-radius: 15px;
     margin: 0 auto;
-    box-shadow: 3px 3px 10px #a3a3a3;
-    padding: 80px 10px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     border: solid 1px black;
+}
+
+.yPhysioWrapper .text {
+    color: #d0d0d0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .yPhysioHeader {
     font-family: var(--mainFont);
     font-family: 'Taviraj', serif;
     color: white;
-    font-size: 2rem;
-    text-align: center;
-    width: 200px;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    text-align: left;
     margin: 0 auto;
 }
 
 .yPhysioInner {
-    width: 90%;
     max-width: var(--maxWidth);
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 70px;
+    gap: 80px;
+    padding: 30px 0 0 0;
 }
 
 .yPhysio {
@@ -811,7 +817,7 @@ h5 {
 
 .yPhysioContent {
     color: white;
-    padding: 50px 25px 20px 25px;
+    padding: 40px 25px 20px 25px;
     font-size: .9rem;
     line-height: 1.4rem;
     font-family: var(--mainFont);
