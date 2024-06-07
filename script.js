@@ -70,69 +70,69 @@ document.querySelector(".backToTop").onclick = function () {
 
 /************* SCROLL ANIMATIONS ************/
 
-function moveUpRevealFun() {
-    var moveUpReveals = document.querySelectorAll(".fromBottomWrapper");
-    for (var i = 0; i < moveUpReveals.length; i++) {
-        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveTop");
+function moveDownRevealFun() {
+    var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
+    for (var i = 0; i < moveDownReveals.length; i++) {
+        for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
+            moveDownReveals[i].getElementsByTagName("*")[x].classList.add("moveTop");
         }
 
         var windowHeight = window.innerHeight;
-        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
         var elementVisible = 100;
         if (elementTop < windowHeight - elementVisible) {
-            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 6 + "s";
-                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
+                //moveDownReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveDownReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 6 + "s";
+                moveDownReveals[i].getElementsByTagName("*")[x].classList.add("active");
             }
         } else {
-            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-                //moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = 0 + "s";
-                //moveUpReveals[i].getElementsByTagName("*")[x].classList.remove("active");
+            for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
+                //moveDownReveals[i].getElementsByTagName("*")[x].style.transitionDelay = 0 + "s";
+                //moveDownReveals[i].getElementsByTagName("*")[x].classList.remove("active");
             }
         }
     }
 }
 
 /*
-function moveUpRevealFunOverlay() {
-    var moveUpReveals = document.querySelectorAll(".moveUpRevealOverlay");
-    for (var i = 0; i < moveUpReveals.length; i++) {
-        for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-            moveUpReveals[i].getElementsByTagName("*")[x].classList.add("moveUpReveals");
+function moveDownRevealFunOverlay() {
+    var moveDownReveals = document.querySelectorAll(".moveDownRevealOverlay");
+    for (var i = 0; i < moveDownReveals.length; i++) {
+        for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
+            moveDownReveals[i].getElementsByTagName("*")[x].classList.add("moveDownReveals");
 
         }
         var windowHeight = window.innerHeight;
-        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
         var elementVisible = 80;
         if (elementTop < windowHeight - elementVisible) {
-            for (var x = 0; x < moveUpReveals[i].getElementsByTagName("*").length; x++) {
-                //moveUpReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                moveUpReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 3 + "s";
-                moveUpReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
+                //moveDownReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
+                moveDownReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 3 + "s";
+                moveDownReveals[i].getElementsByTagName("*")[x].classList.add("active");
             }
         } else {
-            moveUpReveals[i].getElementsByTagName("*")[x].classList.remove("active");
+            moveDownReveals[i].getElementsByTagName("*")[x].classList.remove("active");
         }
     }
 }
 */
 
 
-function moveUpRevealOverlay() {
-    var moveUpReveals = document.querySelectorAll(".moveUpRevealOverlay");
-    for (var i = 0; i < moveUpReveals.length; i++) {
+function moveDownRevealOverlay() {
+    var moveDownReveals = document.querySelectorAll(".moveDownRevealOverlay");
+    for (var i = 0; i < moveDownReveals.length; i++) {
 
 
         var windowHeight = window.innerHeight;
-        var elementTop = moveUpReveals[i].getBoundingClientRect().top;
+        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
         var elementVisible = 180;
         if (elementTop < windowHeight - elementVisible) {
 
-            moveUpReveals[i].classList.add("active");
+            moveDownReveals[i].classList.add("active");
         } else {
-            //moveUpReveals[i].classList.remove("active");
+            //moveDownReveals[i].classList.remove("active");
         }
     }
 }
@@ -168,6 +168,23 @@ function rotateOpacity() {
     }
 }
 
+function moveDown() {
+    var moveDown = document.querySelectorAll(".moveDown");
+    for (var i = 0; i < moveDown.length; i++) {
+
+        var windowHeight = window.innerHeight;
+        var elementTop = moveDown[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+
+            moveDown[i].classList.add("moveDownActive");
+
+        } else {
+            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+        }
+    }
+}
+
 function borderReveal() {
     var borderRevealWrapper = document.querySelectorAll(".borderRevealWrapper");
 
@@ -194,9 +211,10 @@ function borderReveal() {
 }
 
 window.addEventListener("scroll", rotateOpacity);
-window.addEventListener("scroll", moveUpRevealOverlay);
-window.addEventListener("scroll", moveUpRevealFun);
+window.addEventListener("scroll", moveDown);
+window.addEventListener("scroll", moveDownRevealOverlay);
+window.addEventListener("scroll", moveDownRevealFun);
 window.addEventListener("scroll", borderReveal);
 window.addEventListener("scroll", opacityReveal);
-window.addEventListener("load", moveUpRevealOverlay);
-window.addEventListener("load", moveUpRevealFun);
+window.addEventListener("load", moveDownRevealOverlay);
+window.addEventListener("load", moveDownRevealFun);

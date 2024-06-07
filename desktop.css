@@ -7,12 +7,12 @@
     .navigationBar {
         font-family: var(--mainFont);
         background-color: rgba(255, 255, 255, 1.0);
-        position: fixed;
-        top: 0;
+        //position: fixed;
+        //top: 0;
         width: 100%;
         z-index: 2;
-        display: flex;
-        align-items: center;
+        //display: flex;
+        //align-items: center;
         transition: ease-out .2s;
     }
 
@@ -46,6 +46,27 @@
         display: flex;
     }
 
+    .navigationBarBelow {
+        width: 100%;
+        border-top: solid 1px #f5f5f5;
+
+        display: flex;
+        align-items: center;
+
+        background-color: var(--lightGrey);
+    }
+
+    .navigationBarBelow_inner {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        margin: 0px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .2s;
+    }
+
     #headerWrapper {
         height: 100vh;
         min-height: 500px;
@@ -55,6 +76,8 @@
         width: 100%;
         height: 110px;
         display: block;
+
+        display: none;
     }
 
     #logo {
@@ -98,8 +121,7 @@
     #navigationBar_menu {
         display: flex;
         align-items: center;
-        gap: 40px;
-        padding: 0 30px;
+        height: 100%;
     }
 
     #navigationBar_menuItem {
@@ -107,6 +129,16 @@
         cursor: pointer;
         font-weight: 600;
         font-size: .9rem;
+        height: 100%;
+        padding: 25px 20px;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    #navigationBar_menuItem:hover {
+        background-color: var(--ultraDarkColour);
+        color: white;
     }
 
     #header {
@@ -555,7 +587,7 @@
         width: 100%;
         //border-radius: 15px;
         margin: 0 auto;
-        padding: 80px 0;
+        padding: 120px 0;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -572,7 +604,7 @@
     .yPhysioInner {
         width: 90%;
         max-width: var(--maxWidth);
-        margin: 0 auto;
+        margin: 2rem auto 0 auto;
         gap: 0;
 
         display: flex;

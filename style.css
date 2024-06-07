@@ -4,7 +4,7 @@
     --ultraDarkColour: #0b214f;
     --lightColour: #4598F1;
     --verylightColour: #E6F1FA;
-    --lightGrey: rgba(0, 0, 0, 0.02);
+    --lightGrey: rgba(0, 0, 0, 0.01);
     --borderColour: #e3e3e3;
     --mainFont: 'Josefin Sans', sans-serif;
     /* --mainFont: 'Taviraj', serif; */
@@ -156,7 +156,7 @@ h5 {
     font-family: var(--mainFont);
     font-size: 2rem;
     font-weight: 600;
-    color: white;
+    color: #e5e5e5;
 
     opacity: 0;
     transform: translateY(100px);
@@ -316,10 +316,10 @@ h5 {
     position: relative;
     width: 100%;
     z-index: 1;
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
     background-color: white;
-    border-bottom: solid 4px rgba(0, 0, 0, 0.11);
+    //border-bottom: solid 4px rgba(0, 0, 0, 0.11);
 }
 
 .navigationBar_inner {
@@ -395,6 +395,7 @@ h5 {
 
 .hamburgerMenuScrolled {
     background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 1px #f0f0f0;
 }
 
 .hamburgerMenuLine {
@@ -666,7 +667,7 @@ h5 {
     height: 46px;
     width: 46px;
     display: flex;
-    background-color: var(--darkColour);
+    background-color: var(--ultraDarkColour);
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -683,7 +684,7 @@ h5 {
     width: 100%;
     //border-radius: 15px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 25px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -705,6 +706,9 @@ h5 {
     line-height: 2.7rem;
     text-align: left;
     margin: 0 auto;
+
+    opacity: 0;
+    transform: translateY(100px);
 }
 
 .yPhysioInner {
