@@ -27,13 +27,13 @@
 
         width: var(--contentWidth);
         max-width: var(--maxWidth);
-        margin: 10px auto;
+        margin: 15px auto;
 
         display: flex;
         justify-content: space-between;
         transition: .2s;
         height: 70px;
-        padding: 0 5px;
+        padding: 0;
     }
 
     .navigationBar-innerScrolled {
@@ -44,6 +44,34 @@
     #navigationBar_logo {
         height: 100%;
         display: flex;
+    }
+
+    .addressBarWrapper {
+        font-family: "Poppins", sans-serif;
+        color: var(--ultraDarkColour);
+        font-size: .9rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .addressBarItem {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .addressBarItem_img {
+        width: 50px;
+        height: 50px;
+        border: solid 1px #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressBarItem_img .fa-location-dot {
+        color: var(--ultraDarkColour);
+        font-size: 2rem;
     }
 
     .navigationBarBelow {
@@ -67,7 +95,22 @@
         transition: .2s;
     }
 
-    #headerWrapper {
+    .navigationBarBelow_social {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigationBarBelow_social i {
+        font-size: 2.3rem;
+        color: var(--ultraDarkColour);
+    }
+
+    .used {
+        background-color: var(--ultraDarkColour);
+        color: white;
+    }
+
+    .used #headerWrapper {
         height: 100vh;
         min-height: 500px;
     }
@@ -125,12 +168,11 @@
     }
 
     #navigationBar_menuItem {
-        color: var(--darkColour);
         cursor: pointer;
         font-weight: 600;
         font-size: .9rem;
         height: 100%;
-        padding: 25px 20px;
+        padding: 20px;
         display: flex;
         -ms-align-items: center;
         align-items: center;
@@ -232,7 +274,7 @@
     #firstSection {
         //height: 100vh;
         max-height: 100vh;
-        min-height: 800px;
+        min-height: 900px;
 
         display: flex;
         align-items: center;
@@ -514,7 +556,7 @@
     #testSection {
         height: 100vh;
         min-height: 500px;
-        max-height: 700px;
+        max-height: 900px;
         display: flex;
         align-items: center;
     }
@@ -592,6 +634,10 @@
         flex-direction: column;
         gap: 2rem;
         border: solid 1px black;
+    }
+
+    .yPhysioWrapper .text {
+        text-align: center;
     }
 
     .yPhysioHeader {

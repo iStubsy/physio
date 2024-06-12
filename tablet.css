@@ -70,7 +70,7 @@
         height: 100vh;
         background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
         background-size: cover;
-        background-attachment: fixed;
+        //background-attachment: fixed;
     }
 
     #header {
@@ -163,7 +163,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
         position: relative;
 
         border-radius: 10px;
