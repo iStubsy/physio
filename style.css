@@ -829,6 +829,15 @@ h5 {
 }
 
 
+.addressBarWrapper {
+    display: none;
+}
+
+.navigationBarBelow {
+    display: none;
+}
+
+
 
 .tro {
     opacity: 1;
