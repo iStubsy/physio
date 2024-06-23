@@ -556,7 +556,7 @@
     #testSection {
         height: 100vh;
         min-height: 500px;
-        max-height: 900px;
+        max-height: 700px;
         display: flex;
         align-items: center;
     }
@@ -686,13 +686,6 @@
         text-align: left;
         padding: 0 15px;
         z-index: 1;
-    }
-
-    .borderLines {
-        background-color: var(--borderColour);
-        position: absolute;
-        transition: 2s;
-        border: solid .75px white;
     }
 
     .lineTop {

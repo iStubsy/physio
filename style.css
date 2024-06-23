@@ -707,8 +707,6 @@ h5 {
     text-align: left;
     margin: 0 auto;
 
-    opacity: 0;
-    transform: translateY(100px);
 }
 
 .yPhysioInner {
@@ -758,7 +756,7 @@ h5 {
     background-color: var(--borderColour);
     position: absolute;
     transition: 2s;
-    border: solid .75px #d4d4d4;
+    border: solid 1.25px #d4d4d4;
     z-index: 0;
 }
 
