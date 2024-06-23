@@ -155,7 +155,7 @@ h5 {
 .overlayNavigation-item {
     font-family: var(--mainFont);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 300;
     color: #e5e5e5;
 
     opacity: 0;
@@ -756,7 +756,7 @@ h5 {
     background-color: var(--borderColour);
     position: absolute;
     transition: 2s;
-    border: solid 1.25px #d4d4d4;
+    border: solid .5px #d4d4d4;
     z-index: 0;
 }
 
