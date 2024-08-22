@@ -1,0 +1,858 @@
+@media (min-width: 1101px) {
+
+    .overlay {
+        display: none;
+    }
+
+    .navigationBar {
+        font-family: var(--mainFont);
+        background-color: rgba(255, 255, 255, 1.0);
+        //position: fixed;
+        //top: 0;
+        width: 100%;
+        z-index: 2;
+        //display: flex;
+        //align-items: center;
+        transition: ease-out .2s;
+    }
+
+    .navigationBarScrolled {
+        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .navigationBar_inner {
+
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        margin: 15px auto;
+
+        display: flex;
+        justify-content: space-between;
+        transition: .2s;
+        height: 70px;
+        padding: 0;
+    }
+
+    .navigationBar-innerScrolled {
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    #navigationBar_logo {
+        height: 100%;
+        display: flex;
+    }
+
+    .addressBarWrapper {
+        font-family: "Poppins", sans-serif;
+        color: var(--ultraDarkColour);
+        font-size: .9rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .addressBarItem {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .addressBarItem_img {
+        width: 50px;
+        height: 50px;
+        border: solid 1px #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addressBarItem_img .fa-location-dot {
+        color: var(--ultraDarkColour);
+        font-size: 2rem;
+    }
+
+    .navigationBarBelow {
+        width: 100%;
+        border-top: solid 1px #f5f5f5;
+
+        display: flex;
+        align-items: center;
+
+        background-color: var(--lightGrey);
+    }
+
+    .navigationBarBelow_inner {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        margin: 0px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .2s;
+    }
+
+    .navigationBarBelow_social {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigationBarBelow_social i {
+        font-size: 2.3rem;
+        color: var(--ultraDarkColour);
+    }
+
+    .used {
+        background-color: var(--ultraDarkColour);
+        color: white;
+    }
+
+    .used #headerWrapper {
+        height: 100vh;
+        min-height: 500px;
+    }
+
+    #header-emptyTop {
+        width: 100%;
+        height: 110px;
+        display: block;
+
+        display: none;
+    }
+
+    #logo {
+        height: 100%;
+    }
+
+    .navigationBar_logoText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .2s;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .navigationBar_logoTextItem1 {
+        color: var(--darkColour);
+        overflow: hidden;
+        font-weight: 500;
+        font-family: arial;
+        font-size: 1.4rem;
+        transition: ease-out .2s;
+
+    }
+
+    .navigationBar_logoTextItem2 {
+        color: black;
+        overflow: hidden;
+        transition: ease-out .2s;
+        font-size: 1.2rem;
+    }
+
+    .navigationBar_logoTextItem1-scrolled {
+        font-size: 1rem;
+
+    }
+
+    .navigationBar_logoTextItem2-scrolled {
+        font-size: .9rem;
+    }
+
+    #navigationBar_menu {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #navigationBar_menuItem {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: .9rem;
+        height: 100%;
+        padding: 18px 20px;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    #navigationBar_menuItem:hover {
+        background-color: var(--ultraDarkColour);
+        color: white;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #header_inner {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerContactWrapper {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: var(--mainFont);
+        border-top: solid 1px rgba(0, 0, 0, 0.12);
+        gap: 80px;
+        display: none;
+    }
+
+    .headerContact {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 3px;
+    }
+
+    .cutter {
+        height: 70%;
+        background-color: rgba(255, 255, 255, 0.26);
+        width: 1px;
+        margin: auto 0;
+    }
+
+    .headerContactContent {
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    .phone,
+    .address {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text {
+        font-family: var(--mainFont);
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2rem;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta-button {
+        background-color: var(--lightColour);
+        background-color: #0072c9;
+        color: white;
+        border-radius: 5px;
+        padding: 14px 18px;
+        outline: none;
+        border: none;
+        width: fit-content;
+        font-size: .9rem;
+        position: relative;
+        margin: 30px 0 0 0;
+    }
+
+    #content > section {
+        //padding: 40px 0;
+    }
+
+    #logo2 {
+        position: absolute;
+        right: -100%;
+        animation: fade-in linear;
+    }
+
+    #firstSection {
+        //height: 100vh;
+        height: 90vh;
+        max-height: 90vh;
+        min-height: 700px;
+
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .firstSection_inner {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        padding: 0;
+    }
+
+    .sectionRight {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 100px;
+    }
+
+    .sectionRight img {
+        position: absolute;
+        height: 150%;
+    }
+
+    #secondSection {
+        height: 100vh;
+        max-height: 600px;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .secondSection-overlay {
+        background-color: var(--ultraDarkColour);
+        position: absolute;
+        top: 0;
+        width: 70%;
+        width: 60%;
+        height: 100%;
+        //clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+
+    .firstSection-overlay {
+        //background-color: #f8f8f8;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        //clip-path: polygon(0 0, 78% 0, 69% 100%, 0% 100%);
+    }
+
+    .secondSection_inner {
+        margin: 0 auto;
+        //background-color: var(--verylightColour);
+        //background-color: var(--lightGrey);
+        width: 100%;
+    }
+
+    .aboutMeWrapper {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        border-radius: 20px;
+        display: flex;
+        border-radius: 20px;
+        justify-content: space-between;
+        margin: 0px auto;
+        height: 100%;
+        align-items: center;
+    }
+
+    .aboutMeWrapperBG {
+        position: absolute;
+        left: 0;
+        background-color: var(--verylightColour);
+        width: 80%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: none;
+    }
+
+    .aboutMeTextBox {
+        position: relative;
+        width: 50%;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //padding-top: 71px;
+    }
+
+    .aboutMeTextBox h4,
+    .aboutMeTextBox h5,
+    .aboutMeTextBox .text {
+        color: #e0e0e0;
+    }
+
+    .imi {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.26);
+        border-radius: 3px;
+    }
+
+    .aboutMeImageBoxWrapper {
+        display: flex;
+        padding: 10px;
+        width: 45%;
+        max-width: 100%;
+        //width: 500px;
+        height: 500px;
+
+        gap: 14px;
+    }
+
+    .aboutMeImageBox {
+        width: 50%;
+        height: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        padding: 0;
+        gap: 14px;
+    }
+
+    .aboutMeImageBox-first {
+
+        width: 100%;
+        height: 35%;
+
+        background-color: red;
+
+        background-image: url("src/aboutMe.jpg");
+        background-size: cover;
+    }
+
+    .aboutMeImageBox-second {
+
+        background-image: url("src/training2.jpg");
+        background-size: cover;
+
+        background-color: red;
+
+        width: 100%;
+        height: 65%;
+    }
+
+    .aboutMeImageBox-third {
+        background-image: url("src/training.jpg");
+        background-size: cover;
+
+        background-color: red;
+        width: 100%;
+        height: 70%;
+    }
+
+    .aboutMeImageBox-fourth {
+        background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+        background-size: cover;
+
+        width: 100%;
+        height: 50%;
+    }
+
+
+
+    #thirdSection {
+        height: 100vh;
+        max-height: 800px;
+        min-height: 400px;
+        background-color: var(--lightGrey);
+        display: flex;
+        align-items: center;
+    }
+
+    .thirdSection_inner {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        margin: 0 auto;
+    }
+
+    .thirdSection_grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin: 20px auto;
+    }
+
+    .thirdSection_grid > div {
+        height: 200px;
+        border-radius: 5px;
+        background-position: center;
+    }
+
+    .grid-item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url("src/training2.jpg");
+        background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+        background-size: cover;
+    }
+
+    .grid-item2 {
+        background-color: var(--darkColour);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .grid-item3 {
+        background-color: var(--verylightColour);
+        background-image: url("https://i.pinimg.com/originals/de/bc/fb/debcfbe5292de96182cb871bf0b7f7e0.jpg");
+        background-size: cover;
+    }
+
+    .grid-item4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-image: url("src/aboutMe.jpg");
+        background-image: url("https://physio-360-juelich.de/wp-content/uploads/2019/08/Behandlungsraum-Physio-360-Juelich.jpg");
+        background-size: cover;
+    }
+
+    .gridtext {
+        color: white;
+        position: absolute;
+        font-weight: 100;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .fourthSection_inner {
+        background-color: var(--verylightColour);
+        padding: 50px;
+    }
+
+    .fourthSection_inner h5,
+    #testSection h5 {
+        text-align: center;
+    }
+
+    .fourthSection_itemWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .fourthSection_item {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: var(--mainFont);
+        text-align: center;
+    }
+
+    .fourthSection_item .text {
+        font-size: .9rem;
+        line-height: 1.4rem;
+        width: 100%;
+    }
+
+    /*    FONTAWESOME    */
+
+    .fa-mobile-screen-button,
+    .fa-location-dot {
+        font-size: 1.4rem;
+        color: white;
+    }
+
+    #testSection {
+        height: 100vh;
+        min-height: 500px;
+        max-height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .testSection_inner {
+        width: 85%;
+        max-width: var(--maxWidth);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: var(--maxWidth);
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .testSection_subWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .testSection_sub {
+        display: flex;
+        gap: 22px;
+        max-width: 350px;
+        padding: 20px;
+        margin-top: 3rem;
+        height: fit-content;
+    }
+
+    .testSection_subPic {
+        min-width: 70px;
+        height: 75px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testSection_subPic > i {
+        font-size: 2.5rem;
+        color: var(--darkColour);
+    }
+
+    .blueStuff {
+        width: 80%;
+        height: 6px;
+        background-color: var(--darkColour);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .testSection_subText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description {
+        font-family: "Poppins", sans-serif;
+        font-size: .9rem;
+        color: var(--darkColour);
+        font-weight: 400;
+    }
+
+    .yPhysioWrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 120px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border: solid 1px black;
+        //box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .yPhysioWrapper .text {
+        text-align: center;
+    }
+
+    .yPhysioHeader {
+        color: white;
+        font-size: 3.5rem;
+        text-align: center;
+
+    }
+
+    .yPhysioInner {
+        width: 90%;
+        max-width: var(--maxWidth);
+        margin: 2rem auto 0 auto;
+        gap: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .yPhysio {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 30%;
+    }
+
+    .headlineWrapper {
+        height: 55px;
+        position: absolute;
+        top: -26px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headline {
+        position: relative;
+        color: white;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-family: var(--mainFont);
+        text-align: left;
+        padding: 0 15px;
+        z-index: 1;
+    }
+
+    .lineTop {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .lineTopShow {
+        width: 100%;
+    }
+
+    .lineRight {
+        height: 0;
+        right: 0;
+    }
+
+    .lineRightShow {
+        height: 100%;
+    }
+
+    .lineLeft {
+        height: 0;
+        width: 1px;
+
+        left: 0;
+    }
+
+    .lineLeftShow {
+        height: 100%;
+    }
+
+    .lineBottom {
+        width: 0;
+
+        bottom: 0;
+    }
+
+    .lineBottomShow {
+        width: 100%;
+    }
+
+    .showBorder {
+        opacity: 1;
+    }
+
+    .absoluteBox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        //border: solid 1.5px #d8d8d8;
+
+        //top: 0.7rem;
+    }
+
+    #footer {
+        padding: 0;
+    }
+
+    .footer_inner {
+        flex-direction: row;
+    }
+
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .backToTop {
+        display: none;
+    }
+
+    .image-container {
+        background-color: red;
+        height: 1000px;
+        background-color: green;
+    }
+
+    .stickyContainer {
+        position: relative;
+        display: flex;
+        height: 1400px;
+        gap: 5px;
+    }
+
+    .stickyColumnLeft {
+        width: 50%;
+        height: 1360px;
+        position: relative;
+    }
+
+    .stickyColumnLeft .stickyColumn {
+        width: 100%;
+        height: 820px;
+
+        position: sticky;
+        top: 135px;
+    }
+
+    .stickyColumnRight {
+        width: 50%;
+        position: relative;
+        top: 450px;
+        height: 910px;
+    }
+
+    .stickyColumnRight .stickyColumn {
+        width: 100%;
+        height: 700px;
+
+        position: sticky;
+        top: 135px;
+    }
+
+    .stick1 {
+        width: 100%;
+        height: 200px;
+        background-image: url("src/aboutMe.jpg");
+        background-size: cover;
+
+        position: sticky;
+        top: 135px;
+    }
+
+    .stick2 {
+        width: 100%;
+        height: 200px;
+        background-image: url("src/training.jpg");
+        background-size: cover;
+
+        position: sticky;
+        top: 135px;
+    }
+
+    .stick3 {
+        height: 200px;
+        width: 100%;
+        background-image: url("src/training2.jpg");
+        background-size: cover;
+        background-position: center;
+        position: sticky;
+        top: 335px;
+        border-top: solid 5px #f7f7f7;
+    }
+
+    .stick4 {
+        height: 200px;
+        width: 100%;
+        background-image: url("src/winner.jpg");
+        background-size: cover;
+        background-position: center;
+        position: sticky;
+        top: 335px;
+
+        border-top: solid 5px #f7f7f7;
+    }
+
+
+
+    /************** TEST ***********/
+
+    .imagerino1 {
+        background-image: url("src/training.jpg");
+        width: 100%;
+        height: 170px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+}
