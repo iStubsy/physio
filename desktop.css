@@ -236,7 +236,6 @@
 
     .text {
         font-family: var(--mainFont);
-        color: var(--darkColour);
         font-size: 1.1rem;
         font-weight: 500;
         line-height: 2rem;
@@ -273,8 +272,9 @@
 
     #firstSection {
         //height: 100vh;
-        max-height: 100vh;
-        min-height: 900px;
+        height: 90vh;
+        max-height: 90vh;
+        min-height: 700px;
 
         display: flex;
         align-items: center;
@@ -302,7 +302,7 @@
 
     #secondSection {
         height: 100vh;
-        max-height: 800px;
+        max-height: 600px;
         min-height: 600px;
         display: flex;
         flex-direction: column;
@@ -368,7 +368,6 @@
         flex-direction: column;
         justify-content: center;
         //padding-top: 71px;
-        gap: 10px;
     }
 
     .aboutMeTextBox h4,
@@ -472,7 +471,7 @@
 
     .thirdSection_grid > div {
         height: 200px;
-        border-radius: 8px;
+        border-radius: 5px;
         background-position: center;
     }
 
@@ -625,15 +624,14 @@
     }
 
     .yPhysioWrapper {
-        background-color: var(--ultraDarkColour);
         width: 100%;
-        //border-radius: 15px;
         margin: 0 auto;
         padding: 120px 0;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         border: solid 1px black;
+        //box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     }
 
     .yPhysioWrapper .text {

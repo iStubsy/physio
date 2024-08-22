@@ -46,8 +46,8 @@
         color: var(--darkColour);
         font-family: var(--mainFont);
         font-family: 'Taviraj', serif;
-        font-size: 3.8rem;
-        line-height: 4.5rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
         font-weight: 400;
     }
 
@@ -121,6 +121,9 @@
         display: flex;
         position: relative;
         padding: 70px 25px;
+
+        display: flex;
+        align-items: center;
     }
 
     #secondSection {
