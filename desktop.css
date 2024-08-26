@@ -169,7 +169,7 @@
 
     #navigationBar_menuItem {
         cursor: pointer;
-        font-weight: 600;
+        font-weight: 500;
         font-size: .9rem;
         height: 100%;
         padding: 18px 20px;
@@ -237,7 +237,7 @@
     .text {
         font-family: var(--mainFont);
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 2rem;
     }
 
@@ -247,8 +247,7 @@
     }
 
     .cta-button {
-        background-color: var(--lightColour);
-        background-color: #0072c9;
+        background-color: var(--darkColour);
         color: white;
         border-radius: 5px;
         padding: 14px 18px;
@@ -279,6 +278,7 @@
         display: flex;
         align-items: center;
         overflow: hidden;
+        display: none;
     }
 
     .firstSection_inner {
@@ -301,13 +301,11 @@
     }
 
     #secondSection {
-        height: 100vh;
-        max-height: 600px;
         min-height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        padding: 6rem 0;
     }
 
     .secondSection-overlay {
@@ -553,7 +551,7 @@
     }
 
     #testSection {
-        height: 100vh;
+        //height: 100vh;
         min-height: 500px;
         max-height: 700px;
         display: flex;
@@ -632,6 +630,7 @@
         gap: 2rem;
         border: solid 1px black;
         //box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+        display: none;
     }
 
     .yPhysioWrapper .text {

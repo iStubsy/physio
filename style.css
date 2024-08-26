@@ -26,6 +26,10 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+section {
+    padding: 0rem 0;
+}
+
 /****** TYPOGRAPHY *********/
 
 body {
@@ -46,7 +50,6 @@ h1 {
 }
 
 h2 {
-    color: var(--darkColour);
     font-family: var(--mainFont);
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
@@ -76,14 +79,14 @@ h5 {
     font-size: 2.2rem;
     line-height: 2.5rem;
     font-weight: 400;
-    margin: 12px 0 22px 0;
 }
 
 .smallText {
     font-family: "Poppins", sans-serif;
-    font-size: .9rem;
-    color: var(--darkColour);
+    font-size: 1rem;
     font-weight: 300;
+    max-width: 800px;
+    margin: .5rem auto;
 }
 
 /*********** OVERLAY ***********/
@@ -212,7 +215,7 @@ h5 {
     font-size: .8rem;
 
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
     left: 0;
     margin: 40px auto;
@@ -406,8 +409,95 @@ h5 {
     margin: 3.5px auto;
 }
 
+.physioHelps {
+    text-align: center;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.physioHelpsCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.physioHelpsCard {
+    background-color: var(--lightGrey);
+    padding: 1.2rem;
+    text-align: center;
+    font-family: Montserrat;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    max-width: 400px;
+}
+
+.physioHelpsCardHeadline {
+    font-size: 1.2rem;
+    color: var(--darkColour);
+    margin-bottom: .4rem;
+    font-weight: 500;
+}
+
+.physioHelpsCardText {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+
+#leistungenWrapper {
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.leistungen {
+    text-align: center;
+    padding: 2rem;
+}
+
+.leistungenCards {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+    background-attachment: fixed;
+}
+
+.leistungenCard {
+    padding: 2rem 2rem;
+    background-color: rgba(23, 46, 96, 0.95);
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.leistungenCard .smallText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.leistungenCard i {
+    color: white;
+    font-size: 3.2rem;
+}
+
+.leistungenCardC {
+    background-color: rgba(11, 33, 79, 0.95);
+    width: 100%;
+}
+
+
+
+
+
 #firstSection {
     position: relative;
+    display: none;
 }
 
 .firstSection_inner {
@@ -437,6 +527,12 @@ h5 {
     display: flex;
     justify-content: center;
     display: none;
+}
+
+.aboutMeTextBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .aboutMeImageBox {
@@ -491,7 +587,6 @@ h5 {
 #testSection h5 {
     text-align: center;
 }
-
 
 .testSection_inner {
     display: flex;
@@ -563,7 +658,9 @@ h5 {
 
 #footer {
     background-color: var(--ultraDarkColour);
+    background-color: rgba(11, 33, 79, 0.95);
     width: 100%;
+    position: relative;
 }
 
 .footerText .fa-solid {
@@ -653,6 +750,16 @@ h5 {
     gap: 15px;
 }
 
+.footerAbsoluteBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
 .backToTop {
     color: white;
     position: fixed;
@@ -680,7 +787,6 @@ h5 {
 
 .yPhysioWrapper {
     background-color: var(--ultraDarkColour);
-    width: 95%;
     //border-radius: 15px;
     margin: 0 auto;
     padding: 60px 25px;
@@ -690,6 +796,7 @@ h5 {
     border: solid 1px black;
     //background-image: url("src/logo.png");
     position: relative;
+    display: none;
 }
 
 .yPhysioWrapper .text {
@@ -843,4 +950,8 @@ h5 {
     opacity: 1;
     transform: translateY(0px);
     transition: 1s;
+}
+
+.white {
+    color: white;
 }

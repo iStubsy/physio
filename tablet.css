@@ -1,5 +1,8 @@
 @media only screen and (min-width: 601px) {
 
+    section {
+        padding: 6rem 0 7rem 0;
+    }
 
 
     /****** TYPOGRAPHY ******/
@@ -18,7 +21,6 @@
     }
 
     h2 {
-        color: var(--darkColour);
         font-family: var(--mainFont);
         font-size: 1.2rem;
         font-family: "Poppins", sans-serif;
@@ -109,6 +111,55 @@
         position: relative;
         //max-width: calc(var(--contentWidth)/2);
         margin: 0 auto;
+    }
+
+    #physioHelpsWrapper {
+        padding: 8rem 0;
+    }
+
+    .physioHelps {
+        padding: 0;
+    }
+
+    #physioHelpsWrapper h5 {
+        margin: 0 auto 1rem auto;
+        text-align: center;
+    }
+
+    #physioHelpsWrapper .smallText {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .physioHelpsCards {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 4rem auto 0 auto;
+        max-width: 1400px;
+    }
+
+    .physioHelpsCard {
+        //max-width: 360px;
+        padding: 2rem 3rem;
+    }
+
+    .leistungen {
+        padding: 0;
+    }
+
+    .leistungenCards {
+        display: flex;
+        flex-direction: row;
+        margin: 4rem auto 0 auto;
+    }
+
+    .leistungenCard {
+        padding: 2rem 5rem;
+        width: 33.33%;
     }
 
     #firstSection {
