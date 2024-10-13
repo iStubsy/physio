@@ -4,7 +4,8 @@
     --ultraDarkColour: #0b214f;
     --lightColour: #4598F1;
     --verylightColour: #E6F1FA;
-    --lightGrey: rgba(0, 0, 0, 0.02);
+    --lightGrey: rgba(0, 0, 0, 0.03);
+    --lightGrey: rgba(152, 187, 242, 0.08);
     --borderColour: #e3e3e3;
     --mainFont: 'Josefin Sans', sans-serif;
     /* --mainFont: 'Taviraj', serif; */
@@ -83,8 +84,8 @@ h4 {
 h5 {
     color: var(--darkColour);
     font-family: var(--mainFont);
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     font-weight: 400;
     text-align: left;
 }
@@ -188,7 +189,7 @@ p {
 
 .overlayFooter {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -201,7 +202,7 @@ p {
 
 .overlayFooter-social {
     color: white;
-    padding: 20px;
+    padding: 30px;
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -319,7 +320,7 @@ p {
 }
 
 #header_headlineWrapper h5 {
-    margin: 1rem 0;
+    margin: .3rem 0;
     font-size: 1.8rem;
 }
 
@@ -447,6 +448,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    margin: 2rem 0;
 }
 
 .physioHelpsCard {
