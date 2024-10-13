@@ -23,6 +23,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/8fc67f8040.js" crossorigin="anonymous"></script>
 
 
@@ -52,10 +56,14 @@
             </div>
         </div>
     </div>
+    <div id="header-emptyTop"></div>
     <div id="headerWrapper">
-        <div id="header-leftSide"></div>
-
-        <!--<div id="header-emptyTop"></div>-->
+        <!--<div class="headerPictureCollection">
+            <div class="headerPicture"></div>
+            <div class="headerPicture"></div>
+            <div class="headerPicture"></div>
+        </div> -->
+        <!--<div id="header-leftSide"></div>-->
         <div id="header">
             <div class="navigationBar">
                 <div class="navigationBar_inner">
@@ -68,35 +76,11 @@
                             <div class="navigationBar_logoTextItem2">Praxis Weber</div>
                         </div>
                     </div>
-                    <!--
                     <div id="navigationBar_menu">
-                        <div id="navigationBar_menuItem">PRAXIS</div>
-                        <div id="navigationBar_menuItem">ÜBER MICH</div>
-                        <div id="navigationBar_menuItem">LEISTUNGEN</div>
-                        <div id="navigationBar_menuItem">KONTAKT</div>
-                    </div>-->
-                    <div class="addressBarWrapper">
-                        <div class="addressBarItem">
-                            <div class="addressBarItem_img"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="addressBarItem_textWrapper">
-                                <div class="adressBarItem_text">Crayenbühlstraße 1a</div>
-                                <div class="adressBarItem_text">67295 Bolanden-Weierhof</div>
-                            </div>
-                        </div>
-                        <div class="addressBarItem">
-                            <div class="addressBarItem_img"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="addressBarItem_textWrapper">
-                                <div class="adressBarItem_text">Crayenbühlstraße 1a</div>
-                                <div class="adressBarItem_text">67295 Bolanden-Weierhof</div>
-                            </div>
-                        </div>
-                        <div class="addressBarItem">
-                            <div class="addressBarItem_img"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="addressBarItem_textWrapper">
-                                <div class="adressBarItem_text">Crayenbühlstraße 1a</div>
-                                <div class="adressBarItem_text">67295 Bolanden-Weierhof</div>
-                            </div>
-                        </div>
+                        <div id="navigationBar_menuItem">Anwendungsgebiete</div>
+                        <div id="navigationBar_menuItem">Über mich</div>
+                        <div id="navigationBar_menuItem">Netzwerk</div>
+                        <div id="navigationBar_menuItem">Kontakt</div>
                     </div>
                     <button class="hamburgerMenu">
                         <div class="hamburgerMenuLine"></div>
@@ -104,7 +88,7 @@
                         <div class="hamburgerMenuLine"></div>
                     </button>
                 </div>
-                <div class="navigationBarBelow">
+                <!-- <div class="navigationBarBelow">
                     <div class="navigationBarBelow_inner">
                         <div id="navigationBar_menu">
                             <div id="navigationBar_menuItem" class="used">HOME</div>
@@ -118,46 +102,30 @@
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
-            <div id="header-emptyTop"></div>
             <div id="header_inner">
-                <div id="header_headlineWrapper" class="fromBottomWrapper">
-                    <h1 class="moveTop">Physiotherapie<br>Weber</h1>
-                    <h3 class="moveTop">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</h3>
+                <div id="header-left">
+                    <img src="src/frederik.JPG">
                 </div>
-                <div class="information">
-                    <div class="phone"><i class="fa-solid fa-mobile-screen-button"></i>Tel. 01948 97873</div>
-                    <div class="address"><i class="fa-solid fa-location-dot"></i>Crayenbühlstraße 1a, Bolanden-Weierhof</div>
+                <div id="header-right">
+                    <div id="header_headlineWrapper" class="fromBottomWrapper">
+                        <h1 class="moveTop">Frederik Weber</h1>
+                        <h5 class="moveTop">Physiotherapeut</h5>
+                        <div class="line moveTop"></div>
+                        <p class="moveTop">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
-            <!-- <div class="headerContactWrapper">
-                <div class="headerContact">
-                    <div class="headerContactHeadline">Telefon</div>
-                    <div class="headerContactContent">063022269</div>
-                </div>
-                <div class="cutter"></div>
-                <div class="headerContact">
-                    <div class="headerContactHeadline">Adresse</div>
-                    <div class="headerContactContent">Crayenbühlstraße 1a</div>
-                    <div class="headerContactContent">67295 Bolanden-Weierhof</div>
-                </div>
-                <div class="cutter"></div>
-                <div class="headerContact">Adresse</div>
-            </div>-->
         </div>
     </div>
 
     <div id="content">
 
-        <section>
+        <section id="physioHelpsWrapper" class="opacityReveal">
             <div class="physioHelps">
                 <h5>Physiotherapie in Bolanden</h5>
+                <div class="line"></div>
                 <div class="smallText">Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</div>
                 <div class="physioHelpsCards">
                     <div class="physioHelpsCard">
@@ -175,16 +143,42 @@
                 </div>
             </div>
         </section>
-        <section id="secondSection">
-            <div class="secondSection-overlay moveDownRevealOverlay">
-                <!--<div class="aboutMeTextBox fromBottomWrapper">
-                    <h4>Über mich</h4>
-                    <h5>Heilpraktiker für<br>Physiotherapie</h5>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</div>
-                    <button type="button" class="cta-button">MEHR ERFAHREN</button>
-                </div> -->
+        <section id="newLeistungenWrapper" class="opacityReveal">
+            <div class="newLeistungen">
+                <div class="newLeistungenLeft">
+                    <div class="newLeistungenLeftInner">
+                        <h5>Anwendungsgebiete</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="newLeistungenRight">
+                    <div class="leistungenRightGrid">
+                        <div class="newLeistungen-card">
+                            <img src="src/frederik.JPG">
+                            <div class="newLeistungen-cardText">Vielseitige Therapieverfahren</div>
+                        </div>
+                        <div class="newLeistungen-card">
+                            <img src="src/training.jpg">
+                            <div class="newLeistungen-cardText">Effektives Coaching</div>
+                        </div>
+
+                        <div class="newLeistungen-card">
+                            <img src="src/anatomie.JPG">
+                            <div class="newLeistungen-cardText">Professionnelle Fitnessberatung</div>
+                        </div>
+                        <div class="newLeistungen-card">
+                            <img src="src/IMG_3908.JPG">
+                            <div class="newLeistungen-cardText">Effektives Coaching</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="firstSection-overlay"></div> -->
+        </section>
+
+
+        <!-- <section id="secondSection">
+            <div class="secondSection-overlay moveDownRevealOverlay">
+            </div>
             <div class="secondSection_inner">
                 <div class="aboutMeWrapper">
                     <div class="aboutMeTextBox">
@@ -206,10 +200,10 @@
 
                 </div>
             </div>
-        </section>
+        </section>-->
 
 
-        <section>
+        <!-- <section id="leistungenWrapper">
             <div class="leistungen">
                 <h5>Unsere Leistungen</h5>
                 <div class="smallText">Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</div>
@@ -234,7 +228,7 @@
                         • Personal Training</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -294,53 +288,6 @@
             </div>
 
         </div>
-
-        <!--<section id="testSection">
-            <div class="testSection_inner">
-                <h5>Unsere Leistungen</h5>
-                <div class="testSection_subWrapper">
-                    <div class="testSection_sub">
-                        <div class="testSection_subPicSection">
-                            <div class="testSection_subPic">
-                                <i class="fa-solid fa-staff-snake"></i>
-                            </div>
-                            <div class="blueStuff"></div>
-                        </div>
-                        <div class="testSection_subText">
-                            <h2>Vielseitige<br>Therapieverfahren</h2>
-                            <div class="description">Kombination aus Physiotherapie, manueller Therapie, Lymphdrainage und neurologischen Konzepten (bereits ab dem Baby-/Kleinkindalter)</div>
-                        </div>
-                    </div>
-                    <div class="testSection_sub">
-                        <div class="testSection_subPicSection">
-                            <div class="testSection_subPic">
-                                <i class="fa-solid fa-handshake-angle"></i>
-                            </div>
-                            <div class="blueStuff"></div>
-                        </div>
-                        <div class="testSection_subText">
-                            <h2>Effektives Coaching</h2>
-                            <div class="description">im Bereich Schmerzpsychologie und Wahrnehmung</div>
-                        </div>
-                    </div>
-                    <div class="testSection_sub">
-                        <div class="testSection_subPicSection">
-                            <div class="testSection_subPic">
-                                <i class="fa-solid fa-dumbbell"></i>
-                            </div>
-                            <div class="blueStuff"></div>
-                        </div>
-                        <div class="testSection_subText">
-                            <h2>Professionnelle Fitnessberatung</h2>
-                            <div class="description">• Erstellung von Fitnessplänen<br>
-                                • gemeinsames Training<br>
-                                • Personal Training</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
--->
 
         <section id="thirdSection">
             <div class="thirdSection_inner">
