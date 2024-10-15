@@ -74,7 +74,7 @@ function moveDownRevealFun() {
     var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
     for (var i = 0; i < moveDownReveals.length; i++) {
         for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
-            moveDownReveals[i].getElementsByTagName("*")[x].classList.add("moveTop");
+            //moveDownReveals[i].getElementsByTagName("*")[x].classList.add("moveTop");
         }
 
         var windowHeight = window.innerHeight;
