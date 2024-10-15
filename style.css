@@ -311,7 +311,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 30px;
+    padding: 40px 25px;
 }
 
 #header_headlineWrapper h5 {
@@ -323,6 +323,7 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--darkColour);
 }
 
 .subTitle .line {
@@ -360,7 +361,7 @@ p {
     justify-content: space-between;
     align-items: center;
     transition: .4s;
-    height: 75px;
+    height: 80px;
 }
 
 #navigationBar_logo {
@@ -379,7 +380,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: .4s;
     font-family: 'Montserrat', sans-serif;
@@ -440,7 +441,6 @@ p {
 #physioHelpsWrapper {
     background-color: var(--lightGrey);
     background-color: var(--darkColour);
-    background-color: rgb(34, 57, 108);
     color: white;
 }
 
@@ -450,7 +450,7 @@ p {
 
 .physioHelps {
     text-align: center;
-    padding: 40px 30px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -566,6 +566,7 @@ p {
     width: 100%;
     margin: 0 auto;
     max-width: var(--maxWidth);
+    padding: 40px 25px;
 }
 
 .newLeistungenLeft {}
@@ -573,7 +574,6 @@ p {
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
 
     position: sticky;
     top: 70px;
@@ -592,7 +592,7 @@ p {
     display: grid;
     gap: 50px;
     grid-template-columns: auto;
-    padding: 0 2rem;
+    margin-top: 30px;
 }
 
 .newLeistungen-card {
@@ -681,7 +681,9 @@ p {
     display: none;
 }
 
-#thirdSection {}
+#thirdSection {
+    display: none;
+}
 
 #testSection h5 {
     text-align: center;
