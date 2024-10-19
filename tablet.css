@@ -1,23 +1,12 @@
 @media only screen and (min-width: 601px) {
 
-
-
-    * {
-        display: none;
-    }
-
-    section {
-        padding: 10rem 0 10rem 0;
-    }
-
-
     /****** TYPOGRAPHY ******/
 
 
     h1 {
         font-weight: 300;
-        font-size: 6rem;
-        line-height: 6.2rem;
+        font-size: 4rem;
+        line-height: 4.2rem;
         //text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
     }
 
@@ -54,6 +43,12 @@
         text-align: center;
     }
 
+    p {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
     .smallText {
         text-align: center;
     }
@@ -77,8 +72,8 @@
         //background-attachment: fixed;
         background-image: none;
         height: 100vh;
-        min-height: 700px;
-        max-height: 1000px;
+        min-height: 500px;
+        max-height: 700px;
     }
 
     .headerPictureCollection {
@@ -128,6 +123,10 @@
         width: 50%;
     }
 
+    #header-left img {
+        height: 100%;
+    }
+
     #header-right {
         width: 50%;
         display: flex;
@@ -147,9 +146,12 @@
         width: 100%;
         height: 110px;
         display: block;
+        display: none;
     }
 
-    #physioHelpsWrapper {}
+    #physioHelpsWrapper {
+        padding: 4rem 0;
+    }
 
     .physioHelps {
         padding: 0;
@@ -157,7 +159,6 @@
 
     #physioHelpsWrapper h5,
     #leistungenWrapper h5 {
-        margin: 0 auto 1rem auto;
         text-align: center;
     }
 
@@ -170,7 +171,7 @@
     }
 
     .physioHelpsCards {
-        flex-direction: row;
+        //flex-direction: row;
         justify-content: space-between;
         width: 80%;
         margin: 4rem auto 0 auto;
@@ -180,6 +181,39 @@
     .physioHelpsCard {
         //max-width: 360px;
         padding: 1.5rem 1.5rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    #newLeistungenWrapper {}
+
+    .newLeistungen h5 {
+        text-align: left;
+    }
+
+    .newLeistungen .line {}
+
+    .newLeistungen p {
+        text-align: left;
+    }
+
+    .newLeistungen-card {
+        width: 280px;
+        height: 280px;
+    }
+
+    .newLeistungenRight {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .newLeistungenLeft {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .newLeistungenLeft p {
+        margin: 0;
     }
 
     #leistungenWrapper {}

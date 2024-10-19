@@ -87,6 +87,29 @@
         min-height: 500px;
     }
 
+    #headerWrapper {
+        max-height: none;
+    }
+
+    #header-emptyTop {
+        width: 100%;
+        height: 110px;
+        display: block;
+    }
+
+    .physioHelpsCards {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4rem auto 0 auto;
+        max-width: 1400px;
+    }
+
+    .newLeistungen {
+        flex-direction: row;
+        max-width: 1400px;
+        width: 90%;
+    }
+
     #logo {
         height: 100%;
     }
@@ -404,6 +427,8 @@
         background-color: var(--lightGrey);
         display: flex;
         align-items: center;
+
+        display: none;
     }
 
     .thirdSection_inner {
