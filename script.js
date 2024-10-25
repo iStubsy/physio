@@ -72,28 +72,36 @@ document.querySelector(".backToTop").onclick = function () {
 
 function moveDownRevealFun() {
     var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
-    for (var i = 0; i < moveDownReveals.length; i++) {
-        for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
-            //moveDownReveals[i].getElementsByTagName("*")[x].classList.add("moveTop");
-        }
 
+    for (var i = 0; i < moveDownReveals.length; i++) {
+        // Nur direkte div-Kinder sammeln und die Klasse "moveTop" hinzufügen
+        var directChildDivs = Array.from(moveDownReveals[i].children).filter(child => child.tagName === "DIV");
+        directChildDivs.forEach(childDiv => childDiv.classList.add("moveTop"));
+
+        // Fensterhöhe und Position des aktuellen Elements berechnen
         var windowHeight = window.innerHeight;
         var elementTop = moveDownReveals[i].getBoundingClientRect().top;
         var elementVisible = 100;
+
+        // Prüfen, ob das Element im sichtbaren Bereich ist
+        var allChildren = moveDownReveals[i].getElementsByTagName("*");
+
         if (elementTop < windowHeight - elementVisible) {
-            for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
-                //moveDownReveals[i].getElementsByTagName("*")[x].parentNode.style.overflow = "hidden";
-                moveDownReveals[i].getElementsByTagName("*")[x].style.transitionDelay = x / 6 + "s";
-                moveDownReveals[i].getElementsByTagName("*")[x].classList.add("active");
+            // Verzögerung und Aktivierung für sichtbare Elemente
+            for (var x = 0; x < allChildren.length; x++) {
+                allChildren[x].style.transitionDelay = x / 6 + "s";
+                allChildren[x].classList.add("active");
             }
         } else {
-            for (var x = 0; x < moveDownReveals[i].getElementsByTagName("*").length; x++) {
-                //moveDownReveals[i].getElementsByTagName("*")[x].style.transitionDelay = 0 + "s";
-                //moveDownReveals[i].getElementsByTagName("*")[x].classList.remove("active");
+            // Optional: Animation zurücksetzen, falls das Element nicht sichtbar ist
+            for (var x = 0; x < allChildren.length; x++) {
+                allChildren[x].style.transitionDelay = "0s";
+                allChildren[x].classList.remove("active");
             }
         }
     }
 }
+
 
 /*
 function moveDownRevealFunOverlay() {

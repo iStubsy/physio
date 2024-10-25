@@ -10,7 +10,6 @@
     opacity: 0;
     transform: translateY(120px);
 
-    transition: opacity .2s ease-out, transform .5s ease-out;
     transition-delay: 0s;
 }
 
@@ -21,8 +20,9 @@
 
 .active {
     opacity: 1;
-    transition: opacity 0.5s ease-out, transform .6s ease-out;
+    transition: opacity .2s ease-out, transform .5s ease-out;
     transform: translateX(0);
+    transform: translateY(0);
 }
 
 .rotateOpacitySel {

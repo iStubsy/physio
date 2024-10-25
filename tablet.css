@@ -40,11 +40,11 @@
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
     }
 
     p {
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
         max-width: 800px;
     }
@@ -131,6 +131,7 @@
         width: 50%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     #header_headlineWrapper {}
@@ -140,6 +141,7 @@
         text-align: left;
         text-shadow: none;
         color: var(--ultraDarkColour);
+        max-width: 550px;
     }
 
     #header-emptyTop {
@@ -154,12 +156,8 @@
     }
 
     .physioHelps {
-        padding: 0;
-    }
-
-    #physioHelpsWrapper h5,
-    #leistungenWrapper h5 {
-        text-align: center;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .physioHelps .smallText {
