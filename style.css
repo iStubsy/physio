@@ -241,6 +241,7 @@ p {
     cursor: pointer;
     background-color: black;
     border-bottom-left-radius: 50%;
+    z-index: 1;
 }
 
 .closeButton_line1 {
