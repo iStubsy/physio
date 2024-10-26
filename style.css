@@ -250,6 +250,7 @@ p {
     padding: 35px;
     cursor: pointer;
     background-color: black;
+    background-color: red;
     border-bottom-left-radius: 50%;
 }
 
