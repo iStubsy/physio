@@ -260,6 +260,8 @@ p {
     transform: rotate(45deg);
     position: absolute;
 
+    display: none;
+
 }
 
 .closeButton_line2 {
@@ -268,6 +270,8 @@ p {
     background-color: white;
     width: 30px;
     transform: rotate(-45deg);
+
+    display: none;
 }
 
 /*********** HEADER ************/
@@ -289,12 +293,12 @@ p {
 }
 
 #header-left {
-    height: 100%;
+    height: 80vh;
 }
 
 #header-left img {
     width: 100%;
-    height: 450px;
+    height: 100%;
     object-fit: cover;
     object-position: 0 0;
     display: block;
@@ -355,6 +359,7 @@ p {
     background-color: white;
     //border-bottom: solid 4px rgba(0, 0, 0, 0.11);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-bottom: solid 3px var(--darkColour);
 }
 
 .navigationBar_inner {
@@ -482,17 +487,16 @@ p {
     padding: 1.2rem;
     text-align: center;
     font-family: Montserrat;
-    background-color: white;
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
 
-    border: solid 1px rgba(0, 0, 0, 0.04);
+    //border: solid 1px rgba(0, 0, 0, 0.04);
     max-width: 400px;
 
     //border: solid 1px #f2f2f2;
 }
 
 .physioHelpsCardHeadline {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--darkColour);
     margin-bottom: .6rem;
     font-weight: 500;
@@ -501,7 +505,7 @@ p {
 .physioHelpsCardText {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
 

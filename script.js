@@ -89,7 +89,7 @@ function moveDownRevealFun() {
         if (elementTop < windowHeight - elementVisible) {
             // Verzögerung und Aktivierung für sichtbare Elemente
             for (var x = 0; x < allChildren.length; x++) {
-                allChildren[x].style.transitionDelay = x / 6 + "s";
+                allChildren[x].style.transitionDelay = x / 10 + "s";
                 allChildren[x].classList.add("active");
             }
         } else {
