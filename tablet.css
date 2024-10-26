@@ -1,24 +1,16 @@
 @media only screen and (min-width: 601px) {
 
-
-
     /****** TYPOGRAPHY ******/
 
 
     h1 {
-        font-family: var(--mainFont);
-        font-family: 'Taviraj', serif;
-        font-weight: 400;
-        font-size: 4.5rem;
-        color: white;
-        line-height: 5.5rem;
-        color: white;
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 4.2rem;
         //text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
-        text-align: center;
     }
 
     h2 {
-        color: var(--darkColour);
         font-family: var(--mainFont);
         font-size: 1.2rem;
         font-family: "Poppins", sans-serif;
@@ -26,7 +18,6 @@
     }
 
     h3 {
-        color: #e5e5e5;
         font-family: var(--mainFont);
         line-height: 1.8rem;
         font-size: 1rem;
@@ -44,64 +35,210 @@
 
     h5 {
         color: var(--darkColour);
-        font-family: var(--mainFont);
-        font-family: 'Taviraj', serif;
-        font-size: 3.8rem;
-        line-height: 4.5rem;
+        font-family: 'Unbounded', sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        line-height: 3.5rem;
         font-weight: 400;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .smallText {
+        text-align: center;
+    }
+
+    .yPhysioHeader {
+        width: 100%;
+        text-align: center:
+    }
+
+
+    .yPhysioInner {
+        padding: 50px 0px 0px 0px;
     }
 
     #headerWrapper {
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+        //background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
         background-size: cover;
-        background-attachment: fixed;
+        //background-attachment: fixed;
+        background-image: none;
+        height: 100vh;
+        min-height: 500px;
+        max-height: 700px;
+    }
+
+    .headerPictureCollection {
+        position: absolute;
+        bottom: 0;
+        height: 120px;
+        height: 15%;
+        width: 60%;
+        right: 0;
+        z-index: 1;
+
+
+        display: flex;
+        justify-content: space-between;
+        max-height: 120px;
+        min-height: 80px;
+    }
+
+    .headerPicture {
+        width: 31%;
+        background-color: black;
+
+        background-image: url("src/training.jpg");
+        background-size: cover;
+        background-position: center;
+
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.32);
     }
 
     #header {
         position: relative;
         width: 100%;
-        height: 100%;
-        display: flex;
         align-items: center;
-        overflow: hidden;
+        background-size: cover;
     }
 
 
     #header_inner {
-        width: var(--contentWidth);
-        max-width: var(--maxWidth);
         margin: 0 auto;
-        display: flex;
-    }
-
-    #header-leftSide {
-        background-color: rgba(0, 0, 0, 0.3);
-        //background-color: rgba(11, 33, 79, 1);
-        position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 0;
 
+        display: flex;
     }
 
-    #header_headlineWrapper {
+    #header-left {
+        width: 50%;
+        height: 100%;
+    }
+
+    #header-left img {
+        height: 100%;
+    }
+
+    #header-right {
+        width: 50%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        position: relative;
-        //max-width: calc(var(--contentWidth)/2);
+    }
+
+    #header_headlineWrapper {}
+
+    #header_headlineWrapper h1,
+    #header_headlineWrapper p {
+        text-align: left;
+        text-shadow: none;
+        color: var(--ultraDarkColour);
+        max-width: 550px;
+    }
+
+    #header-emptyTop {
+        width: 100%;
+        height: 110px;
+        display: block;
+        display: none;
+    }
+
+    #physioHelpsWrapper {
+        padding: 4rem 0;
+    }
+
+    .physioHelps {
+        width: 80%;
         margin: 0 auto;
     }
 
-    #firstSection {
-        overflow: hidden;
+    .physioHelps .smallText {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
     }
+
+    .physioHelpsCards {
+        //flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 4rem auto 0 auto;
+        max-width: 1400px;
+    }
+
+    .physioHelpsCard {
+        //max-width: 360px;
+        padding: 1.5rem 1.5rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    #newLeistungenWrapper {}
+
+    .newLeistungen h5 {
+        text-align: left;
+    }
+
+    .newLeistungen .line {}
+
+    .newLeistungen p {
+        text-align: left;
+    }
+
+    .newLeistungen-card {
+        width: 280px;
+        height: 280px;
+    }
+
+    .newLeistungenRight {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .newLeistungenLeft {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .newLeistungenLeft p {
+        margin: 0;
+    }
+
+    #leistungenWrapper {}
+
+    .leistungen {
+        padding: 0;
+    }
+
+    .leistungen .smallText {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .leistungenCards {
+        display: flex;
+        flex-direction: row;
+        margin: 4rem auto 0 auto;
+        justify-content: center;
+    }
+
+    .leistungenCard {
+        padding: 3rem 2rem;
+        width: 33.33%;
+        width: 420px;
+    }
+
 
     .firstSection_inner {
         width: 90%;
@@ -109,17 +246,27 @@
         display: flex;
         position: relative;
         padding: 70px 25px;
+
+        display: flex;
+        align-items: center;
     }
 
     #secondSection {
         position: relative;
-        background-color: #f7f7f7;
+        background-color: var(--lightGrey);
     }
 
     .secondSection_inner {
         width: 90%;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .leistungenRightGrid {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: auto auto;
+        padding: 0 3rem;
     }
 
     .aboutMeTextBox {
@@ -131,6 +278,10 @@
 
     .aboutMeTextBox .text {
         width: 90%;
+    }
+
+    .aboutMeTextBox h5 {
+        text-align: left;
     }
 
     .aboutMeImageBox {
@@ -147,14 +298,21 @@
 
     .sectionLeft {
         position: relative;
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0px;
         position: relative;
 
         border-radius: 10px;
+    }
+
+    .sectionLeft h5 {
+        text-align: right;
+    }
+
+    .sectionLeft .text {
+        text-align: right;
     }
 
     .sectionRight {

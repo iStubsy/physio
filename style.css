@@ -1,16 +1,19 @@
 :root {
+    --primary: white;
+    --secondary: #fbfbfb;
     --mainColour: #0071C7;
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --lightColour: #4598F1;
     --verylightColour: #E6F1FA;
     --lightGrey: rgba(0, 0, 0, 0.02);
+    --borderColour: #e3e3e3;
     --mainFont: 'Josefin Sans', sans-serif;
     /* --mainFont: 'Taviraj', serif; */
     --mainFont: 'Montserrat', sans-serif;
     /* --maintFont: "Poppins", sans-serif; */
     --contentWidth: 80%;
-    --maxWidth: 1200px;
+    --maxWidth: 1500px;
 }
 
 * {
@@ -25,6 +28,10 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+section {
+    padding: 0rem 0;
+}
+
 /****** TYPOGRAPHY *********/
 
 body {
@@ -34,26 +41,33 @@ body {
 h1 {
     font-family: var(--mainFont);
     font-family: 'Taviraj', serif;
-    font-weight: 400;
-    font-size: 2.8rem;
-    color: white;
-    line-height: 3.2rem;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+    font-family: 'Unbounded', sans-serif;
+    font-family: "Poppins", sans-serif;
+
+
+    color: black;
+
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    //text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 
     animation: 1s ease-out 0s 1 slideInFromLeft;
+
+
 }
 
 h2 {
-    color: var(--darkColour);
     font-family: var(--mainFont);
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    margin: 1rem 0 0.5rem 0;
 }
 
 h3 {
-    color: rgba(229, 229, 229, 0.80);
+    color: var(--darkColour);
     font-family: var(--mainFont);
     line-height: 1.4rem;
     font-size: .9rem;
@@ -69,20 +83,138 @@ h4 {
 }
 
 h5 {
-    color: var(--darkColour);
     font-family: var(--mainFont);
-    font-family: 'Taviraj', serif;
     font-size: 2.2rem;
-    line-height: 2.5rem;
+    line-height: 2.6rem;
     font-weight: 400;
-    margin: 12px 0;
+    text-align: left;
+}
+
+p {
+    font-family: var(--mainFont);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+    text-align: left;
+    max-width: 500px;
 }
 
 .smallText {
     font-family: "Poppins", sans-serif;
-    font-size: .9rem;
-    color: var(--darkColour);
+    font-size: 1rem;
     font-weight: 300;
+    max-width: 800px;
+    text-align: left;
+}
+
+/*********** OVERLAY ***********/
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #02102F;
+    z-index: 1001;
+    overflow-x: hidden;
+    overflow: hidden;
+
+    border: outline 4px white;
+    transition: ease-out .2s;
+
+
+    display: flex;
+    flex-direction: column;
+    //background-image: url("src/logo.png");
+    background-size: cover;
+}
+
+.overlayInner {
+    height: 100vh;
+    min-height: 500px;
+    background-color: rgba(2, 16, 47, 0.79);
+    display: flex;
+    flex-direction: column;
+    border: solid 4px black;
+}
+
+.overlayShow {
+    width: 100% !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.overlayHeader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.overlayLogo {
+    height: 70%;
+    width: fit-content;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.overlayNavigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px;
+    height: 100vh;
+}
+
+.overlayNavigation-item {
+    font-family: var(--mainFont);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #e5e5e5;
+
+    opacity: 0;
+    transform: translateY(100px);
+
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.overlayFooter {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: solid 1px white;
+}
+
+.overlayFooter-social {
+    color: white;
+    padding: 30px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.overlayFooter-social a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 /********* MISC ************/
@@ -101,7 +233,7 @@ h5 {
     font-size: .8rem;
 
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
     left: 0;
     margin: 40px auto;
@@ -128,124 +260,15 @@ h5 {
     transform: rotate(45deg);
     position: absolute;
 
+
 }
 
 .closeButton_line2 {
+    position: absolute;
     height: 2px;
     background-color: white;
     width: 30px;
     transform: rotate(-45deg);
-    position: absolute;
-
-}
-
-/*********** OVERLAY ***********/
-
-.overlay {
-    position: fixed;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    background-color: #02102F;
-    z-index: 1001;
-    overflow-x: hidden;
-    overflow: hidden;
-
-    border: outline 4px white;
-    transition: ease-out .2s;
-
-
-    display: flex;
-    flex-direction: column;
-    background-image: url("src/logo.png");
-    background-size: cover;
-}
-
-.overlayInner {
-    height: 100vh;
-    min-height: 500px;
-    background-color: rgba(2, 16, 47, 0.79);
-    display: flex;
-    flex-direction: column;
-    border: solid 4px black;
-}
-
-.overlayShow {
-    width: 100% !important;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.overlayHeader {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.overlayLogo {
-    height: 70%;
-    width: fit-content;
-    background-color: white;
-    border-radius: 2px;
-    padding: 5px;
-}
-
-.overlayNavigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 0px;
-    height: 100vh;
-}
-
-.overlayNavigation-item {
-    font-family: var(--mainFont);
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-
-    opacity: 0;
-    transform: translateY(100px);
-
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.overlayFooter {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top: solid 1px white;
-}
-
-.overlayFooter-social {
-    color: white;
-    padding: 20px;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.overlayFooter-social a {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 
 /*********** HEADER ************/
@@ -254,9 +277,6 @@ h5 {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 500px;
-    background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
-    background-size: cover;
 }
 
 #header {
@@ -264,19 +284,19 @@ h5 {
     width: 100%;
     height: 100%;
     align-items: center;
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
 }
 
-#header-leftSide {
-    background-color: rgba(23, 46, 96, 0.95);
-    position: absolute;
+#header-left {}
+
+#header-left img {
     width: 100%;
     height: 100%;
-    z-index: 0;
-    background-color: rgba(11, 33, 79, 0.95);
+    object-fit: cover;
+    object-position: 0 0;
+    display: block;
 }
 
 .information {
@@ -289,20 +309,34 @@ h5 {
     display: none;
 }
 
-#header_inner {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #header_headlineWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    overflow: hidden;
+    padding: 40px 25px;
+}
+
+#header_headlineWrapper h5 {
+    margin: .3rem 0;
+    font-size: 1.5rem;
+}
+
+.subTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--darkColour);
+}
+
+.subTitle .line {
+    width: 40px;
+}
+
+.line {
+    background-color: var(--darkColour);
+    height: 2px;
+    width: 70px;
+    margin: 1.2rem 0;
 }
 
 .headerContactWrapper {
@@ -315,10 +349,12 @@ h5 {
     position: relative;
     width: 100%;
     z-index: 1;
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
     background-color: white;
-    border-bottom: solid 4px rgba(0, 0, 0, 0.11);
+    //border-bottom: solid 4px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-bottom: solid 3px var(--darkColour);
 }
 
 .navigationBar_inner {
@@ -328,7 +364,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     transition: .4s;
-    height: 75px;
+    height: 80px;
 }
 
 #navigationBar_logo {
@@ -347,7 +383,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: .4s;
     font-family: 'Montserrat', sans-serif;
@@ -394,6 +430,7 @@ h5 {
 
 .hamburgerMenuScrolled {
     background-color: rgba(0, 0, 0, 0.4);
+    border-top: solid 1px #f0f0f0;
 }
 
 .hamburgerMenuLine {
@@ -404,13 +441,114 @@ h5 {
     margin: 3.5px auto;
 }
 
+#physioHelpsWrapper {
+    background-color: var(--secondary);
+}
+
+.physioHelps {
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#physioHelpsWrapper .line {
+    background-color: white;
+}
+
+.sectionImagePadding {
+    padding: 10px;
+    display: none;
+}
+
+.sectionImage {
+    background: url("src/IMG_3945.JPG");
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+}
+
+.physioHelpsCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.physioHelpsCard {
+    color: black;
+    padding: 1.2rem;
+    text-align: center;
+    font-family: Montserrat;
+    //box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
+
+    //border: solid 1px rgba(0, 0, 0, 0.04);
+    max-width: 400px;
+
+    //border: solid 1px #f2f2f2;
+}
+
+.physioHelpsCardHeadline {
+    font-size: 1.3rem;
+    color: var(--darkColour);
+    margin-bottom: .6rem;
+    font-weight: 500;
+}
+
+.physioHelpsCardText {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+
+.leistungen {
+    text-align: center;
+    padding: 2rem;
+}
+
+.leistungenCards {
+    display: flex;
+    flex-direction: column;
+    //background-image: url("https://i.pinimg.com/originals/96/ef/f9/96eff9a254b6dacbaec2f46c5d3639c4.jpg");
+    background-attachment: fixed;
+}
+
+.leistungenCard {
+    padding: 1.5rem 2rem;
+    background-color: rgba(23, 46, 96, 1);
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.leistungenCard .smallText {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.leistungenCard i {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.leistungenCardC {
+    background-color: rgba(11, 33, 79, 1);
+    width: 100%;
+}
+
 #firstSection {
     position: relative;
+    display: none;
 }
 
 .firstSection_inner {
     margin: 0 auto;
-    padding: 40px 25px;
+    padding: 60px 25px;
 }
 
 .text {
@@ -424,10 +562,78 @@ h5 {
 }
 
 .secondSection_inner {
-    background-color: var(--verylightColour);
-    background-color: #f7f7f7;
+    //background-color: var(--verylightColour);
+    //background-color: #f7f7f7;
     padding: 40px 25px;
     padding-bottom: 110px;
+}
+
+#newLeistungenWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.newLeistungen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+    padding: 40px 25px;
+}
+
+.newLeistungenLeft {}
+
+.newLeistungenLeftInner {
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 70px;
+}
+
+.newLeistungenLeft h5 {
+    text-align: left;
+}
+
+.newLeistungenRight {
+    display: flex;
+    justify-content: center;
+}
+
+.leistungenRightGrid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto;
+    margin-top: 30px;
+}
+
+.newLeistungen-card {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    cursor: pointer;
+}
+
+.newLeistungen-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newLeistungen-cardText {
+    background-color: var(--ultraDarkColour);
+    font-family: var(--mainFont);
+    position: absolute;
+    bottom: 0;
+    color: white;
+
+    font-size: 1.1rem;
+    padding: 14px;
+    width: 100%;
 }
 
 .sectionRight {
@@ -435,6 +641,12 @@ h5 {
     display: flex;
     justify-content: center;
     display: none;
+}
+
+.aboutMeTextBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .aboutMeImageBox {
@@ -489,7 +701,6 @@ h5 {
 #testSection h5 {
     text-align: center;
 }
-
 
 .testSection_inner {
     display: flex;
@@ -562,6 +773,7 @@ h5 {
 #footer {
     background-color: var(--ultraDarkColour);
     width: 100%;
+    position: relative;
 }
 
 .footerText .fa-solid {
@@ -651,6 +863,15 @@ h5 {
     gap: 15px;
 }
 
+.footerAbsoluteBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
 .backToTop {
     color: white;
     position: fixed;
@@ -665,7 +886,7 @@ h5 {
     height: 46px;
     width: 46px;
     display: flex;
-    background-color: var(--darkColour);
+    background-color: var(--ultraDarkColour);
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -676,10 +897,201 @@ h5 {
     right: 20px;
 }
 
+.yPhysioWrapper {
+    background-color: var(--ultraDarkColour);
+    //border-radius: 15px;
+    margin: 0 auto;
+    padding: 60px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: solid 1px black;
+    //background-image: url("src/logo.png");
+    position: relative;
+    display: none;
+}
+
+.yPhysioWrapper .text {
+    color: #d0d0d0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.yPhysioHeader {
+    font-family: var(--mainFont);
+    font-family: 'Taviraj', serif;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.yPhysioInner {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 30px 0 0 0;
+}
+
+.yPhysio {
+    position: relative;
+    display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //gap: 10px;
+    max-width: 100%;
+}
+
+#contact {
+    padding: 8px;
+    height: 1000px;
+
+    background-color: var(--secondary);
+}
+
+.contactHeadline {
+    background-image: url("src/contactImage.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+
+    position: sticky;
+    top: 8px;
+}
+
+.contactHeadline h5 {
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 5px;
+}
+
+.headlineWrapper {
+    height: 55px;
+    position: absolute;
+    top: -27px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--ultraDarkColour);
+    z-index: 1;
+}
+
+.headline {
+    position: relative;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: var(--mainFont);
+    text-align: left;
+    padding: 0 15px;
+    z-index: 1;
+
+}
+
+.borderLines {
+    background-color: var(--borderColour);
+    position: absolute;
+    transition: 2s;
+    border: solid .5px #d4d4d4;
+    z-index: 0;
+}
+
+.lineTop {
+    width: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0s, width 1s;
+}
+
+.lineTopShow {
+    width: 100%;
+    opacity: 1;
+}
+
+.lineRight {
+    height: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0s, height 1s;
+}
+
+.lineRightShow {
+    height: 100%;
+    opacity: 1;
+}
+
+.lineLeft {
+    height: 0;
+    width: 1px;
+
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0s, height 1s;
+}
+
+.lineLeftShow {
+    height: 100%;
+    opacity: 1;
+}
+
+.lineBottom {
+    width: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0s, width 1s;
+}
+
+.lineBottomShow {
+    width: 100%;
+    opacity: 1;
+}
+
+.showBorder {
+    opacity: 1;
+}
+
+.yPhysioContent {
+    color: white;
+    padding: 40px 25px 20px 25px;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    font-family: var(--mainFont);
+    color: #e3e3e3;
+}
+
+
+.addressBarWrapper {
+    display: none;
+}
+
+.navigationBarBelow {
+    display: none;
+}
+
 
 
 .tro {
     opacity: 1;
     transform: translateY(0px);
     transition: 1s;
+}
+
+.white {
+    color: white;
 }
