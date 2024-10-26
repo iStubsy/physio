@@ -260,7 +260,6 @@ p {
     transform: rotate(45deg);
     position: absolute;
 
-    display: none;
 
 }
 
@@ -292,9 +291,7 @@ p {
     flex-direction: column;
 }
 
-#header-left {
-    height: 80vh;
-}
+#header-left {}
 
 #header-left img {
     width: 100%;
