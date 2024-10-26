@@ -99,7 +99,7 @@ function moveDownRevealFun() {
             // Optional: Animation zurücksetzen, falls das Element nicht sichtbar ist
             for (var x = 0; x < allChildren.length; x++) {
                 allChildren[x].style.transitionDelay = "0s";
-                allChildren[x].classList.remove("active");
+                //allChildren[x].classList.remove("active");
             }
         }
     }

@@ -344,7 +344,6 @@ p {
     background-color: white;
     //border-bottom: solid 4px rgba(0, 0, 0, 0.11);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-    border-bottom: solid 3px var(--darkColour);
 }
 
 .navigationBar_inner {
@@ -621,7 +620,7 @@ p {
     bottom: 0;
     color: white;
 
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 14px;
     width: 100%;
 }
@@ -941,7 +940,6 @@ p {
 
 #contact {
     padding: 8px;
-    height: 1000px;
 
     background-color: var(--secondary);
 }
