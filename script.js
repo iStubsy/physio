@@ -79,7 +79,7 @@ function moveDownRevealFun() {
     for (var i = 0; i < moveDownReveals.length; i++) {
         // Nur direkte div-Kinder sammeln und die Klasse "moveTop" hinzufügen
         var directChildDivs = Array.from(moveDownReveals[i].children).filter(child => child.tagName === "DIV");
-        directChildDivs.forEach(childDiv => childDiv.classList.add("moveTop"));
+        //directChildDivs.forEach(childDiv => childDiv.classList.add("moveTop"));
 
         // Fensterhöhe und Position des aktuellen Elements berechnen
         var windowHeight = window.innerHeight;
