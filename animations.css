@@ -1,4 +1,4 @@
-.moveDownRevealOverlay {
+.moveUpRevealOverlay {
     opacity: 0;
     transition: opacity 2s;
     transform: translateX(-500px);
@@ -10,40 +10,31 @@
     opacity: 0;
     transform: translateY(120px);
 
+    transition: opacity .2s ease-out, transform .5s ease-out;
     transition-delay: 0s;
 }
 
 .opacityReveal {
     opacity: 0;
-    transition: 1s;
 }
 
 .active {
     opacity: 1;
-    transition: opacity .2s ease-out, transform .5s ease-out;
+    transition: opacity .5s ease-out, transform .5s ease-out;
     transform: translateX(0);
-    transform: translateY(0);
-    transition-delay: 0s;
 }
+
+
+
+
 
 .rotateOpacitySel {
     opacity: 0;
     transition: transform ease-out 1500ms, opacity ease-out 1s;
+
 }
 
 .rotateOpacity {
     opacity: 1;
     transform: rotate(60deg);
-}
-
-.moveDown {
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: opacity 1s, translate ease-out 5s;
-}
-
-.moveDownActive {
-    opacity: 1;
-    transition: 1s;
-    transform: translateY(0px);
 }
