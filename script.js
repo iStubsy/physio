@@ -19,6 +19,10 @@ document.querySelector(".hamburgerMenu").onclick = function () {
             //console.log(document.querySelectorAll(".overlayAnimation")[y].getElementsByTagName("*").length);
         }
     }
+
+    for (var i = 0; i < document.querySelectorAll(".hamburgerMenuLine").length; i++) {
+        document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "28px";
+    }
 }
 
 

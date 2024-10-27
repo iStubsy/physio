@@ -110,7 +110,8 @@
     }
 
     #physioHelpsWrapper {
-        padding: 8rem 0;
+        padding: 6rem 0;
+        clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
     }
 
     .physioHelpsCards {
@@ -127,7 +128,7 @@
     }
 
     #newLeistungenWrapper {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 
     .newLeistungen {
