@@ -88,7 +88,7 @@ function moveDownRevealFun() {
         // Fensterhöhe und Position des aktuellen Elements berechnen
         var windowHeight = window.innerHeight;
         var elementTop = moveDownReveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
+        var elementVisible = 250;
 
         // Prüfen, ob das Element im sichtbaren Bereich ist
         var allChildren = moveDownReveals[i].getElementsByTagName("*");

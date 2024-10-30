@@ -110,7 +110,7 @@
     }
 
     #physioHelpsWrapper {
-        padding: 6rem 0;
+        padding: 6rem 0 6rem 0;
         clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
     }
 
@@ -134,7 +134,6 @@
     .newLeistungen {
         flex-direction: row;
         max-width: 1400px;
-        width: 90%;
         gap: 2rem;
     }
 
