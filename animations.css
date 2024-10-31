@@ -20,7 +20,7 @@
 
 .active {
     opacity: 1;
-    transition: opacity .2s ease-out, transform .5s ease-out;
+    transition: opacity .5s ease-out, transform .8s ease-out;
     transform: translateX(0);
     transform: translateY(0);
     transition-delay: 0s;

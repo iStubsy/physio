@@ -448,14 +448,30 @@ p {
 #physioHelpsWrapper {
     background-color: var(--secondary);
     clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0% 95%, 0 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.BGimage {
+    position: absolute;
+    top: 0;
+
+    background-image: url("src/logo.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 1;
+    height: 100%;
 }
 
 .physioHelps {
     text-align: center;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 30px;
+    max-width: 1200px;
 }
 
 #physioHelpsWrapper .line {
@@ -622,6 +638,7 @@ p {
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .newLeistungen-card img {

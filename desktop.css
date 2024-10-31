@@ -139,6 +139,12 @@
 
     .newLeistungenLeft {
         margin: auto auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .newLeistungenLeftInner {
+        width: 500px;
     }
 
     .newLeistungen-card {

@@ -154,6 +154,11 @@
 
     #physioHelpsWrapper {
         padding: 4rem 0;
+        height: 90vh;
+        min-height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .physioHelps {

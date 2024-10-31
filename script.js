@@ -77,6 +77,8 @@ document.querySelector(".backToTop").onclick = function () {
 
 /************* SCROLL ANIMATIONS ************/
 
+
+/***
 function moveDownRevealFun() {
     var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
 
@@ -108,6 +110,80 @@ function moveDownRevealFun() {
         }
     }
 }
+****/
+
+
+/**
+function moveDownRevealFun() {
+    var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
+
+    for (var i = 0; i < moveDownReveals.length; i++) {
+        // Collect all direct children and add the "moveTop" class to them
+        var directChildren = Array.from(moveDownReveals[i].children);
+        directChildren.forEach(child => child.classList.add("moveTop"));
+
+        // Calculate window height and current element position
+        var windowHeight = window.innerHeight;
+        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
+        var elementVisible = 250;
+
+        // Check if the element is within the visible area
+        var allChildren = moveDownReveals[i].getElementsByTagName("*");
+
+        if (elementTop < windowHeight - elementVisible) {
+            // Add delay and activate class for visible elements
+            for (var x = 0; x < allChildren.length; x++) {
+                allChildren[x].style.transitionDelay = x / 10 + "s";
+                allChildren[x].classList.add("active");
+            }
+        } else {
+            // Optional: Reset animation if the element is not visible
+            for (var x = 0; x < allChildren.length; x++) {
+                allChildren[x].style.transitionDelay = "0s";
+                // allChildren[x].classList.remove("active");
+            }
+        }
+    }
+}
+**/
+
+function moveDownRevealFun() {
+    var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
+
+    for (var i = 0; i < moveDownReveals.length; i++) {
+        // Collect all direct children except images and add the "moveTop" class
+        var directChildren = Array.from(moveDownReveals[i].children).filter(child => child.tagName !== "IMG");
+        directChildren.forEach(child => child.classList.add("moveTop"));
+
+        // Calculate window height and current element position
+        var windowHeight = window.innerHeight;
+        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
+        var elementVisible = 250;
+
+        // Check if the element is within the visible area
+        var allChildren = moveDownReveals[i].getElementsByTagName("*");
+
+        if (elementTop < windowHeight - elementVisible) {
+            // Add delay and activate class for visible elements
+            for (var x = 0; x < allChildren.length; x++) {
+                if (allChildren[x].tagName !== "IMG") { // Exclude images
+                    allChildren[x].style.transitionDelay = x / 10 + "s";
+                    allChildren[x].classList.add("active");
+                }
+            }
+        } else {
+            // Optional: Reset animation if the element is not visible
+            for (var x = 0; x < allChildren.length; x++) {
+                if (allChildren[x].tagName !== "IMG") { // Exclude images
+                    allChildren[x].style.transitionDelay = "0s";
+                    // allChildren[x].classList.remove("active");
+                }
+            }
+        }
+    }
+}
+
+
 
 
 /*
