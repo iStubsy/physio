@@ -1,19 +1,22 @@
 :root {
     --primary: white;
-    --secondary: #f8f8f8;
+    --secondary: #f9f9f9;
     --mainColour: #0071C7;
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
-    --lightColour: #4598F1;
+    --lightColour: #eff4f8;
+    --lightColour: #f5fbff;
     --verylightColour: #E6F1FA;
     --lightGrey: rgba(0, 0, 0, 0.02);
     --borderColour: #e3e3e3;
-    --mainFont: 'Josefin Sans', sans-serif;
-    /* --mainFont: 'Taviraj', serif; */
+    /* --mainFont: 'Josefin Sans', sans-serif;
+    --mainFont: 'Taviraj', serif;
     --mainFont: 'Montserrat', sans-serif;
-    /* --maintFont: "Poppins", sans-serif; */
+    --maintFont: "Poppins", sans-serif; */
+    --mainFont: "Archivo", sans-serif;
+    --secondFont: "DM Sans", serif;
     --contentWidth: 80%;
-    --maxWidth: 1500px;
+    --maxWidth: 1300px;
 }
 
 * {
@@ -40,28 +43,17 @@ body {
 
 h1 {
     font-family: var(--mainFont);
-    font-family: 'Taviraj', serif;
-
-    font-family: 'Unbounded', sans-serif;
-    font-family: "Poppins", sans-serif;
-
-
     color: black;
 
     font-weight: 300;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    //text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
-
 }
 
 h2 {
     font-family: var(--mainFont);
     font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin: 1rem 0 0.5rem 0;
 }
@@ -83,21 +75,22 @@ h4 {
 }
 
 h5 {
+    color: var(--darkColour);
     font-family: var(--mainFont);
     font-size: 2.2rem;
     line-height: 2.6rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: left;
 }
 
 p {
-    font-family: var(--mainFont);
+    font-family: var(--secondFont);
     font-size: 1rem;
     line-height: 1.5rem;
     margin: .5rem 0;
     text-align: left;
     max-width: 500px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .smallText {
@@ -269,6 +262,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: var(--lightColour);
 }
 
 #header {
@@ -279,6 +273,8 @@ p {
 
     display: flex;
     flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 #header-left {}
@@ -289,6 +285,10 @@ p {
     object-fit: cover;
     object-position: 0 0;
     display: block;
+    width: 300px;
+    margin: 30px auto 0 auto;
+    border-radius: 50%;
+    height: 300px;
 }
 
 .information {
@@ -321,7 +321,11 @@ p {
 }
 
 .subTitle .line {
-    width: 40px;
+    width: 30px;
+}
+
+.subTitle h5 {
+    font-weight: 400;
 }
 
 .line {
@@ -332,17 +336,33 @@ p {
 }
 
 .moreButton {
-    padding: 10px 15px;
     width: fit-content;
     font-size: 1.1rem;
     background-color: var(--darkColour);
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 100px;
     cursor: pointer;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.19);
+    padding: .5rem .5rem .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
+
+.moreButton .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ultraDarkColour);
+    font-size: 1.2rem;
+}
+
 
 .headerContactWrapper {
     display: none;
@@ -446,8 +466,8 @@ p {
 
 
 #physioHelpsWrapper {
-    background-color: var(--secondary);
-    clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0% 95%, 0 0);
+    //background-color: var(--secondary);
+    //clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0% 95%, 0 0);
     position: relative;
     overflow: hidden;
 }
@@ -456,13 +476,14 @@ p {
     position: absolute;
     top: 0;
 
-    background-image: url("src/logo.png");
+    //background-image: url("src/logo.png");
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     opacity: 1;
     height: 100%;
+    width: 100%;
 }
 
 .physioHelps {
@@ -471,7 +492,7 @@ p {
     flex-direction: column;
     gap: 10px;
     padding: 30px;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 #physioHelpsWrapper .line {
@@ -513,16 +534,19 @@ p {
 }
 
 .physioHelpsCardHeadline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--darkColour);
     margin-bottom: .6rem;
     font-weight: 500;
+    font-family: var(--mainFont);
 }
 
 .physioHelpsCardText {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     line-height: 1.5rem;
+    font-family: var(--secondFont);
+
 }
 
 

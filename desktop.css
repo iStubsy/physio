@@ -2,7 +2,7 @@
 
 
     p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.8rem;
         text-align: center;
     }
@@ -89,18 +89,16 @@
         color: var(--ultraDarkColour);
     }
 
-    .used {
-        background-color: var(--ultraDarkColour);
-        color: white;
-    }
-
-    .used #headerWrapper {
-        height: 100vh;
-        min-height: 500px;
-    }
-
     #headerWrapper {
-        max-height: none;
+        height: 100vh;
+        min-height: 800px;
+        max-height: 1000px;
+    }
+
+    #header {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
+        min-width: 1000px;
     }
 
     #header-emptyTop {
@@ -111,14 +109,14 @@
 
     #physioHelpsWrapper {
         padding: 6rem 0 6rem 0;
-        clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
+        //clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
     }
 
     .physioHelpsCards {
         flex-direction: row;
         justify-content: space-between;
         margin: 4rem auto 0 auto;
-        max-width: 1400px;
+        max-width: 1300px;
         width: 100%;
     }
 
@@ -133,8 +131,8 @@
 
     .newLeistungen {
         flex-direction: row;
-        max-width: 1400px;
-        gap: 2rem;
+        max-width: 1200px;
+        gap: 4rem;
     }
 
     .newLeistungenLeft {
@@ -143,8 +141,9 @@
         justify-content: flex-end;
     }
 
-    .newLeistungenLeftInner {
-        width: 500px;
+    .newLeistungenRight {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .newLeistungen-card {
@@ -196,8 +195,8 @@
 
     #navigationBar_menuItem {
         cursor: pointer;
-        font-weight: 500;
-        font-size: 1rem;
+        font-weight: 400;
+        font-size: 1.1rem;
         height: 100%;
         padding: 18px 20px;
         display: flex;
@@ -243,6 +242,41 @@
 
     .headerContactContent {
         color: rgba(255, 255, 255, 0.76);
+    }
+
+    #header-left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header-leftBG {
+        position: absolute;
+        top: 30px;
+        left: -150px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: rgba(23, 46, 96, 0.05);
+    }
+
+    .header-leftBG2 {
+        position: absolute;
+        bottom: 30px;
+        left: 300px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: rgba(23, 46, 96, 0.03);
+
+    }
+
+    #header-left img {
+        height: 550px;
+        width: 550px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px lightGrey;
+        z-index: 1;
     }
 
     .phone,

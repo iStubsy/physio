@@ -8,7 +8,7 @@
 
 .moveTop {
     opacity: 0;
-    transform: translateY(120px);
+    transform: translateY(60px);
 
     transition-delay: 0s;
 }
@@ -20,7 +20,7 @@
 
 .active {
     opacity: 1;
-    transition: opacity .5s ease-out, transform .8s ease-out;
+    transition: opacity .5s ease-out, transform 1s ease-out;
     transform: translateX(0);
     transform: translateY(0);
     transition-delay: 0s;
