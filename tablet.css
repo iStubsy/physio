@@ -138,7 +138,6 @@
     #header_headlineWrapper p {
         text-align: left;
         text-shadow: none;
-        color: var(--ultraDarkColour);
         max-width: 550px;
     }
 
@@ -202,7 +201,6 @@
 
     .newLeistungen-card {
         width: 280px;
-        height: 280px;
     }
 
     .newLeistungenRight {

@@ -242,6 +242,9 @@ function opacityReveal() {
     }
 }
 
+
+
+
 function rotateOpacity() {
     var rotateOpacitySel = document.querySelectorAll(".rotateOpacitySel");
     for (var i = 0; i < rotateOpacitySel.length; i++) {
@@ -276,6 +279,27 @@ function moveDown() {
     }
 }
 
+
+function moveRight() {
+    var moveRight = document.querySelectorAll(".moveRight");
+    for (var i = 0; i < moveRight.length; i++) {
+
+        var windowHeight = window.innerHeight;
+        var elementTop = moveRight[i].getBoundingClientRect().top;
+        var elementVisible = 220;
+        if (elementTop < windowHeight - elementVisible) {
+
+            moveRight[i].classList.add("active");
+
+        } else {
+            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+        }
+    }
+}
+
+
+
+
 function borderReveal() {
     var borderRevealWrapper = document.querySelectorAll(".borderRevealWrapper");
 
@@ -303,6 +327,7 @@ function borderReveal() {
 
 window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveDown);
+window.addEventListener("scroll", moveRight);
 window.addEventListener("scroll", moveDownRevealOverlay);
 window.addEventListener("scroll", moveDownRevealFun);
 window.addEventListener("scroll", borderReveal);

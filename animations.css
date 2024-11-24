@@ -18,9 +18,14 @@
     transition: 1s;
 }
 
+.moveRight {
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
 .active {
     opacity: 1;
-    transition: opacity .5s ease-out, transform 1s ease-out;
+    transition: opacity .5s ease-out, transform .6s ease-out;
     transform: translateX(0);
     transform: translateY(0);
     transition-delay: 0s;
