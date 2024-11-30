@@ -96,7 +96,7 @@
     }
 
     #header {
-        width: var(--contentWidth);
+        //width: var(--contentWidth);
         max-width: var(--maxWidth);
         min-width: 1000px;
     }
@@ -107,6 +107,11 @@
         display: block;
     }
 
+    .sectionWrapper {
+        max-width: var(--maxWidth);
+        width: 80%;
+    }
+
     #physioHelpsWrapper {
         padding: 6rem 0 6rem 0;
         //clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
@@ -115,8 +120,7 @@
     .physioHelpsCards {
         flex-direction: row;
         justify-content: space-between;
-        margin: 4rem auto 0 auto;
-        max-width: 1300px;
+        margin: 7rem auto 0 auto;
         width: 100%;
     }
 
@@ -131,14 +135,18 @@
 
     .newLeistungen {
         flex-direction: row;
-        max-width: 1200px;
-        gap: 4rem;
+        gap: 6rem;
+        padding: 0;
     }
 
-    .newLeistungenLeft {
-        margin: auto auto;
-        display: flex;
-        justify-content: flex-end;
+    .newLeistungen h5,
+    .newLeistungen p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .newLeistungen .line {
+        margin: 1rem 0;
     }
 
     .newLeistungenRight {
@@ -275,6 +283,23 @@
         width: 550px;
         border-radius: 50%;
         box-shadow: 3px 3px 5px lightGrey;
+        z-index: 1;
+    }
+
+    .headerItemWrapper {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .headerItem {
+        background-color: white;
+        width: fit-content;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 10px 15px;
+        margin: 4rem 0;
         z-index: 1;
     }
 
@@ -692,7 +717,6 @@
         color: white;
         font-size: 3.5rem;
         text-align: center;
-
     }
 
     .yPhysioInner {
@@ -902,7 +926,6 @@
 
         border-top: solid 5px #f7f7f7;
     }
-
 
 
     /************** TEST ***********/

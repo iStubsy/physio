@@ -5,7 +5,7 @@
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --lightColour: #eff4f8;
-    --lightColour: #f5fbff;
+    //--lightColour: #f5fbff;
     --verylightColour: #E6F1FA;
     --lightGrey: rgba(0, 0, 0, 0.02);
     --borderColour: #e3e3e3;
@@ -288,6 +288,30 @@ p {
     margin: 0 auto 0 auto;
 }
 
+.headerItemWrapper {
+    display: none;
+}
+
+.headerItem i {
+    font-size: 2.5rem;
+    color: var(--ultraDarkColour);
+}
+
+.headerItem p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.headerItem h5 {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+
 .information {
     display: none;
 }
@@ -305,11 +329,6 @@ p {
     padding: 40px 25px;
 }
 
-#header_headlineWrapper h5 {
-    margin: .3rem 0;
-    font-size: 1.5rem;
-}
-
 .subTitle {
     display: flex;
     align-items: center;
@@ -321,8 +340,10 @@ p {
     width: 30px;
 }
 
-.subTitle h5 {
+.subTitle p {
     font-weight: 400;
+    margin: 15px 0;
+    font-size: 1.5rem;
 }
 
 .line {
@@ -500,7 +521,7 @@ p {
 
 #physioHelpsWrapper .line {
     background-color: var(--ultraDarkColour);
-    margin: 1rem 0 1.2rem 0;
+    margin: .6rem 0 .8rem 0;
 }
 
 .sectionImagePadding {
@@ -621,7 +642,6 @@ p {
 
 #newLeistungenWrapper {
     width: 100%;
-    overflow: hidden;
     background-color: var(--lightColour);
 }
 
@@ -634,14 +654,12 @@ p {
     padding: 40px 25px;
 }
 
-.newLeistungenLeft {}
-
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
 
     position: sticky;
-    top: 70px;
+    top: 6rem;
 }
 
 .newLeistungenLeft h5 {
@@ -657,7 +675,6 @@ p {
     display: grid;
     gap: 50px;
     grid-template-columns: auto;
-    margin: 30px;
 }
 
 .newLeistungen-card {

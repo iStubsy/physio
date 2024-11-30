@@ -158,7 +158,7 @@ function moveDownRevealFun() {
         // Calculate window height and current element position
         var windowHeight = window.innerHeight;
         var elementTop = moveDownReveals[i].getBoundingClientRect().top;
-        var elementVisible = 250;
+        var elementVisible = 200;
 
         // Check if the element is within the visible area
         var allChildren = moveDownReveals[i].getElementsByTagName("*");
@@ -233,7 +233,7 @@ function opacityReveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 200;
+        var elementVisible = 130;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         } else {
@@ -334,3 +334,5 @@ window.addEventListener("scroll", borderReveal);
 window.addEventListener("scroll", opacityReveal);
 window.addEventListener("load", moveDownRevealOverlay);
 window.addEventListener("load", moveDownRevealFun);
+window.addEventListener("load", moveRight);
+window.addEventListener("load", moveTop);
