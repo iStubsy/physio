@@ -4,7 +4,7 @@
     --mainColour: #0071C7;
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
-    --lightColour: #eff4f8;
+    --lightColour: #f8f8f8;
     //--lightColour: #f5fbff;
     --verylightColour: #E6F1FA;
     --lightGrey: rgba(0, 0, 0, 0.02);
@@ -13,7 +13,8 @@
     --mainFont: 'Taviraj', serif;
     --mainFont: 'Montserrat', sans-serif;
     --maintFont: "Poppins", sans-serif; */
-    --mainFont: "Archivo", sans-serif;
+    /* --mainFont: "Archivo", sans-serif; */
+    --mainFont: arial;
     --secondFont: "DM Sans", serif;
     --contentWidth: 80%;
     --maxWidth: 1300px;
@@ -374,7 +375,7 @@ p {
     margin: 0;
 }
 
-.moreButton .icon {
+.icon {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -384,8 +385,8 @@ p {
     align-items: center;
     color: var(--ultraDarkColour);
     font-size: 1.2rem;
+    transform: translateY(50px);
 }
-
 
 .headerContactWrapper {
     display: none;
@@ -413,6 +414,7 @@ p {
     align-items: center;
     transition: .4s;
     height: 80px;
+    //box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
 }
 
 #navigationBar_logo {
@@ -496,20 +498,6 @@ p {
     overflow: hidden;
 }
 
-.BGimage {
-    position: absolute;
-    top: 0;
-
-    //background-image: url("src/logo.png");
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-}
-
 .physioHelps {
     text-align: center;
     display: flex;
@@ -553,26 +541,36 @@ p {
     max-width: 400px;
 
     //border: solid 1px #f2f2f2;
-
+    background-color: rgba(255, 0, 0, 0);
     text-align: left;
 }
 
+.physioHelpsCard:hover {
+    background-color: red;
+}
+
 .physioHelpsCardHeadline {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--darkColour);
     color: var(--ultraDarkColour);
     margin-bottom: .6rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--mainFont);
     letter-spacing: 1px;
 }
 
 .physioHelpsCardText {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.4rem;
     font-family: var(--secondFont);
     color: var(--darkColour);
+    color: black;
+}
+
+.testi {
+    transform: translate(-100px);
+    transition: 2s;
 }
 
 
@@ -686,20 +684,22 @@ p {
     //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
     cursor: pointer;
     overflow: hidden;
+    background-color: red;
 }
 
 .newLeistungen-card img {
     width: 100%;
-    height: 80%;
+    //height: 0%;
     object-fit: cover;
     border-radius: 3px;
 }
 
 .newLeistungen-cardText {
     //background-color: var(--ultraDarkColour);
-    color: var(--ultraDarkColour);
+    color: white;
+    background-color: var(--ultraDarkColour);
     font-family: var(--mainFont);
-    font-weight: 500;
+    font-weight: 300;
     position: absolute;
     bottom: 0;
     //color: white;
@@ -707,7 +707,10 @@ p {
     font-size: 1.1rem;
     padding: 8px;
     width: 100%;
+    height: auto;
     line-height: 1.6rem;
+    transition: ease-out .3s;
+    height: 60px;
 }
 
 .sectionRight {

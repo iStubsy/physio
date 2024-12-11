@@ -299,7 +299,6 @@ function moveRight() {
 
 
 
-
 function borderReveal() {
     var borderRevealWrapper = document.querySelectorAll(".borderRevealWrapper");
 
@@ -325,6 +324,26 @@ function borderReveal() {
 
 }
 
+for (var i = 0; i < document.querySelectorAll(".newLeistungen-card").length; i++) {
+    document.querySelectorAll(".newLeistungen-card")[i].onmouseenter = function () {
+        this.querySelector(".newLeistungen-cardText").style.height = "100%";
+    }
+
+    document.querySelectorAll(".newLeistungen-card")[i].onmouseleave = function () {
+        this.querySelector(".newLeistungen-cardText").style.height = "60px";
+    }
+}
+
+
+function lel() {
+    //document.querySelector(".moreButton").style.width = "500px";
+    document.querySelector(".moreButton").querySelector("p").classList.add("active");
+    document.querySelector(".moreButton").querySelector(".icon").classList.add("active");
+}
+
+
+
+
 window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveDown);
 window.addEventListener("scroll", moveRight);
@@ -335,4 +354,5 @@ window.addEventListener("scroll", opacityReveal);
 window.addEventListener("load", moveDownRevealOverlay);
 window.addEventListener("load", moveDownRevealFun);
 window.addEventListener("load", moveRight);
-window.addEventListener("load", moveTop);
+//window.addEventListener("load", moveTop);
+window.addEventListener("load", lel);
