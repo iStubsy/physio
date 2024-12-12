@@ -11,13 +11,13 @@
     --borderColour: #e3e3e3;
     /* --mainFont: 'Josefin Sans', sans-serif;
     --mainFont: 'Taviraj', serif;
-    --mainFont: 'Montserrat', sans-serif;
-    --maintFont: "Poppins", sans-serif; */
+    --mainFont: "Poppins", sans-serif; */
     /* --mainFont: "Archivo", sans-serif; */
-    --mainFont: arial;
+    --mainFont: 'Montserrat', sans-serif;
     --secondFont: "DM Sans", serif;
+    --mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1300px;
+    --maxWidth: 1400px;
 }
 
 * {
@@ -46,9 +46,8 @@ h1 {
     font-family: var(--mainFont);
     color: black;
 
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.5rem;
-    line-height: 2.5rem;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -82,13 +81,12 @@ h5 {
     line-height: 2.6rem;
     font-weight: 500;
     text-align: left;
+    margin-bottom: 4px;
 }
 
 p {
     font-family: var(--secondFont);
     font-size: 1rem;
-    line-height: 1.5rem;
-    margin: .5rem 0;
     text-align: left;
     max-width: 500px;
     font-weight: 400;
@@ -335,6 +333,7 @@ p {
     align-items: center;
     gap: 10px;
     color: var(--darkColour);
+    margin-bottom: 10px;
 }
 
 .subTitle .line {
@@ -343,7 +342,6 @@ p {
 
 .subTitle p {
     font-weight: 400;
-    margin: 15px 0;
     font-size: 1.5rem;
 }
 
@@ -402,8 +400,7 @@ p {
     //align-items: center;
     background-color: white;
     //border-bottom: solid 4px rgba(0, 0, 0, 0.11);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
 }
 
 .navigationBar_inner {
@@ -553,19 +550,9 @@ p {
     font-size: 1.3rem;
     color: var(--darkColour);
     color: var(--ultraDarkColour);
-    margin-bottom: .6rem;
+    margin-bottom: .4rem;
     font-weight: 600;
     font-family: var(--mainFont);
-    letter-spacing: 1px;
-}
-
-.physioHelpsCardText {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4rem;
-    font-family: var(--secondFont);
-    color: var(--darkColour);
-    color: black;
 }
 
 .testi {

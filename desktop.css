@@ -2,8 +2,7 @@
 
 
     p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -39,6 +38,7 @@
 
         //width: var(--contentWidth);
         max-width: var(--maxWidth);
+        max-width: 1300px;
         margin: 15px auto;
 
         display: flex;
@@ -97,10 +97,9 @@
 
     #header {
         //width: var(--contentWidth);
-        max-width: var(--maxWidth);
         min-width: 1000px;
     }
-    
+
     #header_headlineWrapper {
         padding: 15px 15px;
     }
@@ -259,7 +258,7 @@
         flex-direction: column;
         position: relative;
     }
-    
+
     #header-right {
         width: 45%;
     }

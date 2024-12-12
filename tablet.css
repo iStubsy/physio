@@ -4,10 +4,7 @@
 
 
     h1 {
-        font-weight: 300;
         font-size: 4rem;
-        line-height: 4.2rem;
-        //text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
     }
 
     h2 {
@@ -36,7 +33,7 @@
     h5 {
         font-size: 3rem;
         line-height: 3.5rem;
-        font-weight: 700;
+        font-weight: 500;
         text-align: left;
     }
 
@@ -203,6 +200,10 @@
         margin: 0 auto;
         max-width: 100%;
         text-align: center;
+    }
+
+    .physioHelpsCardHeadline {
+        font-size: 1.6rem;
     }
 
     #newLeistungenWrapper {}
