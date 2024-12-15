@@ -36,9 +36,8 @@
 
     .navigationBar_inner {
 
-        //width: var(--contentWidth);
+        width: var(--contentWidth);
         max-width: var(--maxWidth);
-        max-width: 1300px;
         margin: 15px auto;
 
         display: flex;
@@ -125,6 +124,11 @@
         justify-content: space-between;
         margin: 7rem auto 0 auto;
         width: 100%;
+        gap: 8rem;
+    }
+
+    .physioHelpsCard {
+        max-width: 100%;
     }
 
     #newLeistungenWrapper {

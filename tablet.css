@@ -198,8 +198,11 @@
     .physioHelpsCard {
         //max-width: 360px;
         margin: 0 auto;
-        max-width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+
+    .physioHelpsCard p {
+        text-align: left;
     }
 
     .physioHelpsCardHeadline {

@@ -326,11 +326,11 @@ function borderReveal() {
 
 for (var i = 0; i < document.querySelectorAll(".newLeistungen-card").length; i++) {
     document.querySelectorAll(".newLeistungen-card")[i].onmouseenter = function () {
-        this.querySelector(".newLeistungen-cardText").style.height = "100%";
+        this.querySelector(".newLeistungen-cardText").style.transform = "translateY(0%)";
     }
 
     document.querySelectorAll(".newLeistungen-card")[i].onmouseleave = function () {
-        this.querySelector(".newLeistungen-cardText").style.height = "60px";
+        this.querySelector(".newLeistungen-cardText").style.transform = "translateY(75%)";
     }
 }
 

@@ -535,7 +535,7 @@ p {
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
 
     //border: solid 1px rgba(0, 0, 0, 0.04);
-    max-width: 400px;
+    max-width: 350px;
 
     //border: solid 1px #f2f2f2;
     background-color: rgba(255, 0, 0, 0);
@@ -544,6 +544,7 @@ p {
 
 .physioHelpsCard:hover {
     background-color: red;
+    transition-delay: 0s;
 }
 
 .physioHelpsCardHeadline {
@@ -644,7 +645,7 @@ p {
     flex-direction: column;
 
     position: sticky;
-    top: 6rem;
+    top: 8rem;
 }
 
 .newLeistungenLeft h5 {
@@ -671,7 +672,6 @@ p {
     //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
     cursor: pointer;
     overflow: hidden;
-    background-color: red;
 }
 
 .newLeistungen-card img {
@@ -686,7 +686,7 @@ p {
     color: white;
     background-color: var(--ultraDarkColour);
     font-family: var(--mainFont);
-    font-weight: 300;
+    font-weight: 400;
     position: absolute;
     bottom: 0;
     //color: white;
@@ -694,10 +694,10 @@ p {
     font-size: 1.1rem;
     padding: 8px;
     width: 100%;
-    height: auto;
+    height: 100%;
+    transform: translateY(75%);
     line-height: 1.6rem;
     transition: ease-out .3s;
-    height: 60px;
 }
 
 .sectionRight {
