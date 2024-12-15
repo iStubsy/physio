@@ -233,6 +233,14 @@
         width: 280px;
     }
 
+    .newLeistungen-cardText {
+        transform: translateY(204px);
+    }
+
+    .newLeistungen-cardTextMouseover {
+        transform: translateY(0px);
+    }
+
     .newLeistungenRight {
         width: 50%;
         margin: 0 auto;

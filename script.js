@@ -161,7 +161,8 @@ function moveDownRevealFun() {
         var elementVisible = 200;
 
         // Check if the element is within the visible area
-        var allChildren = moveDownReveals[i].getElementsByTagName("*");
+        //var allChildren = moveDownReveals[i].getElementsByTagName("*");
+        var allChildren = moveDownReveals[i].getElementsByClassName("moveTop");
 
         if (elementTop < windowHeight - elementVisible) {
             // Add delay and activate class for visible elements
@@ -171,6 +172,15 @@ function moveDownRevealFun() {
                     allChildren[x].classList.add("active");
                 }
             }
+
+
+            /* RESETS TRANSTION DELAY TO 0 SO OTHER ANIMATIONS CAN BE USED */
+            for (let y = 0; y < document.querySelectorAll(".physioHelpsCard").length; y++) {
+                setTimeout(() => {
+                    document.querySelectorAll(".physioHelpsCard")[y].style.transitionDelay = "0";
+                }, 1000);
+            }
+
         } else {
             // Optional: Reset animation if the element is not visible
             for (var x = 0; x < allChildren.length; x++) {
@@ -180,6 +190,7 @@ function moveDownRevealFun() {
                 }
             }
         }
+
     }
 }
 
@@ -326,11 +337,28 @@ function borderReveal() {
 
 for (var i = 0; i < document.querySelectorAll(".newLeistungen-card").length; i++) {
     document.querySelectorAll(".newLeistungen-card")[i].onmouseenter = function () {
-        this.querySelector(".newLeistungen-cardText").style.transform = "translateY(0%)";
+        //this.querySelector(".newLeistungen-cardText").style.transform = "translateY(0%)";
+        this.querySelector(".newLeistungen-cardText").classList.add("newLeistungen-cardTextMouseover");
+
+        /*
+        
+        if (document.querySelector(".newLeistungen-card").getBoundingClientRect().width === 260) {
+            this.querySelector(".newLeistungen-cardText").style.transform = "translateY(0%)";
+        } else {
+            this.querySelector(".newLeistungen-cardText").style.transform = "translateY(0%)";
+        }
+        
+        */
     }
 
     document.querySelectorAll(".newLeistungen-card")[i].onmouseleave = function () {
-        this.querySelector(".newLeistungen-cardText").style.transform = "translateY(75%)";
+        this.querySelector(".newLeistungen-cardText").classList.remove("newLeistungen-cardTextMouseover");
+        /* if (document.querySelector(".newLeistungen-card").getBoundingClientRect().width === 260) {
+            this.querySelector(".newLeistungen-cardText").style.transform = "translateY(204px)";
+        } else {
+            this.querySelector(".newLeistungen-cardText").style.transform = "translateY(353px)";
+        }
+    }*/
     }
 }
 

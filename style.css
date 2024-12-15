@@ -646,6 +646,7 @@ p {
 
     position: sticky;
     top: 8rem;
+    margin-bottom: 2rem;
 }
 
 .newLeistungenLeft h5 {
@@ -666,10 +667,11 @@ p {
 .newLeistungen-card {
     font-size: 30px;
     text-align: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     //height: 300px;
     position: relative;
-    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
     cursor: pointer;
     overflow: hidden;
 }
@@ -679,25 +681,38 @@ p {
     //height: 0%;
     object-fit: cover;
     border-radius: 3px;
+    display: block;
 }
 
 .newLeistungen-cardText {
     //background-color: var(--ultraDarkColour);
     color: white;
-    background-color: var(--ultraDarkColour);
+    background-color: rgba(11, 33, 79, 0.95);
     font-family: var(--mainFont);
     font-weight: 400;
     position: absolute;
     bottom: 0;
     //color: white;
 
-    font-size: 1.1rem;
-    padding: 8px;
+    font-size: 1rem;
+    padding: 8px 15px;
     width: 100%;
     height: 100%;
-    transform: translateY(75%);
-    line-height: 1.6rem;
+    transform: translateY(353px);
+    line-height: 1.5rem;
     transition: ease-out .3s;
+}
+
+.newLeistungen-cardTextMouseover {
+    transform: translateY(0);
+}
+
+.newLeistungen-cardTextHeadline {
+    //border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sectionRight {
@@ -1023,7 +1038,7 @@ p {
 
 #contact {
     //background-color: var(--ultraDarkColour);
-    background-color: rgba(11, 33, 79, 0.92);
+    background-color: rgba(11, 33, 79, 0.88);
 }
 
 .contactRight {
