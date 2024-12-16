@@ -668,12 +668,13 @@ p {
     font-size: 30px;
     text-align: center;
     margin: 0 auto;
-    width: 80%;
     //height: 300px;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
     cursor: pointer;
     overflow: hidden;
+    width: 320px;
+    height: 320px;
 }
 
 .newLeistungen-card img {
@@ -698,7 +699,7 @@ p {
     padding: 8px 15px;
     width: 100%;
     height: 100%;
-    transform: translateY(353px);
+    transform: translateY(265px);
     line-height: 1.5rem;
     transition: ease-out .3s;
 }
