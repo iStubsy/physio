@@ -4,7 +4,8 @@
 
 
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
 
     h2 {
@@ -125,11 +126,12 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     #header-left {
         width: 50%;
-        height: 100%;
+        height: 700px;
     }
 
     #header-left img {
@@ -145,6 +147,9 @@
 
     #header_headlineWrapper {}
 
+    .sticker {
+        display: none;
+    }
 
     #header_headlineWrapper h1 {
         text-align: left;
@@ -158,6 +163,7 @@
         max-width: 450px;
         margin-left: 0;
         margin-right: 0;
+        gap: 20px;
     }
 
     #header-emptyTop {
@@ -206,13 +212,17 @@
     }
 
     .physioHelpsCardHeadline {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     #newLeistungenWrapper {}
 
     .newLeistungen {
         gap: 50px;
+    }
+
+    .newLeistungenLeft {
+        width: 100%;
     }
 
     .newLeistungen h5 {
@@ -234,7 +244,7 @@
     }
 
     .newLeistungen-cardText {
-        transform: translateY(204px);
+        transform: translateY(214px);
     }
 
     .newLeistungen-cardTextMouseover {
@@ -295,7 +305,7 @@
 
     .leistungenRightGrid {
         display: grid;
-        gap: 40px;
+        gap: 25px;
         grid-template-columns: auto auto;
     }
 

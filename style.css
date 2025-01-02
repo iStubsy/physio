@@ -1,7 +1,7 @@
 :root {
     --primary: white;
     --secondary: #f9f9f9;
-    --mainColour: #0071C7;
+    --mainColour: #0064b1;
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --lightColour: #f8f8f8;
@@ -14,10 +14,11 @@
     --mainFont: "Poppins", sans-serif; */
     /* --mainFont: "Archivo", sans-serif; */
     --mainFont: 'Montserrat', sans-serif;
-    --secondFont: "DM Sans", serif;
-    --mainFont: 'Josefin Sans', sans-serif;
+    --secondFont: 'Montserrat', sans-serif;
+    //--secondFont: "DM Sans", serif;
+    //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1400px;
+    --maxWidth: 1300px;
 }
 
 * {
@@ -53,9 +54,8 @@ h1 {
 
 h2 {
     font-family: var(--mainFont);
+    color: var(--mainColour);
     font-size: 1.2rem;
-    font-weight: 500;
-    margin: 1rem 0 0.5rem 0;
 }
 
 h3 {
@@ -81,7 +81,7 @@ h5 {
     line-height: 2.6rem;
     font-weight: 500;
     text-align: left;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 p {
@@ -89,7 +89,8 @@ p {
     font-size: 1rem;
     text-align: left;
     max-width: 500px;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 .smallText {
@@ -276,7 +277,9 @@ p {
     margin: 0 auto;
 }
 
-#header-left {}
+#header-left {
+    display: none;
+}
 
 #header-left img {
     width: 100%;
@@ -286,6 +289,8 @@ p {
     display: block;
     margin: 0 auto 0 auto;
 }
+
+#header-right {}
 
 .headerItemWrapper {
     display: none;
@@ -326,6 +331,23 @@ p {
     flex-direction: column;
     justify-content: center;
     padding: 40px 25px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.66);
+    position: relative;
+}
+
+.sticker {
+    color: red;
+    height: 500px;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    background-color: blue;
+    background-image: url("src/frederikEditLowQ.jpg");
+    background-size: cover;
+    z-index: 0;
 }
 
 .subTitle {
@@ -333,7 +355,7 @@ p {
     align-items: center;
     gap: 10px;
     color: var(--darkColour);
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
 }
 
 .subTitle .line {
@@ -384,6 +406,7 @@ p {
     color: var(--ultraDarkColour);
     font-size: 1.2rem;
     transform: translateY(50px);
+    opacity: 0;
 }
 
 .headerContactWrapper {
@@ -499,7 +522,6 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 30px;
     max-width: 1300px;
 }
@@ -540,17 +562,23 @@ p {
     //border: solid 1px #f2f2f2;
     background-color: rgba(255, 0, 0, 0);
     text-align: left;
+    opacity: 0;
 }
 
-.physioHelpsCard:hover {
-    background-color: red;
-    transition-delay: 0s;
+.cardOne {
+    transform: translateX(-200px);
+}
+
+.cardTwo {}
+
+.cardThree {
+    transform: translateX(200px);
 }
 
 .physioHelpsCardHeadline {
     font-size: 1.3rem;
     color: var(--darkColour);
-    color: var(--ultraDarkColour);
+    //color: var(--ultraDarkColour);
     margin-bottom: .4rem;
     font-weight: 600;
     font-family: var(--mainFont);
@@ -559,6 +587,7 @@ p {
 .testi {
     transform: translate(-100px);
     transition: 2s;
+    opacity: 0;
 }
 
 
@@ -640,6 +669,11 @@ p {
     padding: 40px 25px;
 }
 
+.newLeistungenLeft {
+    width: 320px;
+    margin: 0 auto;
+}
+
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
@@ -675,6 +709,7 @@ p {
     overflow: hidden;
     width: 320px;
     height: 320px;
+    border-radius: 5px;
 }
 
 .newLeistungen-card img {
@@ -696,10 +731,10 @@ p {
     //color: white;
 
     font-size: 1rem;
-    padding: 8px 15px;
+    padding: 12px 15px;
     width: 100%;
     height: 100%;
-    transform: translateY(265px);
+    transform: translateY(255px);
     line-height: 1.5rem;
     transition: ease-out .3s;
 }

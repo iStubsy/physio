@@ -19,7 +19,6 @@
 }
 
 .moveRight {
-    transform: translateX(-200px);
     opacity: 0;
 }
 
