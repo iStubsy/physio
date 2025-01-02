@@ -333,7 +333,7 @@ p {
     padding: 40px 25px;
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.66);
-    background-color: yellow;
+    background-color: var(--darkColour);
     position: relative;
     z-index: 1;
 }
@@ -345,8 +345,6 @@ p {
 
     position: sticky;
     top: 0;
-
-    background-color: blue;
     background-image: url("src/frederikEditLowQ.jpg");
     background-size: cover;
     z-index: 0;
