@@ -333,8 +333,9 @@ p {
     padding: 40px 25px;
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.66);
-    background-color: red;
+    background-color: yellow;
     position: relative;
+    z-index: 1;
 }
 
 .sticker {
