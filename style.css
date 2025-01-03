@@ -56,6 +56,7 @@ h2 {
     font-family: var(--mainFont);
     color: var(--mainColour);
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 h3 {
@@ -277,9 +278,7 @@ p {
     margin: 0 auto;
 }
 
-#header-left {
-    display: none;
-}
+#header-left {}
 
 #header-left img {
     width: 100%;
@@ -332,23 +331,6 @@ p {
     justify-content: center;
     padding: 40px 25px;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.66);
-    background-color: var(--darkColour);
-    position: relative;
-    z-index: 1;
-}
-
-.sticker {
-    color: red;
-    height: 500px;
-    width: 100%;
-
-    position: sticky;
-    top: 0;
-    //background-image: url("src/frederikEditLowQ.jpg");
-    background-color: red;
-    background-size: cover;
-    z-index: 0;
 }
 
 .subTitle {
@@ -557,7 +539,7 @@ p {
     font-family: Montserrat;
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
 
-    //border: solid 1px rgba(0, 0, 0, 0.04);
+    //border: solid 1px rgba(0, 0, 0, 0.09);
     max-width: 350px;
 
     //border: solid 1px #f2f2f2;
