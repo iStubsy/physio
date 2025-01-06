@@ -24,6 +24,7 @@
         //display: flex;
         //align-items: center;
         transition: ease-out .2s;
+        border-bottom: none;
     }
 
     .navigationBarScrolled {
@@ -123,7 +124,7 @@
         justify-content: space-between;
         margin: 7rem auto 0 auto;
         width: 100%;
-        gap: 8rem;
+        gap: 5rem;
     }
 
     .physioHelpsCard {
@@ -146,10 +147,6 @@
         width: 100%;
     }
 
-    .newLeistungen .line {
-        margin: 1rem 0;
-    }
-
     .newLeistungenRight {
         display: flex;
         justify-content: flex-end;
@@ -158,6 +155,14 @@
     .newLeistungen-card {
         width: 280px;
         height: 280px;
+    }
+
+    .newLeistungen-cardText {
+        transform: translateY(204px);
+    }
+
+    .newLeistungen-cardTextMouseover {
+        transform: translateY(0px);
     }
 
     #logo {

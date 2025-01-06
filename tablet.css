@@ -8,22 +8,6 @@
         line-height: 5rem;
     }
 
-    h2 {
-        font-family: var(--mainFont);
-        font-size: 1.2rem;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-    }
-
-    h3 {
-        font-family: var(--mainFont);
-        line-height: 1.8rem;
-        font-size: 1rem;
-        font-weight: 400;
-        width: 500px;
-        text-align: center;
-    }
-
     h4 {
         color: var(--mainColour);
         font-size: 1.1rem;
@@ -207,10 +191,6 @@
         text-align: left;
     }
 
-    .physioHelpsCard p {
-        text-align: left;
-    }
-
     .physioHelpsCardHeadline {
         font-size: 1.4rem;
     }
@@ -229,26 +209,10 @@
         text-align: center;
     }
 
-    .newLeistungen .line {
-        margin: 1rem auto;
-    }
 
     .newLeistungen p {
         text-align: center;
         width: 80%;
-        margin: 0px auto;
-    }
-
-    .newLeistungen-card {
-        width: 280px;
-    }
-
-    .newLeistungen-cardText {
-        transform: translateY(214px);
-    }
-
-    .newLeistungen-cardTextMouseover {
-        transform: translateY(0px);
     }
 
     .newLeistungenRight {
@@ -272,12 +236,6 @@
         flex-direction: row;
         margin: 4rem auto 0 auto;
         justify-content: center;
-    }
-
-    .leistungenCard {
-        padding: 3rem 2rem;
-        width: 33.33%;
-        width: 420px;
     }
 
 
