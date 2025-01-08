@@ -141,6 +141,10 @@
         padding: 0;
     }
 
+    .newLeistungen p {
+        margin-bottom: 1rem;
+    }
+
     .newLeistungen h5,
     .newLeistungen p {
         text-align: left;
@@ -276,12 +280,12 @@
         width: 400px;
         height: 400px;
         border-radius: 50%;
-        background-color: rgba(23, 46, 96, 0.05);
+        background-color: rgba(23, 46, 96, 0.03);
 
         position: absolute;
         right: 300px;
         top: 5%;
-        margin-inline: auto;
+        //margin-inline: auto;
     }
 
     .header-leftBG2 {
@@ -291,10 +295,10 @@
         width: 400px;
         height: 400px;
         border-radius: 50%;
-        background-color: rgba(23, 46, 96, 0.05);
+        background-color: rgba(23, 46, 96, 0.03);
 
         position: absolute;
-        margin-inline: auto;
+        //margin-inline: auto;
 
     }
 

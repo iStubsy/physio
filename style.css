@@ -18,7 +18,7 @@
     //--secondFont: "DM Sans", serif;
     //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1300px;
+    --maxWidth: 1200px;
 }
 
 * {
@@ -45,7 +45,7 @@ body {
 
 h1 {
     font-family: var(--mainFont);
-    color: black;
+    color: var(--darkColour);
 
     font-weight: 400;
     font-size: 2.5rem;
@@ -54,14 +54,11 @@ h1 {
 
 h2 {
     font-family: var(--mainFont);
-    color: white;
+    color: var(--darkColour);
     font-size: 1.2rem;
-    font-weight: 400;
-    background-color: var(--ultraDarkColour);
-    border-radius: 50px;
+    font-weight: 600;
     text-align: center;
     width: fit-content;
-    padding: 5px 30px;
 }
 
 h3 {
@@ -102,11 +99,12 @@ p {
 button {
     width: fit-content;
     background-color: var(--darkColour);
-    padding: .5rem 1.5rem;
+    padding: .6rem 1.5rem;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .smallText {
@@ -543,8 +541,8 @@ button {
 .physioHelpsCards {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    margin: 2rem 0;
+    gap: 5rem;
+    margin: 5rem 0 2rem 0;
 }
 
 .physioHelpsCardIcon {
@@ -695,9 +693,7 @@ button {
     padding: 40px 25px;
 }
 
-.newLeistungen p {
-    margin-bottom: 2rem;
-}
+.newLeistungen p {}
 
 .newLeistungen .line {
     margin: .8rem 0;
@@ -705,7 +701,7 @@ button {
 
 .newLeistungenLeft {
     width: 320px;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
 }
 
 .newLeistungenLeftInner {
@@ -714,7 +710,6 @@ button {
 
     position: sticky;
     top: 8rem;
-    margin-bottom: 2rem;
     gap: .8rem;
 }
 
@@ -749,8 +744,11 @@ button {
     border: solid 1.5px var(--ultraDarkColour);
 }
 
+
+
 .newLeistungen-card img {
     width: 100%;
+    height: 100%;
     //height: 0%;
     object-fit: cover;
     border-radius: 3px;
@@ -760,7 +758,7 @@ button {
 .newLeistungen-cardText {
     //background-color: var(--ultraDarkColour);
     color: white;
-    background-color: rgba(11, 33, 79, 0.95);
+    background-color: rgba(11, 33, 79, 0.9);
     font-family: var(--mainFont);
     font-weight: 400;
     position: absolute;
@@ -790,17 +788,34 @@ button {
     display: flex;
     align-items: flex-end;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     gap: .6rem;
 }
 
-.newLeistungen-cardTextHeadline .iconi {
+.iconi {
     position: relative;
+
+    border-radius: 5px;
+    outline: solid 1px black;
+    background-color: white;
     width: 50px;
     height: 50px;
-    border-radius: 5px;
-    border: solid 1px black;
-    background-color: white;
+}
+
+.iconi img {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    left: -8px;
+    top: -2px;
+
 }
 
 .sectionRight {
@@ -1143,8 +1158,46 @@ button {
 }
 
 .contactRight {
-    padding: 50px;
+    padding: 1.5rem;
 }
+
+.contactRight-card {
+    display: flex;
+    color: white;
+}
+
+.contactRight-cardContent {
+    border: solid 1px rgba(255, 255, 255, 0.30);
+    display: flex;
+    align-items: center;
+    padding: 0 .8rem;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contactRight-cardContent p {
+    color: white;
+}
+
+.contactRight-cardIcon {
+
+    padding: 5px;
+    border-right: solid 1px white;
+    background-color: #01143c;
+
+    border: solid 1px rgba(255, 255, 255, 0.30);
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contactRight-cardIcon i {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
 
 .contactHeadline {
     background-image: url("src/frontDoor.JPG");
@@ -1155,24 +1208,11 @@ button {
     top: 8px;
 }
 
-.contactHeadline h5 {
-    color: white;
-    font-weight: 400;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 5px;
-}
-
-
-.contactRight {
-    width: 60%;
-    position: relative;
-}
 
 .contactRight h5 {
     color: white;
     font-weight: 400;
+    text-align: left;
 }
 
 .headlineWrapper {
