@@ -771,7 +771,7 @@
         position: relative;
         top: 0;
         width: 40%;
-        height: 500px;
+        min-height: 400px;
         background-position: center;
     }
 

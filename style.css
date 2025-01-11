@@ -85,6 +85,8 @@ h5 {
     line-height: 2.6rem;
     font-weight: 500;
     text-align: left;
+
+    margin-bottom: 8px;
 }
 
 p {
@@ -1017,9 +1019,9 @@ button {
 
 .footerHeadline {
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 6px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .footerHeadlineSocial {
@@ -1159,37 +1161,53 @@ button {
 
 .contactRight {
     padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contactRight-cards {
+    width: 100%;
+    margin: .2rem 0 3rem 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.contactRight-social {
+    margin: 0 auto;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contactRight-cardHeadline {
+    padding: 2px 5px;
 }
 
 .contactRight-card {
     display: flex;
     color: white;
+    width: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .contactRight-cardContent {
-    border: solid 1px rgba(255, 255, 255, 0.30);
     display: flex;
     align-items: center;
     padding: 0 .8rem;
-
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .contactRight-cardContent p {
     color: white;
+    text-align: left;
 }
 
 .contactRight-cardIcon {
 
     padding: 5px;
-    border-right: solid 1px white;
+    border-right: solid 1px rgba(255, 255, 255, 0.25);
     background-color: #01143c;
-
-    border: solid 1px rgba(255, 255, 255, 0.30);
-    border-right: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 .contactRight-cardIcon i {

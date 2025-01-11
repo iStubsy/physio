@@ -203,6 +203,7 @@
 
     .newLeistungenLeft {
         width: 100%;
+        margin: 0;
     }
 
     .newLeistungen h5 {
@@ -220,23 +221,18 @@
         margin: 0 auto;
     }
 
-    #leistungenWrapper {}
-
-    .leistungen {
-        padding: 0;
+    .contactRight {
+        width: 60%;
+        max-width: 800px;
     }
 
-    .leistungen .smallText {
-        text-align: center;
-        margin: 0 auto;
+    .contactRight-cards {
+        grid-template-columns: auto auto;
+        gap: 15px 30px;
+        margin: 1rem 0 3rem 0;
     }
 
-    .leistungenCards {
-        display: flex;
-        flex-direction: row;
-        margin: 4rem auto 0 auto;
-        justify-content: center;
-    }
+    .contactRight-cardWrapper {}
 
 
     .firstSection_inner {
@@ -263,7 +259,7 @@
 
     .leistungenRightGrid {
         display: grid;
-        gap: 25px;
+        gap: 35px;
         grid-template-columns: auto auto;
     }
 
