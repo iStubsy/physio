@@ -111,7 +111,7 @@
 
     .sectionWrapper {
         max-width: var(--maxWidth);
-        width: 80%;
+        width: var(--contentWidth);
     }
 
     #physioHelpsWrapper {
@@ -141,11 +141,14 @@
         padding: 0;
     }
 
-    .newLeistungen p {
-        margin-bottom: 1rem;
+    .newLeistungen p {}
+
+    .newLeistungen h5 {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0;
     }
 
-    .newLeistungen h5,
     .newLeistungen p {
         text-align: left;
         width: 100%;
@@ -208,7 +211,7 @@
     #navigationBar_menu {
         display: flex;
         align-items: center;
-        //justify-content: space-between;
+        justify-content: space-between;
         width: 45%;
     }
 
@@ -217,7 +220,7 @@
         font-weight: 500;
         font-size: 1rem;
         height: 100%;
-        padding: 15px 20px;
+        padding: 15px 0;
         display: flex;
         -ms-align-items: center;
         align-items: center;
