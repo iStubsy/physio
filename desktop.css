@@ -43,7 +43,7 @@
 
     .navigationBar_inner {
 
-        width: var(--contentWidth);
+        //width: var(--contentWidth);
         max-width: var(--maxWidth);
         margin: 15px auto;
 
@@ -118,7 +118,7 @@
 
     .sectionWrapper {
         max-width: var(--maxWidth);
-        width: var(--contentWidth);
+        //width: var(--contentWidth);
     }
 
     #physioHelpsWrapper {
