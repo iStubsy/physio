@@ -50,3 +50,15 @@
     transition: 1s;
     transform: translateY(0px);
 }
+
+
+.wentActive {
+    height: 180px;
+    width: 180px;
+
+
+
+    transition: ease-out .6s;
+    transition-delay: .5s;
+    opacity: 1;
+}

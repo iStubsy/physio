@@ -75,77 +75,6 @@ document.querySelector(".backToTop").onclick = function () {
 }
 
 
-/************* SCROLL ANIMATIONS ************/
-
-
-/***
-function moveDownRevealFun() {
-    var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
-
-    for (var i = 0; i < moveDownReveals.length; i++) {
-        // Nur direkte div-Kinder sammeln und die Klasse "moveTop" hinzufügen
-        var directChildDivs = Array.from(moveDownReveals[i].children).filter(child => child.tagName === "DIV");
-        directChildDivs.forEach(childDiv => childDiv.classList.add("moveTop"));
-
-        // Fensterhöhe und Position des aktuellen Elements berechnen
-        var windowHeight = window.innerHeight;
-        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
-        var elementVisible = 250;
-
-        // Prüfen, ob das Element im sichtbaren Bereich ist
-        var allChildren = moveDownReveals[i].getElementsByTagName("*");
-
-        if (elementTop < windowHeight - elementVisible) {
-            // Verzögerung und Aktivierung für sichtbare Elemente
-            for (var x = 0; x < allChildren.length; x++) {
-                allChildren[x].style.transitionDelay = x / 10 + "s";
-                allChildren[x].classList.add("active");
-            }
-        } else {
-            // Optional: Animation zurücksetzen, falls das Element nicht sichtbar ist
-            for (var x = 0; x < allChildren.length; x++) {
-                allChildren[x].style.transitionDelay = "0s";
-                //allChildren[x].classList.remove("active");
-            }
-        }
-    }
-}
-****/
-
-
-/**
-function moveDownRevealFun() {
-    var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
-
-    for (var i = 0; i < moveDownReveals.length; i++) {
-        // Collect all direct children and add the "moveTop" class to them
-        var directChildren = Array.from(moveDownReveals[i].children);
-        directChildren.forEach(child => child.classList.add("moveTop"));
-
-        // Calculate window height and current element position
-        var windowHeight = window.innerHeight;
-        var elementTop = moveDownReveals[i].getBoundingClientRect().top;
-        var elementVisible = 250;
-
-        // Check if the element is within the visible area
-        var allChildren = moveDownReveals[i].getElementsByTagName("*");
-
-        if (elementTop < windowHeight - elementVisible) {
-            // Add delay and activate class for visible elements
-            for (var x = 0; x < allChildren.length; x++) {
-                allChildren[x].style.transitionDelay = x / 10 + "s";
-                allChildren[x].classList.add("active");
-            }
-        } else {
-            // Optional: Reset animation if the element is not visible
-            for (var x = 0; x < allChildren.length; x++) {
-                allChildren[x].style.transitionDelay = "0s";
-                // allChildren[x].classList.remove("active");
-            }
-        }
-    }
-}
-**/
 
 function moveDownRevealFun() {
     var moveDownReveals = document.querySelectorAll(".fromBottomWrapper");
@@ -168,7 +97,7 @@ function moveDownRevealFun() {
             // Add delay and activate class for visible elements
             for (var x = 0; x < allChildren.length; x++) {
                 if (allChildren[x].tagName !== "IMG") { // Exclude images
-                    allChildren[x].style.transitionDelay = x / 10 + "s";
+                    allChildren[x].style.transitionDelay = x / 3 + "s";
                     allChildren[x].classList.add("active");
                 }
             }
@@ -239,6 +168,7 @@ function moveDownRevealOverlay() {
     }
 }
 
+
 function opacityReveal() {
     var reveals = document.querySelectorAll(".opacityReveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -273,6 +203,7 @@ function rotateOpacity() {
     }
 }
 
+
 function moveDown() {
     var moveDown = document.querySelectorAll(".moveDown");
     for (var i = 0; i < moveDown.length; i++) {
@@ -301,6 +232,25 @@ function moveRight() {
         if (elementTop < windowHeight - elementVisible) {
 
             moveRight[i].classList.add("active");
+
+        } else {
+            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+        }
+    }
+}
+
+
+function goActive() {
+    var goActive = document.querySelectorAll(".goActive");
+
+
+    for (var i = 0; i < goActive.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = goActive[i].getBoundingClientRect().top;
+        var elementVisible = 200;
+        if (elementTop < windowHeight - elementVisible) {
+
+            goActive[i].classList.add("wentActive");
 
         } else {
             //rotateOpacitySel[i].classList.remove("rotateOpacity");
@@ -372,6 +322,7 @@ function lel() {
 
 
 
+window.addEventListener("scroll", goActive);
 window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveDown);
 window.addEventListener("scroll", moveRight);

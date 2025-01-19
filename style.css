@@ -58,7 +58,6 @@ h2 {
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
-    width: fit-content;
 }
 
 h3 {
@@ -586,20 +585,24 @@ button {
     text-align: center;
 
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .physioHelpsCardIconBG {
     position: absolute;
     background-color: #f8f8f8;
-    height: 180px;
-    width: 180px;
+    height: 0px;
+    width: 0px;
+
 
     margin-left: auto;
     margin-right: auto;
+
+    margin: auto;
     left: 0;
     right: 0;
-    top: -50%;
+    top: 0;
+    bottom: 0;
 
     border-radius: 50%;
     z-index: -1;
@@ -737,7 +740,7 @@ button {
 
 .newLeistungenLeft {
     width: 320px;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 6rem auto;
 }
 
 .newLeistungenLeftInner {
@@ -1167,7 +1170,6 @@ button {
 }
 
 #contactWrapper {
-    margin-bottom: 200px;
     background-image: url(src/BG_edit.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -1203,7 +1205,7 @@ button {
     width: 100%;
     margin: .2rem 0 3rem 0;
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .contactRight-social {
@@ -1213,7 +1215,7 @@ button {
 }
 
 .contactRight-cardHeadline {
-    padding: 2px 5px;
+    padding: 0px 5px 5px 10px;
 }
 
 .contactRight-card {

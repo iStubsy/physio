@@ -8,6 +8,10 @@
         line-height: 5rem;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     h4 {
         color: var(--mainColour);
         font-size: 1.1rem;
@@ -27,6 +31,10 @@
         margin: 0 auto;
         max-width: 800px;
         color: var(--ultraDarkColour);
+    }
+
+    button {
+        margin: 20px auto 0 auto;
     }
 
     .smallText {
@@ -115,11 +123,14 @@
 
     #header-left {
         width: 50%;
-        height: 700px;
+        height: 100%;
     }
 
     #header-left img {
         height: 100%;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
     }
 
     #header-right {
@@ -159,8 +170,6 @@
 
     #physioHelpsWrapper {
         padding: 4rem 0;
-        height: 90vh;
-        min-height: 750px;
         display: flex;
         justify-content: center;
         align-items: center;

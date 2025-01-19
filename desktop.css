@@ -5,10 +5,17 @@
         text-align: center;
     }
 
+    h2 {
+        text-align: left;
+    }
+
     h5 {
         text-align: center;
     }
 
+    button {
+        margin: 20px 0 0 0;
+    }
 
     .overlay {
         display: none;
