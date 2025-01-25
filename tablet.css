@@ -29,7 +29,6 @@
     p {
         text-align: left;
         margin: 0 auto;
-        max-width: 800px;
         color: var(--ultraDarkColour);
     }
 
@@ -119,6 +118,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: var(--maxWidth);
     }
 
     #header-left {
@@ -336,10 +336,6 @@
 
     .footerLogo {
         height: 120px;
-    }
-
-    .footerHeadline {
-        font-size: 1.2rem;
     }
 
     .footerText {

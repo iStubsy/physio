@@ -3,6 +3,7 @@
 
     p {
         text-align: center;
+        max-width: 800px;
     }
 
     h2 {
@@ -14,7 +15,7 @@
     }
 
     button {
-        margin: 20px 0 0 0;
+        margin: 0;
     }
 
     .overlay {
@@ -57,11 +58,6 @@
     .navigationBar-innerScrolled {
         height: 50px;
         margin: 10px auto;
-    }
-
-    #navigationBar_logo {
-        height: 100%;
-        display: flex;
     }
 
     .navigationBarBelow {
@@ -122,7 +118,7 @@
     }
 
     #physioHelpsWrapper {
-        padding: 6rem 0 6rem 0;
+        padding: 8rem 0;
         //clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
     }
 
@@ -189,6 +185,7 @@
         justify-content: center;
         transition: .2s;
         font-family: 'Montserrat', sans-serif;
+        padding: 0 10px 0 0;
     }
 
     .navigationBar_logoTextItem1 {
@@ -227,7 +224,7 @@
         font-weight: 500;
         font-size: 1rem;
         height: 100%;
-        padding: 15px 0;
+        padding: 10px 10px;
         display: flex;
         -ms-align-items: center;
         align-items: center;
