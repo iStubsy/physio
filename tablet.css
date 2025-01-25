@@ -23,17 +23,21 @@
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: 500;
-        text-align: left;
+        text-align: center;
     }
 
     p {
-        text-align: left;
+        text-align: center;
         margin: 0 auto;
         color: var(--ultraDarkColour);
     }
 
     button {
         margin: 20px auto 0 auto;
+    }
+
+    .moreButton {
+        margin: 0;
     }
 
     .smallText {
@@ -137,12 +141,16 @@
         width: 50%;
         display: flex;
         align-items: center;
-
     }
 
-    #header_headlineWrapper {}
+    .imgBox {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
 
-    .sticker {
+    .darkCircle,
+    .brightCircle {
         display: none;
     }
 
@@ -214,11 +222,6 @@
         width: 100%;
         margin: 0;
     }
-
-    .newLeistungen h5 {
-        text-align: center;
-    }
-
 
     .newLeistungen p {
         text-align: center;
