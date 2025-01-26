@@ -5,6 +5,7 @@
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --lightColour: #f8f8f8;
+    --lightColour: #f5f5f7;
     //--lightColour: #f5fbff;
     --verylightColour: #E6F1FA;
     --lightGrey: rgba(0, 0, 0, 0.02);
@@ -47,7 +48,7 @@ h1 {
     font-family: var(--mainFont);
     color: var(--darkColour);
 
-    font-weight: 400;
+    font-weight: 420;
     font-size: 2.5rem;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -143,8 +144,6 @@ button {
     height: 100vh;
     min-height: 500px;
     //background-color: rgba(2, 16, 47, 0.79);
-    display: flex;
-    flex-direction: column;
     //border: solid 4px black;
 }
 
@@ -301,7 +300,7 @@ button {
     border-radius: 50%;
     width: 360px;
     height: 360px;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     position: relative;
 }
 
@@ -311,7 +310,7 @@ button {
     position: absolute;
     top: 0;
 
-    border: solid 13px rgba(0, 0, 0, 0.2);
+    border: solid 13px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
 
@@ -322,7 +321,7 @@ button {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: solid 6px rgba(255, 255, 255, 0.4);
+    border: solid 6px rgba(255, 255, 255, 0.3);
 
     border-radius: 50%;
 }
@@ -400,7 +399,7 @@ button {
     flex-direction: column;
     justify-content: center;
     padding: 40px 25px;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .subTitle {
@@ -747,7 +746,9 @@ button {
     padding: 40px 30px;
 }
 
-.newLeistungen p {}
+.newLeistungen p {
+    margin: 1rem 0;
+}
 
 .newLeistungen .line {
     margin: .8rem 0;
@@ -763,7 +764,6 @@ button {
 
     position: sticky;
     top: 8rem;
-    gap: .6rem;
 }
 
 .newLeistungenRight {

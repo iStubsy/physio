@@ -57,6 +57,6 @@
     width: 160px;
 
     transition: ease-out .6s;
-    transition-delay: .5s;
+    transition-delay: 0.1s;
     opacity: 1;
 }
