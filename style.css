@@ -85,8 +85,6 @@ h5 {
     line-height: 2.6rem;
     font-weight: 500;
     text-align: left;
-
-    margin-bottom: 8px;
 }
 
 p {
@@ -285,8 +283,11 @@ button {
 
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
     margin: 0 auto;
+}
+
+#header_inner {
+    width: 100%;
 }
 
 #header-left {
@@ -321,7 +322,7 @@ button {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: solid 6px rgba(255, 255, 255, 0.3);
+    border: solid 4px rgba(255, 255, 255, 0.2);
 
     border-radius: 50%;
 }
@@ -398,7 +399,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 25px;
     gap: 1.5rem;
 }
 
@@ -566,8 +566,6 @@ button {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    max-width: 1300px;
 }
 
 #physioHelpsWrapper .line {
@@ -587,11 +585,16 @@ button {
     height: 80px;
 }
 
+.sectionWrapper {
+    //background-color: red !important;
+    padding: 3rem 2rem;
+}
+
 .physioHelpsCards {
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    margin: 6rem auto 2rem auto;
+    margin: 6rem auto 0rem auto;
 }
 
 .physioHelpsCardIcon {
@@ -742,8 +745,6 @@ button {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    max-width: var(--maxWidth);
-    padding: 40px 30px;
 }
 
 .newLeistungen p {
@@ -755,7 +756,7 @@ button {
 }
 
 .newLeistungenLeft {
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 4rem auto;
 }
 
 .newLeistungenLeftInner {
@@ -919,14 +920,6 @@ button {
     display: none;
 }
 
-
-#fourthSection {
-    display: none;
-}
-
-#thirdSection {
-    display: none;
-}
 
 #testSection h5 {
     text-align: center;
@@ -1136,6 +1129,7 @@ button {
     border: solid 1px black;
     //background-image: url("src/logo.png");
     position: relative;
+
     display: none;
 }
 
@@ -1178,15 +1172,16 @@ button {
 }
 
 #contactWrapper {
-    background-image: url(src/BG_edit.jpg);
+    //background-image: url(src/BG_edit.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 200px;
     position: relative;
+    background-color: var(--ultraDarkColour);
 }
 
 .contactRightBG {
-    background-image: url(src/opacityTest.png);
+    //background-image: url(src/opacityTest.png);
     background-size: cover;
     background-position: bottom;
     width: 60%;
@@ -1196,14 +1191,7 @@ button {
     right: 0;
 }
 
-#contact {
-    //background-color: var(--ultraDarkColour);
-    background-color: rgba(11, 33, 79, 0.88);
-    background-color: rgba(11, 33, 79, 1);
-}
-
 .contactRight {
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

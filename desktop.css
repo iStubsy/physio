@@ -98,7 +98,8 @@
     }
 
     #header {
-        //width: var(--contentWidth);
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
         min-width: 1000px;
     }
 
@@ -112,15 +113,13 @@
         display: block;
     }
 
-    .sectionWrapper {
-        max-width: var(--maxWidth);
-        //width: var(--contentWidth);
-    }
-
     #physioHelpsWrapper {
         padding: 8rem 0;
         //clip-path: polygon(100% 0, 100% 85%, 35% 100%, 0% 85%, 0 0);
     }
+
+
+
 
     .physioHelpsCards {
         flex-direction: row;
@@ -378,6 +377,11 @@
 
     #content > section {
         //padding: 40px 0;
+    }
+
+    .sectionWrapper {
+        width: var(--contentWidth);
+        max-width: var(--maxWidth);
     }
 
     #logo2 {

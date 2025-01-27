@@ -122,7 +122,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: var(--maxWidth);
     }
 
     #header-left {
@@ -234,6 +233,18 @@
         margin: 0 auto;
     }
 
+    #contact {
+        display: flex;
+    }
+
+    .contactHeadline {
+        position: relative;
+        top: 0;
+        width: 40%;
+        min-height: 400px;
+        background-position: center;
+    }
+
     .contactRight {
         width: 60%;
         max-width: 800px;
@@ -244,8 +255,6 @@
         gap: 15px 30px;
         margin: 1rem 0 3rem 0;
     }
-
-    .contactRight-cardWrapper {}
 
 
     .firstSection_inner {
