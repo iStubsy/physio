@@ -14,8 +14,8 @@
         text-align: center;
     }
 
-    button {
-        margin: 0;
+    .justAbutton {
+        margin: 1.5rem 0;
     }
 
     .overlay {
@@ -146,13 +146,11 @@
     .newLeistungen h5 {
         text-align: left;
         width: 100%;
-        margin-bottom: 0;
     }
 
     .newLeistungen p {
         text-align: left;
         width: 100%;
-        margin: 1rem 0;
     }
 
     .newLeistungenRight {
