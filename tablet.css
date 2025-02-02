@@ -4,8 +4,8 @@
 
 
     h1 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 5.5rem;
+        line-height: 5.5rem;
     }
 
     h2 {
@@ -28,7 +28,6 @@
     p {
         text-align: center;
         margin: 0 auto;
-        color: var(--ultraDarkColour);
     }
 
     button {
@@ -51,6 +50,10 @@
 
     .yPhysioInner {
         padding: 50px 0px 0px 0px;
+    }
+
+    .sectionWrapper {
+        padding: 4rem 2rem;
     }
 
     #headerWrapper {
@@ -152,6 +155,10 @@
         display: none;
     }
 
+    #header_headlineWrapper {
+        gap: 1rem;
+    }
+
     #header_headlineWrapper h1 {
         text-align: left;
         text-shadow: none;
@@ -175,7 +182,6 @@
     }
 
     #physioHelpsWrapper {
-        padding: 4rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -183,7 +189,6 @@
 
     .physioHelps {
         margin: 0 auto;
-        padding: 0;
     }
 
     .physioHelps .smallText {
