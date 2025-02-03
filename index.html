@@ -42,6 +42,29 @@
 </head>
 
 <body>
+
+    <!-- <div class="loader-wrapper">
+
+        <div class="blueDots">
+            <div class="blueDot1"></div>
+            <div class="blueDot2"></div>
+            <div class="blueDot3"></div>
+            <div class="blueDot4"></div>
+            <div class="blueDot5"></div>
+            <div class="blueDot6"></div>
+            <div class="blueDot7"></div>
+            <div class="blueDot8"></div>
+            <div class="blueDot9"></div>
+            <div class="blueDot10"></div>
+        </div>
+
+        <img class="loadImage" src="src/logo.png" height="200px">
+        <div class="line-wobble"></div>
+
+
+
+    </div> -->
+
     <div class="overlay">
         <div class="overlayInner">
             <div class="closeButton">
@@ -460,6 +483,27 @@
     </div>
     <div class="backToTop"><i class="fa-solid fa-angle-up"></i></div>
     <script src="script.js"></script>
+
+
+    <script>
+        function changeDots() {
+            for (let i = 0; i < document.querySelector(".blueDots").children.length; i++) {
+                document.querySelector(".blueDots").children[i].style.backgroundColor = "black";
+            }
+
+            for (let i = 0; i < document.querySelector(".blueDots").children.length; i++) {
+                document.querySelector(".blueDots").children[i].style.transition = ".2s";
+
+                setTimeout(() => {
+                    document.querySelector(".blueDots").children[i].style.backgroundColor = "red";
+                }, i * 200); // Delay increases for each dot
+            }
+            setTimeout(changeDots, document.querySelector(".blueDots").children.length * 200);
+        }
+
+        changeDots();
+
+    </script>
 
 </body>
 
