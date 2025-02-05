@@ -156,6 +156,7 @@
     .newLeistungenRight {
         display: flex;
         justify-content: flex-end;
+        width: auto;
     }
 
     .newLeistungen-card {
@@ -892,9 +893,7 @@
         display: none;
     }
 
-    .backToTop {
-        display: none;
-    }
+    .backToTop {}
 
     .image-container {
         background-color: red;
