@@ -307,14 +307,63 @@ button {
     overflow: hidden;
 }
 
+.testCircleWrapper {
+    height: 460px;
+    width: 100%;
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.testCircle {
+    background-color: rgba(0, 0, 0, 0.02);
+    width: 800px;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    overflow: hidden;
+    border: solid 2px #ededed;
+
+}
+
+.testCircle img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    bottom: 30px;
+    margin: auto;
+
+    border-radius: 50%;
+
+    border: solid 3px white;
+
+}
+
+
+
+
 .imgBox {
     width: 100%;
     height: 100%;
-    //border-radius: 50%;
-    //width: 360px;
-    //height: 360px;
-    //margin: 40px auto 0 auto;
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    margin: 40px auto 0 auto;
     position: relative;
+
+    display: none;
 }
 
 .darkCircle {
@@ -362,6 +411,7 @@ button {
     position: absolute;
 }
 
+
 #header-left img {
     width: 100%;
     height: 100%;
@@ -369,6 +419,8 @@ button {
     object-fit: cover;
     object-position: 0 0;
     display: block;
+
+    border-radius: 50%;
 }
 
 #header-right {}
@@ -416,12 +468,13 @@ button {
 
 .subTitle {
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 
 .subTitle p {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: rgba(128, 128, 128, 0.70);
 }
 
@@ -438,7 +491,7 @@ button {
     border-radius: 100px;
     cursor: pointer;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.19);
-    padding: .5rem .5rem .5rem 1.2rem;
+    padding: .4rem .4rem .4rem 1.2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -448,7 +501,8 @@ button {
 
 .moreButton p {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 450;
     margin: 0;
 }
 
@@ -479,8 +533,8 @@ button {
     //display: flex;
     //align-items: center;
     background-color: white;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.04);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+    //border-bottom: solid 1px rgba(0, 0, 0, 0.04);
+    //box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
 }
 
 .navigationBar_inner {
