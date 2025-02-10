@@ -160,12 +160,12 @@
     }
 
     .newLeistungen-card {
-        width: 280px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
     }
 
     .newLeistungen-cardText {
-        transform: translateY(204px);
+        transform: translateY(225px);
     }
 
     .newLeistungen-cardTextMouseover {
@@ -309,8 +309,8 @@
     }
 
     .imgBox {
-        height: 580px;
-        width: 580px;
+        height: 560px;
+        width: 560px;
     }
 
     .darkCircle,

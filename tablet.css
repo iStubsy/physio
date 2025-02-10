@@ -369,4 +369,13 @@
     }
 
 
+    .testCircleWrapper {
+        display: none;
+    }
+
+    .imgBox {
+        display: block;
+    }
+
+
 }
