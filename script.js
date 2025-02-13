@@ -118,11 +118,11 @@ function moveDownRevealFun() {
 
 
             /* RESETS TRANSTION DELAY TO 0 SO OTHER ANIMATIONS CAN BE USED */
-            for (let y = 0; y < document.querySelectorAll(".physioHelpsCard").length; y++) {
+            /*for (let y = 0; y < document.querySelectorAll(".physioHelpsCard").length; y++) {
                 setTimeout(() => {
                     document.querySelectorAll(".physioHelpsCard")[y].style.transitionDelay = "0";
                 }, 1000);
-            }
+            }*/
 
         } else {
             // Optional: Reset animation if the element is not visible

@@ -15,11 +15,11 @@
 
 .opacityReveal {
     opacity: 0;
-    transition: 1s;
 }
 
 .moveRight {
     opacity: 0;
+    transform: translate(100px);
 }
 
 .active {
