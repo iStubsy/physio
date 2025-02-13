@@ -32,6 +32,10 @@ html {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 section {
@@ -554,7 +558,7 @@ button {
 
 #logo {
     height: 100%;
-    padding: 2px 3px;
+    //padding: 2px 3px;
 }
 
 .navigationBar_logoText {
@@ -1454,32 +1458,83 @@ button {
     color: white;
 }
 
-
-
-
 .loader-wrapper {
     width: 100%;
     height: 100%;
-    background-color: var(--ultraDarkColour);
-    background-color: #f0f0f0;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #eaeaea;
+}
+
+.loadImageWrapper {
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+
+.line-wobble {
+    --uib-size: 80px;
+    --uib-speed: 1.55s;
+    --uib-color: black;
+    --uib-line-weight: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--uib-line-weight);
+    width: var(--uib-size);
+    border-radius: calc(var(--uib-line-weight) / 2);
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.line-wobble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--ultraDarkColour);
+    opacity: 0.1;
+}
+
+.line-wobble::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: calc(var(--uib-line-weight) / 2);
+    animation: wobble var(--uib-speed) ease-in-out infinite;
+    transform: translateX(-90%);
+    background-color: var(--ultraDarkColour);
+}
+
+
+@keyframes wobble {
+
+    0%,
+    100% {
+        transform: translateX(-90%);
+    }
+
+    50% {
+        transform: translateX(90%);
+    }
 }
 
 .blueDot10 {
     width: 3px;
     height: 3px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
     top: 0;
-    bottom: 177.5px;
+    bottom: 181.5px;
     left: 73px;
     right: 0;
 }
@@ -1487,13 +1542,12 @@ button {
 .blueDot9 {
     width: 5px;
     height: 5px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
     top: 0;
-    bottom: 140.5px;
+    bottom: 145.5px;
     left: 86px;
     right: 0;
 }
@@ -1501,13 +1555,12 @@ button {
 .blueDot8 {
     width: 7px;
     height: 7px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
     top: 0;
-    bottom: 100px;
+    bottom: 105px;
     left: 91px;
     right: 0;
 }
@@ -1515,13 +1568,12 @@ button {
 .blueDot7 {
     width: 9px;
     height: 9px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
     top: 0;
-    bottom: 54px;
+    bottom: 59px;
     left: 84px;
     right: 0;
 }
@@ -1529,13 +1581,12 @@ button {
 .blueDot6 {
     width: 12px;
     height: 12px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
     top: 0;
-    bottom: 13.5px;
+    bottom: 19.5px;
     left: 53px;
     right: 0;
 }
@@ -1543,12 +1594,11 @@ button {
 .blueDot5 {
     width: 18px;
     height: 18px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
-    top: 20.5px;
+    top: 15.5px;
     bottom: 0;
     left: 8.5px;
     right: 0;
@@ -1558,12 +1608,11 @@ button {
 .blueDot4 {
     width: 10px;
     height: 10px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
-    top: 52px;
+    top: 47px;
     bottom: 0;
     left: 0;
     right: 35px;
@@ -1572,12 +1621,11 @@ button {
 .blueDot3 {
     width: 8px;
     height: 8px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
-    top: 92px;
+    top: 88px;
     bottom: 0;
     left: 0;
     right: 55px;
@@ -1586,12 +1634,11 @@ button {
 .blueDot2 {
     width: 5px;
     height: 5px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
 
     margin: auto;
-    top: 134px;
+    top: 130px;
     bottom: 0;
     left: 0;
     right: 60px;
@@ -1600,12 +1647,10 @@ button {
 .blueDot1 {
     width: 3.5px;
     height: 3.5px;
-    background-color: black;
     border-radius: 50%;
     position: absolute;
-
     margin: auto;
-    top: 173px;
+    top: 168px;
     bottom: 0;
     left: 0;
     right: 62px;
