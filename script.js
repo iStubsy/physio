@@ -197,6 +197,22 @@ function opacityReveal() {
     }
 }
 
+function opacityRevealSlow() {
+    var opacityRevealSlow = document.querySelectorAll(".opacityRevealSlow");
+    for (var i = 0; i < opacityRevealSlow.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 130;
+        if (elementTop < windowHeight - elementVisible) {
+            opacityRevealSlow[i].classList.add("active");
+        } else {
+            //reveals[i].classList.remove("active");
+        }
+    }
+}
+
+
+
 
 
 
