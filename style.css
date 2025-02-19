@@ -527,10 +527,7 @@ button {
     gap: .5rem;
 }
 
-.subTitle {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
+.subTitle {}
 
 
 .subTitle p {
