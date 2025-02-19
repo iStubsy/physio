@@ -6,6 +6,11 @@
         max-width: 800px;
     }
 
+    h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
     h2 {
         text-align: left;
     }
@@ -14,8 +19,8 @@
         text-align: center;
     }
 
-    .justAbutton {
-        margin: 1.5rem 0;
+    .justAButton {
+        margin: 1.5rem 0px;
     }
 
     .overlay {
@@ -44,8 +49,8 @@
 
     .navigationBar_inner {
 
-        width: var(--contentWidth);
         max-width: var(--maxWidth);
+        min-width: 900px;
         margin: 15px auto;
 
         display: flex;
@@ -100,7 +105,7 @@
     #header {
         width: var(--contentWidth);
         max-width: var(--maxWidth);
-        min-width: 1000px;
+        min-width: 1100px;
     }
 
     #header_headlineWrapper {
@@ -268,6 +273,10 @@
         color: rgba(255, 255, 255, 0.76);
     }
 
+    #header_inner {
+        gap: 4rem;
+    }
+
     #header-left {
         display: flex;
         justify-content: center;
@@ -380,10 +389,10 @@
     }
 
     .sectionWrapper {
-        width: var(--contentWidth);
+        //width: var(--contentWidth);
         max-width: var(--maxWidth);
-
-        padding: 9rem 0;
+        //min-width: 1000px;
+        padding: 9rem 0rem;
     }
 
     #logo2 {

@@ -58,7 +58,7 @@
                 <div class="blueDot10"></div>
             </div>
 
-            <img class="loadImage" src="src/loading-logo.png" height="200px">
+            <img class="loadImage" src="src/loading-logo.png" height="150px">
         </div>
         <div class="line-wobble"></div>
 
@@ -120,21 +120,26 @@
                 </div>
             </div>
             <div id="header_inner">
-                <div class="testCircleWrapper">
-                    <div class="testCircle">
 
-                        <div class="testImgBox">
-                            <img src="src/frederikEditLowQ.jpg">
-                        </div>
+                <!--<div class="anotherBox">
+                    <img src="src/frederikEditLowQSquare.png" width="100%">
+                </div>-->
+                <!--<div class="testImgBox">
+                    <img src="src/frederiklowQSquare.jpg" width="100%">
+                </div>-->
 
-                    </div>
+                <!-- <div class="boxi">
+                    <img src="src/frederiklowQSquare.jpg" width="100%">
                 </div>
+                <div class="testCircleWrapper">
+                    <div class="testCircle"></div>
+                </div>-->
 
                 <div id="header-left">
                     <div class="imgBox">
                         <div class="darkCircle"></div>
                         <div class="brightCircle"></div>
-                        <img src="src/frederikEditLowQ.jpg">
+                        <img src="src/frederiklowQSquare.jpg">
                     </div>
 
                     <div class="header-leftBG"></div>
@@ -504,7 +509,7 @@
                 document.querySelector(".blueDots").children[i].style.transition = ".2s";
 
                 setTimeout(() => {
-                    document.querySelector(".blueDots").children[i].style.backgroundColor = "var(--ultraDarkColour)";
+                    document.querySelector(".blueDots").children[i].style.backgroundColor = "var(--mainColour)";
                 }, i * 200); // Delay increases for each dot
             }
             setTimeout(changeDots, document.querySelector(".blueDots").children.length * 200);

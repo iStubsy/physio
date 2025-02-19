@@ -3,16 +3,9 @@
 document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
 
 
-
 $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
-
-    /**for (var y = 0; y < document.querySelectorAll(".overlayAnimation").length; y++) {
-        for (var x = 0; x < document.querySelectorAll(".overlayAnimation")[y].children.length; x++) {
-            document.querySelectorAll(".overlayAnimation")[y].children[x].classList.add("troi");
-        }
-    }**/
 });
 
 document.querySelector(".hamburgerMenu").onclick = function () {
