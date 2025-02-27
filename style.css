@@ -420,7 +420,7 @@ button {
     width: 100%;
     margin: 20px auto 0 auto;
     position: relative;
-    padding: 15px;
+    padding: 20px;
 }
 
 .imgBox img {
@@ -666,6 +666,10 @@ button {
     background-color: transparent;
     outline: none;
     border: none;
+
+    background-color: red;
+
+    height: 80px;
 }
 
 .hamburgerMenuScrolled {
@@ -714,7 +718,7 @@ button {
 }
 
 .sectionWrapper {
-    padding: 2rem 1.4rem 4rem 1.4rem;
+    padding: 2rem 1.8rem 4rem 1.8rem;
 }
 
 .physioHelpsCards {
