@@ -8,6 +8,8 @@ $(window).on("load", function () {
     document.getElementsByTagName("HTML")[0].style.overflow = "auto";
 });
 
+
+/*
 document.querySelector(".hamburgerMenu").onclick = function () {
 
     document.querySelector(".overlay").classList.add("overlayShow");
@@ -31,6 +33,8 @@ document.querySelector(".hamburgerMenu").onclick = function () {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "28px";
     }
 }
+
+*/
 
 
 
