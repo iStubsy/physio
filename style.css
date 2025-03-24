@@ -95,7 +95,7 @@ p {
     font-family: var(--secondFont);
     font-size: 1rem;
     text-align: left;
-    font-weight: 500;
+    font-weight: 480;
     line-height: 1.6rem;
     color: #414141;
     color: rgba(0, 0, 0, 0.80);
@@ -667,7 +667,7 @@ button {
     outline: none;
     border: none;
 
-    background-color: red;
+    background-color: transparent;
 
     height: 80px;
 }
@@ -891,6 +891,7 @@ button {
 
     position: sticky;
     top: 8rem;
+    top: 25vh;
 }
 
 .newLeistungenRight {
@@ -957,6 +958,7 @@ button {
 
 .newLeistungen-cardTextMouseover {
     transform: translateY(0);
+    background-color: rgba(11, 33, 79, 0.99);
 }
 
 .newLeistungen-cardTextHeadline {
