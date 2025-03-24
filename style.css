@@ -660,6 +660,8 @@ button {
     background-color: transparent;
     border: none;
     border-radius: 50%;
+
+    background-color: white;
 }
 
 .hamburgerMenu:active {
@@ -667,7 +669,7 @@ button {
     outline: none;
     border: none;
 
-    background-color: transparent;
+    background-color: white;
 
     height: 80px;
 }
