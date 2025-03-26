@@ -9,7 +9,6 @@ $(window).on("load", function () {
 });
 
 
-/*
 document.querySelector(".hamburgerMenu").onclick = function () {
 
     document.querySelector(".overlay").classList.add("overlayShow");
@@ -33,8 +32,6 @@ document.querySelector(".hamburgerMenu").onclick = function () {
         document.querySelectorAll(".hamburgerMenuLine")[i].style.margin = "28px";
     }
 }
-
-*/
 
 
 
