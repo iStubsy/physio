@@ -24,7 +24,7 @@
 
 .active {
     opacity: 1;
-    transition: opacity .4s ease-out, transform .4s ease-out, background-color .1s linear;
+    transition: opacity .4s ease-out, transform .5s ease-out, background-color .1s linear;
     transform: translateY(0);
     transition-delay: 0s;
 }

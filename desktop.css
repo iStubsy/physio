@@ -37,7 +37,6 @@
         //display: flex;
         //align-items: center;
         transition: ease-out .2s;
-        border-bottom: none;
     }
 
     .navigationBarScrolled {
@@ -97,15 +96,10 @@
     }
 
     #headerWrapper {
-        height: 100vh;
-        min-height: 800px;
-        max-height: 1000px;
-    }
+        //height: 70vh;
+        //min-height: 800px;
+        //max-height: 1000px;
 
-    #header {
-        width: var(--contentWidth);
-        max-width: var(--maxWidth);
-        min-width: 1100px;
     }
 
     #header_headlineWrapper {
@@ -114,7 +108,8 @@
 
     #header-emptyTop {
         width: 100%;
-        height: 100px;
+        height: 110px;
+        height: 101px;
         display: block;
     }
 
@@ -223,7 +218,7 @@
 
     #navigationBar_menuItem {
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1rem;
         height: 100%;
         padding: 10px 10px;
@@ -287,7 +282,7 @@
     }
 
     #header-right {
-        width: 45%;
+        width: 50%;
     }
 
     .header-leftBG {
@@ -322,8 +317,7 @@
     }
 
     .imgBox {
-        height: 560px;
-        width: 560px;
+        height: 800px;
     }
 
     .darkCircle,
@@ -333,10 +327,8 @@
 
     #header-left img {
 
-        border-radius: 50%;
-        //box-shadow: 3px 3px 5px lightGrey;
+        //border-radius: 20px;
         z-index: 1;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
     }
 
     .headerItemWrapper {
@@ -396,7 +388,7 @@
         //width: var(--contentWidth);
         max-width: var(--maxWidth);
         //min-width: 1000px;
-        padding: 9rem 0rem;
+        padding: 9rem 0;
     }
 
     #logo2 {
