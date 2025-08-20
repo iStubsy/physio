@@ -9,6 +9,7 @@
     h1 {
         font-size: 5rem;
         line-height: 5rem;
+        font-weight: 350;
     }
 
     h2 {
@@ -218,7 +219,7 @@
 
     #navigationBar_menuItem {
         cursor: pointer;
-        font-weight: 400;
+        font-weight: 420;
         font-size: 1rem;
         height: 100%;
         padding: 10px 10px;
@@ -226,6 +227,8 @@
         -ms-align-items: center;
         align-items: center;
         border-radius: 5px;
+
+        color: grey;
     }
 
     #navigationBar_menuItem:hover {
@@ -317,7 +320,11 @@
     }
 
     .imgBox {
-        height: 800px;
+        width: 100%;
+        min-height: 80vh;
+        height: 600px;
+        padding: 25px;
+        border-radius: 10px;
     }
 
     .darkCircle,
@@ -329,6 +336,7 @@
 
         //border-radius: 20px;
         z-index: 1;
+        object-position: 0px;
     }
 
     .headerItemWrapper {

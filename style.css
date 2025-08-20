@@ -5,7 +5,6 @@
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --ultraDarkColour: #021846;
-    --ultraDarkColour: #460202;
     --lightColour: #fcfcfc;
     --textBorderColour: #000000;
     //--lightColour: #f5f5f7;
@@ -93,7 +92,6 @@ h5 {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: left;
-    margin-bottom: .3rem;
 }
 
 p {
@@ -112,7 +110,7 @@ button {
     padding: .6rem 1.5rem;
     color: white;
     font-size: 1.1rem;
-    font-weight: 200;
+    font-weight: 300;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -544,7 +542,7 @@ button {
 }
 
 .quote {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     font-style: italic;
     font-weight: 400;
     font-size: 1.1rem;
@@ -561,7 +559,7 @@ button {
 .line {
     background-color: var(--darkColour);
     height: 2px;
-    width: 50px;
+    width: 30px;
 }
 
 .moreButton {
@@ -710,6 +708,38 @@ button {
     margin: 3.5px auto;
 }
 
+.pictureCard {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.19);
+    border: solid 1px var(--ultraDarkColour);
+    width: 300px;
+    height: 180px;
+    background-color: var(--darkColour);
+}
+
+.pictureCard img {
+    object-fit: cover;
+}
+
+.pictureCardOne {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.pictureCardTwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%) rotate(-10deg);
+}
+
+.pictureCardThree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, 20%) rotate(5deg);
+}
 
 #physioHelpsWrapper {
     //clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0% 95%, 0 0);
@@ -717,12 +747,6 @@ button {
     overflow: hidden;
     background-color: var(--lightColour);
 }
-
-.tast {
-    width: 800px;
-    padding: 20px;
-}
-
 
 .tast > p {
     text-align: left;
@@ -924,6 +948,7 @@ button {
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
+    gap: 1.4rem;
 
     position: sticky;
     top: 8rem;
