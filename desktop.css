@@ -9,7 +9,7 @@
     h1 {
         font-size: 5rem;
         line-height: 5rem;
-        font-weight: 350;
+        font-weight: 400;
     }
 
     h2 {
@@ -100,7 +100,6 @@
         //height: 70vh;
         //min-height: 800px;
         //max-height: 1000px;
-
     }
 
     #header_headlineWrapper {
@@ -273,6 +272,8 @@
 
     #header_inner {
         gap: 4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     #header-left {
@@ -323,7 +324,6 @@
         width: 100%;
         min-height: 80vh;
         height: 600px;
-        padding: 25px;
         border-radius: 10px;
     }
 
