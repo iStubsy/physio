@@ -133,7 +133,6 @@ function moveDownRevealFun() {
 
 
 
-
 /*
 function moveDownRevealFunOverlay() {
     var moveDownReveals = document.querySelectorAll(".moveDownRevealOverlay");
@@ -176,7 +175,6 @@ function moveDownRevealOverlay() {
     }
 }
 
-
 function opacityReveal() {
     var reveals = document.querySelectorAll(".opacityReveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -204,11 +202,6 @@ function opacityRevealSlow() {
         }
     }
 }
-
-
-
-
-
 
 function rotateOpacity() {
     var rotateOpacitySel = document.querySelectorAll(".rotateOpacitySel");
@@ -346,6 +339,49 @@ function lel() {
 
 
 
+/*
+function starAnimation() {
+    var cardAnimation = document.querySelectorAll(".rezension-top");
+
+    var windowHeight = window.innerHeight;
+    var elementTop = cardAnimation.getBoundingClientRect().top;
+    var elementVisible = 100;
+    if (elementTop < windowHeight - elementVisible) {
+
+        for (var i = 0; i < cardAnimation.children.length; i++) {
+            //cardAnimation.children[i].style.opacity = "1";
+            //cardAnimation.children[i].style.transform = "translateX(0px)";
+            cardAnimation[i].children[i].style.transitionDelay = i / 4 + "s";
+            cardAnimation[i].children[i].classList.add("show");
+        }
+    }
+}*/
+
+function starAnimation() {
+    var cardAnimations = document.querySelectorAll(".rezension-top");
+    var windowHeight = window.innerHeight;
+    var elementVisible = 100;
+
+    cardAnimations.forEach((card, index) => {
+        var elementTop = card.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - elementVisible) {
+            // loop through each child of this card
+            for (var i = 0; i < card.children.length; i++) {
+                card.children[i].style.transitionDelay = i / 4 + "s";
+                card.children[i].classList.add("show");
+            }
+        }
+    });
+}
+
+
+
+
+
+
+
+
 window.addEventListener("scroll", goActive);
 window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveDown);
@@ -359,3 +395,5 @@ window.addEventListener("load", moveDownRevealFun);
 window.addEventListener("load", moveRight);
 //window.addEventListener("load", moveTop);
 window.addEventListener("load", lel);
+window.addEventListener("scroll", starAnimation);
+window.addEventListener("load", starAnimation);

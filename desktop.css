@@ -143,6 +143,10 @@
         padding: 0;
     }
 
+    .newLeistungen-offGrid {
+        position: relative;
+    }
+
     .newLeistungen h5 {
         text-align: left;
         width: 100%;
@@ -162,6 +166,17 @@
     .newLeistungen-card {
         width: 300px;
         height: 300px;
+        transform: translateY(50px);
+    }
+
+    .cardUp {
+        position: absolute;
+        top: -50px;
+    }
+
+    .cardDown {
+        position: absolute;
+        bottom: -50px;
     }
 
     .newLeistungen-cardText {
@@ -271,7 +286,6 @@
     }
 
     #header_inner {
-        gap: 4rem;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -325,19 +339,23 @@
         min-height: 80vh;
         height: 600px;
         border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
+
 
     .darkCircle,
     .brightCircle {
         display: none;
     }
 
-    #header-left img {
+    /*#header-left img {
 
         //border-radius: 20px;
         z-index: 1;
         object-position: 0px;
-    }
+    } */
 
     .headerItemWrapper {
         flex-direction: row;
@@ -396,7 +414,7 @@
         //width: var(--contentWidth);
         max-width: var(--maxWidth);
         //min-width: 1000px;
-        padding: 9rem 0;
+        padding: 6rem 0;
     }
 
     #logo2 {

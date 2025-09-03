@@ -5,7 +5,7 @@
     --darkColour: #172E60;
     --ultraDarkColour: #0b214f;
     --ultraDarkColour: #021846;
-    --lightColour: #fcfcfc;
+    --lightColour: #f8f8f8;
     --textBorderColour: #000000;
     //--lightColour: #f5f5f7;
     //--lightColour: #f5fbff;
@@ -313,10 +313,10 @@ button {
     position: relative;
 }
 
-#header-left {
+/*#header-left {
     position: relative;
     overflow: hidden;
-}
+}*/
 
 .anotherBox {
     background-color: blue;
@@ -423,11 +423,13 @@ button {
 .imgBox {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    width: 100%;
+    //border-radius: 50%;
     margin: 20px auto 0 auto;
     position: relative;
     padding: 20px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .darkCircle {
@@ -473,21 +475,25 @@ button {
     border-radius: 50%;
     background-color: rgba(23, 46, 96, 0.03);
     position: absolute;
+
+
+    display: none;
 }
 
 
 #header-left img {
     width: 100%;
-    height: 100%;
 
     object-fit: cover;
     object-position: 0 0;
     display: block;
 
-    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-#header-right {}
+#header-right {
+    padding: 2rem 1.8rem 4rem 1.8rem;
+}
 
 .headerItemWrapper {
     display: none;
@@ -709,6 +715,11 @@ button {
     margin: 3.5px auto;
 }
 
+#greetings {
+    padding: 1.8rem;
+}
+
+
 #physioHelpsWrapper {
     //clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0% 95%, 0 0);
     position: relative;
@@ -896,6 +907,23 @@ button {
 
 #newLeistungenWrapper {
     width: 100%;
+    position: relative;
+
+    padding: 20px;
+}
+
+.newAbsolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    //background-image: url(src/aboutMe.jpg);
+    background-color: #989898;
+    opacity: 0.08;
+    height: 100%;
+    width: 45%;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+
+    display: none;
 }
 
 .newLeistungen {
@@ -903,6 +931,11 @@ button {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    background-color: var(--lightColour);
+    padding: 20px 15px 40px 15px;
+
+    border-radius: 15px;
 }
 
 .newLeistungen .line {
@@ -916,11 +949,7 @@ button {
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
-
-    position: sticky;
-    top: 8rem;
-    top: 25vh;
+    gap: 1rem;
 }
 
 .newLeistungenRight {
@@ -930,8 +959,8 @@ button {
 
 .leistungenRightGrid {
     display: grid;
-    gap: 50px;
     grid-template-columns: auto;
+    gap: 40px;
 }
 
 .newLeistungen-card {
@@ -1427,10 +1456,13 @@ button {
 
 #rezensionen {
     min-height: 10px;
-    padding: 4rem 5rem 8rem 5rem;
+    padding: 10rem 5rem 10rem 5rem;
     overflow: scroll;
     display: flex;
     gap: 5rem;
+
+
+    display: none;
 }
 
 .rezension {
@@ -1446,7 +1478,13 @@ button {
 
     font-family: var(--mainFont);
     line-height: 24px;
+    transition: ease-out .1s;
+    text-decoration: none;
+}
 
+.rezension:hover {
+    transform: scale(1.06);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .rezension > div {
@@ -1463,6 +1501,14 @@ button {
 .sterne {
     width: 28px;
     height: 28px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: ease-out .5s;
+}
+
+.show {
+    transform: translate(0);
+    opacity: 1;
 }
 
 .rezension-middle {
@@ -1475,6 +1521,7 @@ button {
     z-index: 1;
     text-align: left;
     color: #414141;
+    font-size: 0.9;
 }
 
 .zitat {
@@ -1492,7 +1539,14 @@ button {
 
 }
 
-.rezension-bottom {}
+.rezension-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rezension-bottom p {
+    margin: 0;
+}
 
 
 

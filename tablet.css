@@ -119,7 +119,7 @@
 
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        gap: 35px;
     }
 
     #header-left {
@@ -127,13 +127,13 @@
         height: 100%;
     }
 
-    #header-left img {
+    /* #header-left img {
         height: 100%;
         width: 100%;
         margin: 0;
         object-position: -200px;
         border-radius: 0;
-    }
+    }*/
 
     #header-right {
         width: 50%;
@@ -236,6 +236,10 @@
         font-size: 1.4rem;
     }
 
+    #greetings {
+        padding: 2rem 1.8rem 4rem 1.8rem;
+    }
+
     #newLeistungenWrapper {}
 
     .newLeistungen {
@@ -247,6 +251,16 @@
         margin: 0;
     }
 
+    .newLeistungenLeftInner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+
+        position: sticky;
+        top: 8rem;
+        top: 25vh;
+    }
+
     .newLeistungen p {
         text-align: center;
         width: 80%;
@@ -256,6 +270,28 @@
     .newLeistungenRight {
         width: 50%;
         margin: 0 auto;
+    }
+
+    .leistungenRightGrid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto;
+        width: 635px;
+        height: 635px;
+    }
+
+    .newAbsolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+        //background-image: url(src/aboutMe.jpg);
+        background-color: #989898;
+        opacity: 0.08;
+        height: 100%;
+        width: 45%;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+
+        display: none;
     }
 
     .justAButton {
@@ -313,6 +349,7 @@
         display: grid;
         gap: 35px;
         grid-template-columns: auto auto;
+        margin: 0 auto;
     }
 
     .aboutMeTextBox {
