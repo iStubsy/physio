@@ -21,7 +21,7 @@
     //--secondFont: "DM Sans", serif;
     //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1300px;
+    --maxWidth: 1400px;
 }
 
 * {
@@ -55,7 +55,6 @@ h1 {
     color: var(--darkColour);
 
     font-weight: 450;
-    font-weight: 300;
     font-size: 2.5rem;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
@@ -90,7 +89,7 @@ h4 {
 h5 {
     color: var(--darkColour);
     font-family: var(--mainFont);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: left;
 }
@@ -111,10 +110,11 @@ button {
     padding: .6rem 1.5rem;
     color: white;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 350;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 auto;
 
     display: block;
 }
@@ -424,9 +424,7 @@ button {
     width: 100%;
     height: 100%;
     //border-radius: 50%;
-    margin: 20px auto 0 auto;
     position: relative;
-    padding: 20px;
 
     display: flex;
     justify-content: center;
@@ -539,12 +537,15 @@ button {
 .titleSubtitle {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: .8rem;
+
+    text-align: center;
 }
 
 .subTitle {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -554,19 +555,23 @@ button {
     font-weight: 400;
     font-size: 1.1rem;
     color: #959595;
+    text-align: center;
 }
 
 
 .subTitle p {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--darkColour);
+    color: rgba(2, 24, 70, 0.84);
+    text-align: center;
 }
 
 .line {
     background-color: var(--darkColour);
     height: 2px;
-    width: 30px;
+    width: 40px;
+    background-color: rgb(2, 24, 70);
 }
 
 .moreButton {
@@ -582,6 +587,7 @@ button {
     gap: 1rem;
     overflow: hidden;
     margin-top: 1.4rem;
+
 }
 
 .moreButton p {
@@ -708,7 +714,7 @@ button {
 }
 
 .hamburgerMenuLine {
-    height: 3px;
+    height: 2.5px;
     width: 34px;
     background-color: rgba(23, 46, 96, 0.95);
     border-radius: 3px;
@@ -938,6 +944,10 @@ button {
     border-radius: 15px;
 }
 
+.newLeistungen button {
+    margin: 5px 0 0 0;
+}
+
 .newLeistungen .line {
     margin: .8rem 0;
 }
@@ -993,6 +1003,7 @@ button {
     //background-color: var(--ultraDarkColour);
     color: white;
     background-color: var(--ultraDarkColour);
+    background-color: rgba(2, 24, 70, 0.95);
     font-family: var(--mainFont);
     font-weight: 400;
     position: absolute;
@@ -1455,47 +1466,25 @@ button {
 
 
 #rezensionen {
-    min-height: 10px;
-    padding: 10rem 5rem 10rem 5rem;
-    overflow: scroll;
+    padding: 10rem 0rem 10rem 0rem;
+    overflow: hidden;
+}
+
+.rezensionenSlider {
     display: flex;
-    gap: 5rem;
+    width: max-content;
+    animation: scroll 30s linear infinite;
 
-
-    display: none;
 }
 
-.rezension {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    /* prevents shrinking */
-    width: 550px;
-    background-color: #f8f8f8;
-    padding: 25px 30px;
-    float: left;
-    border-radius: 20px;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
 
-    font-family: var(--mainFont);
-    line-height: 24px;
-    transition: ease-out .1s;
-    text-decoration: none;
-}
-
-.rezension:hover {
-    transform: scale(1.06);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.rezension > div {
-    min-height: 10px;
-}
-
-.rezension-top {
-
-    display: flex;
-    justify-content: flex-end;
-    gap: 3px;
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .sterne {
@@ -1506,9 +1495,29 @@ button {
     transition: ease-out .5s;
 }
 
-.show {
-    transform: translate(0);
-    opacity: 1;
+.rezension {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* prevents shrinking */
+    width: 550px;
+    background-color: var(--lightColour);
+    padding: 25px 30px;
+    float: left;
+    border-radius: 20px;
+
+    font-family: var(--mainFont);
+    line-height: 24px;
+    transition: ease-out .1s;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+.rezension-top {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
 }
 
 .rezension-middle {

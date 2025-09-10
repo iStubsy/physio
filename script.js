@@ -375,7 +375,31 @@ function starAnimation() {
     });
 }
 
+function gridCardAnimation() {
+    var cardAnimations = document.querySelectorAll(".leistungenRightGrid");
+    var windowHeight = window.innerHeight;
+    var elementVisible = 100;
 
+    cardAnimations.forEach((card) => {
+        var elementTop = card.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - elementVisible) {
+            // Collect all children (.cardUp and .cardDown)
+            const children = card.querySelectorAll(".cardUp, .cardDown");
+
+            children.forEach((el, i) => {
+                el.style.transitionDelay = (i * 0.2) + "s"; // staggered globally
+                if (el.classList.contains("cardUp")) {
+                    //el.style.transform = "translate(0, -80px)";
+                    el.classList.add("cardUp_show");
+                } else if (el.classList.contains("cardDown")) {
+                    //el.style.transform = "translate(0, 80px)";
+                    el.classList.add("cardDown_show");
+                }
+            });
+        }
+    });
+}
 
 
 
@@ -394,6 +418,10 @@ window.addEventListener("load", moveDownRevealOverlay);
 window.addEventListener("load", moveDownRevealFun);
 window.addEventListener("load", moveRight);
 //window.addEventListener("load", moveTop);
-window.addEventListener("load", lel);
+
+
 window.addEventListener("scroll", starAnimation);
 window.addEventListener("load", starAnimation);
+
+window.addEventListener("scroll", gridCardAnimation);
+window.addEventListener("load", gridCardAnimation);
