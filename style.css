@@ -1432,16 +1432,6 @@ button {
 .contactRight-cardContent p {
     color: white;
     text-align: left;
-
-
-    color: red;
-    /* keep your default text color */
-    text-decoration: none;
-    /* remove underline if applied */
-    -webkit-text-size-adjust: 100%;
-    /* iOS sometimes tweaks text */
-    -webkit-touch-callout: none;
-    /* prevent callout on long press */
 }
 
 .contactRight-cardIcon {
