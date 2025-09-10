@@ -481,9 +481,9 @@ button {
 
 #header-left img {
     width: 100%;
-
+    aspect-ratio: 1;
     object-fit: cover;
-    object-position: 0 0;
+    //object-position: 0 0;
     display: block;
 
     background-color: rgba(0, 0, 0, 0.05);
@@ -1432,6 +1432,16 @@ button {
 .contactRight-cardContent p {
     color: white;
     text-align: left;
+
+
+    color: inherit;
+    /* keep your default text color */
+    text-decoration: none;
+    /* remove underline if applied */
+    -webkit-text-size-adjust: 100%;
+    /* iOS sometimes tweaks text */
+    -webkit-touch-callout: none;
+    /* prevent callout on long press */
 }
 
 .contactRight-cardIcon {
