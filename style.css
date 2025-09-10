@@ -1898,3 +1898,18 @@ button {
     transition: background-color 1s ease;
     /* 1 second fade */
 }
+
+a[href^="tel"],
+a[href^="tel"]:link,
+a[href^="tel"]:visited {
+    color: white;
+    /* use your text color */
+    text-decoration: none;
+    /* remove underline */
+}
+
+a[href^="tel"]:hover,
+a[href^="tel"]:active {
+    color: white;
+    text-decoration: none;
+}
