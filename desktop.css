@@ -3,7 +3,6 @@
 
     p {
         text-align: center;
-        max-width: 800px;
     }
 
     h1 {
@@ -51,6 +50,7 @@
 
         max-width: var(--maxWidth);
         min-width: 900px;
+        width: 80%;
         margin: 15px auto;
 
         display: flex;
@@ -140,15 +140,11 @@
     .newLeistungen {
         flex-direction: row;
         gap: 6rem;
-        padding: 4rem 3rem;
+        padding: 4rem 0rem;
         margin: 3rem auto 8rem auto;
 
         max-width: var(--maxWidth);
-        width: 90%;
-    }
-
-    .newLeistungen button {
-        margin-top: 8px;
+        width: 80%;
     }
 
     .newLeistungen h5 {
@@ -321,6 +317,7 @@
 
     #header-right {
         width: 50%;
+        background-image: url("/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/diagonal-thin-dark.png");
     }
 
     .header-leftBG {
@@ -413,11 +410,6 @@
         line-height: 2rem;
     }
 
-    #content {
-        display: flex;
-        flex-direction: column;
-    }
-
     .cta-button {
         background-color: var(--darkColour);
         color: white;
@@ -429,10 +421,6 @@
         font-size: .9rem;
         position: relative;
         margin: 30px 0 0 0;
-    }
-
-    #content > section {
-        //padding: 40px 0;
     }
 
     .sectionWrapper {

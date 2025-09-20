@@ -403,9 +403,6 @@ function gridCardAnimation() {
 
 
 
-
-
-
 window.addEventListener("scroll", goActive);
 window.addEventListener("scroll", rotateOpacity);
 window.addEventListener("scroll", moveDown);

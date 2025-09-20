@@ -481,7 +481,7 @@ button {
 
 #header-left img {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3 / 2.5;
     object-fit: cover;
     //object-position: 0 0;
     display: block;
@@ -695,7 +695,8 @@ button {
     border: none;
     border-radius: 50%;
 
-    background-color: white;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
 }
 
 .hamburgerMenu:active {
@@ -944,10 +945,6 @@ button {
     border-radius: 15px;
 }
 
-.newLeistungen button {
-    margin: 5px 0 0 0;
-}
-
 .newLeistungen .line {
     margin: .8rem 0;
 }
@@ -959,7 +956,6 @@ button {
 .newLeistungenLeftInner {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .newLeistungenRight {
