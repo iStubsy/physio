@@ -196,6 +196,7 @@
         width: 70%;
         max-width: 1500px;
         margin: 4rem auto;
+        padding: 5rem;
     }
 
     #greetings p {
@@ -226,9 +227,12 @@
 
     .praxis {
         display: flex;
+        flex-direction: row-reverse;
         width: 90%;
         max-width: var(--maxWidth);
         margin: 12rem auto 15rem auto;
+
+        background-image: url('/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/diagonal-thin-dark.png');
     }
 
     .praxis h5,
@@ -273,7 +277,7 @@
         width: 2rem;
         height: auto;
         aspect-ratio: 1;
-        margin: 2rem 1rem;
+        margin-top: 1.2rem;
     }
 
     #physioHelpsWrapper {
@@ -310,9 +314,6 @@
         font-size: 1.4rem;
     }
 
-    #greetings {
-        padding: 2rem 1.8rem 4rem 1.8rem;
-    }
 
     #newLeistungenWrapper {
         //max-width: var(--maxWidth);
