@@ -235,6 +235,11 @@
         background-image: url('/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/diagonal-thin-dark.png');
     }
 
+    .icono {
+        display: block;
+
+    }
+
     .praxis h5,
     .praxis p {
         width: 100%;
