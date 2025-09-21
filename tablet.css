@@ -197,6 +197,7 @@
         max-width: 1500px;
         margin: 4rem auto;
         padding: 5rem;
+        background-color: var(--lightColour: #f8f8f8);
     }
 
     #greetings p {
@@ -230,9 +231,7 @@
         flex-direction: row-reverse;
         width: 90%;
         max-width: var(--maxWidth);
-        margin: 12rem auto 15rem auto;
-
-        background-image: url('/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/diagonal-thin-dark.png');
+        margin: 8rem auto;
     }
 
     .icono {
@@ -251,10 +250,25 @@
     }
 
     .leftInner {
+        //position: sticky;
+        //top: 50%;
+        //transform: translateY(-50%);
+        //max-width: 500px;
+
+
+        //transition: 1s;
+        //top: 100px;
+        //transform: translateX(-520px);
+
         position: sticky;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 500px;
+        /* Stays visible while scrolling */
+        top: 50px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: cornflowerblue;
+        border-radius: 12px;
+        transition: transform 0.05s linear;
     }
 
 
@@ -265,12 +279,12 @@
         justify-content: center;
         align-items: center;
 
-        padding-top: 6rem;
+        margin-top: 18rem;
     }
 
     .praxis img {
         width: 420px;
-        height: 200px;
+        height: 160px;
         object-fit: cover;
         margin: 10px 0;
         border-radius: 10px;

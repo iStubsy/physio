@@ -123,7 +123,7 @@ function moveDownRevealFun() {
             for (var x = 0; x < allChildren.length; x++) {
                 if (allChildren[x].tagName !== "IMG") { // Exclude images
                     allChildren[x].style.transitionDelay = "0s";
-                    // allChildren[x].classList.remove("active");
+                    allChildren[x].classList.remove("active");
                 }
             }
         }
@@ -245,13 +245,13 @@ function moveRight() {
 
         var windowHeight = window.innerHeight;
         var elementTop = moveRight[i].getBoundingClientRect().top;
-        var elementVisible = 220;
+        var elementVisible = 580;
         if (elementTop < windowHeight - elementVisible) {
 
             moveRight[i].classList.add("active");
 
         } else {
-            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+            moveRight[i].classList.remove("active");
         }
     }
 }
@@ -401,6 +401,21 @@ function gridCardAnimation() {
     });
 }
 
+
+const box = document.querySelector(".moving-box");
+const maxScroll = 500; // scroll distance at which movement stops
+const maxMove = 300; // maximum horizontal move in px
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    if (scrollY < maxScroll) {
+        const moveX = (scrollY / maxScroll) * maxMove;
+        box.style.transform = `translateX(${moveX}px)`;
+    } else {
+        // stay at the final position
+        box.style.transform = `translateX(${maxMove}px)`;
+    }
+});
 
 
 window.addEventListener("scroll", goActive);
