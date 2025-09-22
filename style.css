@@ -1052,7 +1052,7 @@ button {
 
 .newLeistungen-cardTextMouseover {
     transform: translateY(0);
-    background-color: var(--ultraDarkColour);
+    background-color: rgba(2, 24, 70, 0.97);
 }
 
 .newLeistungen-cardTextHeadline {
