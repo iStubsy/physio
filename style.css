@@ -117,6 +117,8 @@ button {
     margin: 0 auto;
 
     display: block;
+
+    margin-top: 1.5rem;
 }
 
 .justAButton {
@@ -540,6 +542,7 @@ button {
     gap: .8rem;
 
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .subTitle {
@@ -550,7 +553,6 @@ button {
 }
 
 .quote {
-    margin: 1.5rem 0;
     font-style: italic;
     font-weight: 400;
     font-size: 1.1rem;
@@ -940,6 +942,10 @@ button {
     position: relative;
 
     padding: 20px;
+}
+
+#newLeistungenWrapper button {
+    margin: 1.5rem 0 0 0;
 }
 
 .newAbsolute {

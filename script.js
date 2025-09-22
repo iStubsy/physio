@@ -123,7 +123,7 @@ function moveDownRevealFun() {
             for (var x = 0; x < allChildren.length; x++) {
                 if (allChildren[x].tagName !== "IMG") { // Exclude images
                     allChildren[x].style.transitionDelay = "0s";
-                    allChildren[x].classList.remove("active");
+                    //allChildren[x].classList.remove("active");
                 }
             }
         }
@@ -402,20 +402,25 @@ function gridCardAnimation() {
 }
 
 
-const box = document.querySelector(".moving-box");
-const maxScroll = 500; // scroll distance at which movement stops
-const maxMove = 300; // maximum horizontal move in px
+function width() {
+    var width = document.querySelectorAll(".width");
+    for (var i = 0; i < width.length; i++) {
 
-window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    if (scrollY < maxScroll) {
-        const moveX = (scrollY / maxScroll) * maxMove;
-        box.style.transform = `translateX(${moveX}px)`;
-    } else {
-        // stay at the final position
-        box.style.transform = `translateX(${maxMove}px)`;
+        var windowHeight = window.innerHeight;
+        var elementTop = width[i].getBoundingClientRect().top;
+        var elementVisible = 580;
+        if (elementTop < windowHeight - elementVisible) {
+
+            width[i].classList.add("width100");
+
+        } else {
+            width[i].classList.remove("width100");
+        }
     }
-});
+}
+
+
+
 
 
 window.addEventListener("scroll", goActive);
