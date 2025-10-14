@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="testSectionCss.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -191,37 +193,87 @@
     </div>
 
     <div id="greetings" class="opacityReveal">
-        <h2>Ein herzliches Hallo!</h2>
-        <p>Ich bin Frederik Weber und heiße Sie Willkommen zu meinem Onlineauftritt.</p><br>
-        <p>Als Physiotherapeut und empathischer Mensch schätze ich vor allem den persönlichen Kontakt, möchte im wahrsten Sinne des Wortes in "Verbindung" treten.</p>
-        <p>Meine Webseite bietet mir zusätzlich die Möglichkeit auf virtuelle Weise mit Ihnen in Kontakt zu treten und Ihnen so einen kleinen Einblick in meine Praxis zu geben.</p><br>
-        <p>Vom Kleinkind, über den Profisportler bis hin zum Senior durfte ich bereits viele Menschen auf ihrem Weg zu einer verbesserten Lebensqualität begleiten. Gerne begleite ich auch Sie bei Ihrem persönlichen Anliegen.</p>
+        <div class="rightBox">
+            <h5>Ein herzliches Hallo!</h5>
+            <p>Ich bin Frederik Weber und heiße Sie Willkommen zu meinem Onlineauftritt.</p><br>
+            <p>Als Physiotherapeut und empathischer Mensch schätze ich vor allem den persönlichen Kontakt, möchte im wahrsten Sinne des Wortes in "Verbindung" treten.</p>
+            <p>Meine Webseite bietet mir zusätzlich die Möglichkeit auf virtuelle Weise mit Ihnen in Kontakt zu treten und Ihnen so einen kleinen Einblick in meine Praxis zu geben.</p><br>
+            <p>Vom Kleinkind, über den Profisportler bis hin zum Senior durfte ich bereits viele Menschen auf ihrem Weg zu einer verbesserten Lebensqualität begleiten. Gerne begleite ich auch Sie bei Ihrem persönlichen Anliegen.</p>
+        </div>
+        <div class="rightBox">
+            <img src="src/frontDoor.JPG" width="100%">
+        </div>
     </div>
 
     <section class="praxis">
-        <div class="praxisBackground"></div>
-        <div class="left-container">
-            <div class="leftInner">
-                <h5>Die Praxis</h5>
+        <div class="praxisInner">
+            <div class="left-container">
+                <div class="praxisBackground"></div>
+                <div class="leftInner fromBottomWrapper">
+                    <div class="titleSubtitle">
+                        <h5>Die Praxis</h5>
+                    </div>
+                    <p>Meine Praxis in Bolanden ist das Zentrum meiner Arbeit.</p>
+                    <p>Aber auch darüber hinaus sehe ich mich als Wegbegleiter.</p>
+                    <p>So durfte ich bereits bei mehreren Turnieren und Wettkämpfen hautnah dabei sein und meine Patienten dabei unterstützen das Beste aus sich herauszuholen. </p>
+
+                    <div class="adresse">
+                        <img class="icono" src="src/location.png" width="100%">
+                        <p>Bolandern-Weierhof</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-container fromBottomWrapper">
+                <!--<div class="imgBoxo"><img src="src/praxis1.JPG"></div>
+            <div class="imgBoxo toTheSide"><img src="src/praxis2.JPG"></div>
+            <div class="imgBoxo"><img src="src/praxis3.JPG"></div>-->
+                <!--<img src="src/praxis1.JPG">-->
+                <div class="parent">
+                    <div class="praxisGridItem1">
+                        <div class="gridItemOverlay"></div>
+                        <img src="src/praxis1.JPG" height="100%">
+                    </div>
+                    <div class="praxisGridItem2">
+                        <div class="gridItemOverlay">
+                        </div><img src="src/praxis2.JPG" height="100%">
+                    </div>
+                    <div class="praxisGridItem3">
+                        <div class="gridItemOverlay"></div>
+                        <img src="src/praxis3.JPG" height="100%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="praxis2">
+        <div class="praxis2Inner">
+            <div class="praxis2TextWrapper">
+                <div class="titleSubtitle">
+                    <h5>Die Praxis</h5>
+                </div>
                 <p>Meine Praxis in Bolanden ist das Zentrum meiner Arbeit.</p>
                 <p>Aber auch darüber hinaus sehe ich mich als Wegbegleiter.</p>
-                <p>So durfte ich bereits bei mehreren Turnieren und Wettkämpfen hautnah dabei sein und meine Patienten dabei unterstützen das Beste aus sich herauszuholen. </p>
-
-                <div class="adresse">
-                    <img class="icono" src="src/location.png" width="100%">
-                    <p>Bolandern-Weierhof</p>
-
-
+                <p>So durfte ich bereits bei mehreren Turnieren und Wettkämpfen hautnah dabei sein und meine Patienten dabei unterstützen das Beste aus sich herauszuholen.</p>
+            </div>
+            <div class="praxis2ImgWrapper">
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis1.JPG" alt="">
+                </div>
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis2.JPG" alt="">
+                </div>
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis3.JPG" alt="">
                 </div>
             </div>
         </div>
-        <div class="right-container fromBottomWrapper">
-            <div><img src="src/behandlung.jpg"></div>
-            <div class="toTheSide"><img src="src/behandlung.jpg"></div>
-            <div><img src="src/behandlung.jpg"></div>
-        </div>
     </section>
-
     <!--<div class="sectionImagePadding">
                 <div class="sectionImage"></div>
             </div>
@@ -595,7 +647,9 @@
             <div class="sectionImage"></div>
         </div>
         <div class="sectionWrapper">
-            <h5>Unsere Partner</h5>
+            <div class="titleSubtitle">
+                <h5>Unsere Partner</h5>
+            </div>
             <p>Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</p>
             <div class="flexBox">
                 <img src="src/HHG.png" height="150px">

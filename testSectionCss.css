@@ -62,3 +62,53 @@
     font-size: 2.5rem;
     color: var(--darkColour);
 }
+
+.praxis2 {
+    background-color: var(--lightColour);
+}
+
+.praxis2Inner {
+    //width: 90%;
+    //max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.praxis2Inner p {
+    width: 800px;
+}
+
+.praxis2ImgWrapper {
+    display: flex;
+
+    position: relative;
+}
+
+.praxis2ImgWrapper img {
+    //object-fit: cover;
+    //margin: 5rem 1.6rem 0 1.6rem;
+
+    //border-radius: 10px;
+    //border: solid 2px var(--ultraDarkColour);
+    width: 100%;
+    //aspect-ratio: 1:1.4;
+    filter: grayscale(40%);
+}
+
+.praxis2ImgWrapper img:nth-child(2) {
+    //transform: translateY(30px);
+}
+
+.henry {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1:1.4;
+    margin: 5rem 1.6rem 0 1.6rem;
+
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid 2px var(--ultraDarkColour);
+}

@@ -23,7 +23,6 @@
         font-size: 3.2rem;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 1.2rem;
     }
 
     p {
@@ -192,30 +191,36 @@
     }
 
     #greetings {
-        width: 70%;
-        max-width: 1500px;
-        margin: 4rem auto;
+        //width: 70%;
+        //max-width: 1500px;
+        margin: 10rem auto;
         background-color: var(--lightColour: #f8f8f8);
+        display: flex;
+        max-width: var(--maxWidth);
+        width: 80%;
+        gap: 5rem;
     }
 
     #greetings p {
         text-align: left;
-        width: 800px;
     }
 
-    #greetings h2 {
-        width: 800px;
-        margin: 0 auto;
+    #greetings h5 {
+        //width: 800px;
         text-align: left;
     }
 
     #greetings .rightBox {
         width: 50%;
-        padding: 50px;
     }
 
     .rightBox p {
         text-align: left;
+    }
+
+    .rightBox img {
+        aspect-ratio: 1/.8;
+        object-fit: cover;
     }
 
     .leftBox {
@@ -226,23 +231,54 @@
 
     .praxis {
         position: relative;
+        margin: 8rem auto 15rem auto;
+        //background-color: var(--lightGrey);
+
+        //background-color: var(--ultraDarkColour);
+        background-color: var(--lightGrey);
+        width: 100%;
+        padding: 4px;
+    }
+
+
+    .gridItemOverlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0.2;
+    }
+
+    .praxis p,
+    .praxis h5 {
+        color: rgba(255, 255, 255, 0.75) !important;
+        font-weight: 450;
+    }
+
+    .praxisInner {
         display: flex;
         flex-direction: row-reverse;
+        //padding: 4rem;
+        gap: 4px;
         width: 90%;
         max-width: var(--maxWidth);
-        margin: 15rem auto;
-        gap: 3rem;
+        margin: 0 auto;
     }
 
     .praxisBackground {
         //background-color: var(--lightColour);
+        //background-image: url("src/BG_edit.jpg");
+        //background-color: var(--ultraDarkColour);
+        //opacity: .05;
         //clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-        background-image: url("src/diagonal-thin-dark.png");
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 120%;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(2, 24, 70, 0.95);
+        background-position: center;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 
 
@@ -275,7 +311,15 @@
         position: relative;
         width: 100%;
         //transform: translateY(-50%);
+        //margin: auto;
+        //background-color: var(--ultraDarkColour);
+        //border-radius: 10px;
+        background-color: rgba(2, 24, 70, 0.95);
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
     }
+
 
     .leftInner {
 
@@ -284,10 +328,11 @@
         //top: 100px;
         //transform: translateX(-520px);
 
-        position: sticky;
-        top: 25vh;
+        //position: sticky;
+        //top: 25vh;
         max-width: 600px;
         padding: 1rem;
+        margin: auto;
     }
 
 
@@ -295,14 +340,44 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
-        width: 100%;
-        gap: 1rem;
+        width: 70%;
+        gap: 3rem;
     }
 
-    .right-container img {
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.18);
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 4px;
+        //margin: auto auto auto 0;
+
+        height: 60vh;
+        min-height: 500px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .praxisGridItem1 {
+        position: relative;
+        grid-row: span 4 / span 4;
+    }
+
+    .praxisGridItem2 {
+        position: relative;
+        grid-row: span 2 / span 2;
+    }
+
+    .praxisGridItem3 {
+        position: relative;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .imgBoxo {
+        width: 100%;
     }
 
     .toTheSide {
@@ -310,12 +385,12 @@
     }
 
     .praxis img {
-        width: 420px;
-        height: 160px;
         object-fit: cover;
-        margin: 10px 0;
+        //border-radius: 10px;
+        //border: solid 2px rgba(0, 0, 0, 0.2);
+        //border: solid 2px var(--ultraDarkColour);
+
         border-radius: 10px;
-        border: solid 2px var(--ultraDarkColour);
     }
 
     .leftInner img {
@@ -329,6 +404,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #physioHelpsWrapper p {
+        max-width: 700px;
     }
 
     .physioHelps {
@@ -364,7 +443,6 @@
         //max-width: var(--maxWidth);
         //margin: 0 auto;
         padding: 0;
-        background-color: var(--lightColour);
     }
 
     .newLeistungen {
@@ -414,7 +492,6 @@
         height: 100%;
         width: 45%;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
-
         display: none;
     }
 
