@@ -42,7 +42,7 @@ html {
 }
 
 section {
-    padding: 0rem 0;
+    padding: 20px;
 }
 
 /****** TYPOGRAPHY *********/
@@ -732,6 +732,10 @@ button {
     padding: 20px;
 }
 
+.praxis img {
+    //aspect-ratio: 1/.8;
+}
+
 .moveTop img {
     width: 100%;
     object-fit: cover;
@@ -789,6 +793,17 @@ button {
     margin: 6rem auto 0rem auto;
 }
 
+#greetings {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#greetings img {
+    aspect-ratio: 2/1.5;
+    object-fit: cover;
+}
+
 .physioHelpsCardIcon {
     height: 75px;
     text-align: center;
@@ -796,6 +811,8 @@ button {
     position: relative;
     margin-bottom: 1.5rem;
 }
+
+
 
 .physioHelpsCardIconBG {
     position: absolute;

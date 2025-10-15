@@ -88,12 +88,13 @@
 }
 
 .praxis2ImgWrapper img {
-    //object-fit: cover;
+    object-fit: cover;
     //margin: 5rem 1.6rem 0 1.6rem;
 
     //border-radius: 10px;
     //border: solid 2px var(--ultraDarkColour);
     width: 100%;
+    height: 100%;
     //aspect-ratio: 1:1.4;
     filter: grayscale(40%);
 }

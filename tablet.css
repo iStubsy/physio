@@ -32,6 +32,7 @@
 
     section {
         width: 100%;
+        padding: 0;
     }
 
     button {
@@ -199,6 +200,7 @@
         max-width: var(--maxWidth);
         width: 80%;
         gap: 5rem;
+        flex-direction: row;
     }
 
     #greetings p {
@@ -258,7 +260,7 @@
         display: flex;
         flex-direction: row-reverse;
         //padding: 4rem;
-        gap: 4px;
+        gap: 8px;
         width: 90%;
         max-width: var(--maxWidth);
         margin: 0 auto;
@@ -276,9 +278,8 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        background-color: rgba(2, 24, 70, 0.95);
+        //background-color: rgba(2, 24, 70, 0.95);
         background-position: center;
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 
 
@@ -350,7 +351,7 @@
         display: grid;
         grid-template-columns: 2fr 1.5fr;
         grid-template-rows: repeat(4, 1fr);
-        gap: 4px;
+        gap: 8px;
         //margin: auto auto auto 0;
 
         height: 60vh;
