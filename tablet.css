@@ -313,9 +313,7 @@
         width: 100%;
         //transform: translateY(-50%);
         //margin: auto;
-        //background-color: var(--ultraDarkColour);
-        //border-radius: 10px;
-        background-color: rgba(2, 24, 70, 0.95);
+        background-color: var(--ultraDarkColour);
         display: flex;
         border-radius: 10px;
         overflow: hidden;
@@ -345,9 +343,10 @@
 
         width: 70%;
         gap: 3rem;
+        margin: 0;
     }
 
-    .parent {
+    .praxisGridWrapper {
         display: grid;
         grid-template-columns: 2fr 1.5fr;
         grid-template-rows: repeat(4, 1fr);
@@ -383,15 +382,6 @@
 
     .toTheSide {
         margin-left: 8rem;
-    }
-
-    .praxis img {
-        object-fit: cover;
-        //border-radius: 10px;
-        //border: solid 2px rgba(0, 0, 0, 0.2);
-        //border: solid 2px var(--ultraDarkColour);
-
-        border-radius: 10px;
     }
 
     .leftInner img {
@@ -526,7 +516,7 @@
 
     #rezensionen {
         min-height: 10px;
-        padding: 8rem 0rem 10rem 0rem;
+        padding: 4rem 0rem 10rem 0rem;
         display: flex;
         gap: 5rem;
 
