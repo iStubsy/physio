@@ -22,7 +22,8 @@
     //--secondFont: "DM Sans", serif;
     //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
-    --maxWidth: 1400px;
+    --minWidth: 900px;
+    --maxWidth: 1300px;
 }
 
 * {
@@ -44,6 +45,10 @@ html {
 section {
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.dark {
+    background-color: #f8f8f8;
 }
 
 /****** TYPOGRAPHY *********/
@@ -94,6 +99,7 @@ h5 {
     font-size: 2.2rem;
     font-weight: 500;
     text-align: left;
+    line-height: 2.5rem;
 }
 
 p {
@@ -107,6 +113,25 @@ p {
 }
 
 button {
+    width: fit-content;
+    background-color: var(--darkColour);
+    padding: .6rem 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 350;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+
+    border: #00005a;
+    display: block;
+}
+
+#header button {
+    margin: 2rem auto 0 auto;
+}
+
+.testbutton {
     width: fit-content;
     background-color: var(--darkColour);
     padding: .6rem 1.5rem;
@@ -733,6 +758,7 @@ button {
     padding: 20px;
 
     background-color: var(--lightColour);
+    display: none;
 }
 
 .praxis img {
@@ -747,6 +773,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    display: none;
 }
 
 .praxis .right-container {
@@ -771,6 +798,7 @@ button {
     position: relative;
     overflow: hidden;
     background-color: var(--lightColour);
+    display: none;
 }
 
 .tast > p {
@@ -967,8 +995,7 @@ button {
 #newLeistungenWrapper {
     width: 100%;
     position: relative;
-
-    padding: 20px;
+    display: none;
 }
 
 #newLeistungenWrapper button {
@@ -995,7 +1022,6 @@ button {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    padding: 20px 15px 40px 15px;
 
     border-radius: 15px;
 }
@@ -1018,16 +1044,9 @@ button {
     justify-content: center;
 }
 
-.leistungenRightGrid {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 40px;
-}
-
 .newLeistungen-card {
     font-size: 30px;
     text-align: center;
-    margin: 0 auto;
     //height: 300px;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
@@ -1088,6 +1107,74 @@ button {
     margin-bottom: 1.5rem;
     gap: 1rem;
 }
+
+
+
+.innerSection {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.cardBox {
+    align-items: center;
+}
+
+.box p,
+.box h5 {
+    text-align: left;
+}
+
+.box div {}
+
+.box img {
+    display: block;
+    object-fit: cover;
+}
+
+#personal img:nth-of-type(2) {
+    margin: 0 0 auto auto;
+}
+
+#personal img {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.21);
+    max-width: 100%;
+}
+
+#regional .innerSection {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#regional img {
+    position: absolute;
+}
+
+#regional img:first-of-type {
+    position: relative;
+    border: 3px solid red;
+}
+
+#regional img:nth-of-type(2) {
+    border: 3px solid blue;
+    bottom: 10%;
+    right: 5%;
+}
+
+
+
+
+
 
 .iconi {
     position: relative;
@@ -1517,7 +1604,6 @@ button {
 
 
 #rezensionen {
-    padding: 5rem 0rem 10rem 0rem;
     overflow: hidden;
 }
 

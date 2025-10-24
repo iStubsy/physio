@@ -57,6 +57,11 @@
     opacity: 1;
 }
 
+.wentNormal {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .show {
     transform: translate(0);
     opacity: 1;

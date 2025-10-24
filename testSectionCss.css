@@ -113,3 +113,37 @@
     overflow: hidden;
     border: solid 2px var(--ultraDarkColour);
 }
+
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.image-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* 🔹 Ab Tabletgröße: Kein Carousel */
+@media (min-width: 768px) {
+    .carousel-wrapper {
+        overflow: visible;
+    }
+
+    .image-carousel {
+        transform: none !important;
+        flex-wrap: wrap;
+    }
+
+    .image-carousel img {
+        width: auto;
+        flex: 1 1 33%;
+    }
+}

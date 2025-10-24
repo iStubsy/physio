@@ -275,6 +275,23 @@ function goActive() {
     }
 }
 
+function goNormal() {
+    //var goNormal = document.querySelectorAll(".newLeistungen-card");
+    const goNormal = document.querySelectorAll(".cardUp, .cardDown");
+    for (var i = 0; i < goNormal.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = document.querySelector(".cardBox").getBoundingClientRect().top;
+        var elementVisible = 300;
+        if (elementTop < windowHeight - elementVisible) {
+
+            goNormal[i].classList.add("wentNormal");
+
+        } else {
+            //rotateOpacitySel[i].classList.remove("rotateOpacity");
+        }
+    }
+}
+
 
 
 function borderReveal() {
@@ -442,3 +459,6 @@ window.addEventListener("load", starAnimation);
 
 window.addEventListener("scroll", gridCardAnimation);
 window.addEventListener("load", gridCardAnimation);
+
+window.addEventListener("scroll", goNormal);
+window.addEventListener("load", goNormal);
