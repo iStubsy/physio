@@ -23,7 +23,7 @@
     //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
     --minWidth: 900px;
-    --maxWidth: 1300px;
+    --maxWidth: 1200px;
 }
 
 * {
@@ -43,7 +43,7 @@ html {
 }
 
 section {
-    padding: 20px;
+    padding: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -1114,7 +1114,7 @@ button {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .box {
@@ -1134,8 +1134,6 @@ button {
 .box h5 {
     text-align: left;
 }
-
-.box div {}
 
 .box img {
     display: block;
@@ -1157,24 +1155,18 @@ button {
 }
 
 #regional img {
-    position: absolute;
+    //position: absolute;
+    margin: 0 10px;
+    height: fit-content;
+    width: 60%;
+    max-width: 180px;
 }
 
-#regional img:first-of-type {
-    position: relative;
-    border: 3px solid red;
+#regional .box:first-of-type {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
-#regional img:nth-of-type(2) {
-    border: 3px solid blue;
-    bottom: 10%;
-    right: 5%;
-}
-
-
-
-
-
 
 .iconi {
     position: relative;

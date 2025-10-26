@@ -277,7 +277,7 @@ function goActive() {
 
 function goNormal() {
     //var goNormal = document.querySelectorAll(".newLeistungen-card");
-    const goNormal = document.querySelectorAll(".cardUp, .cardDown");
+    const goNormal = document.querySelectorAll(".cardUp, .cardDown, .cardLeft, .cardRight");
     for (var i = 0; i < goNormal.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = document.querySelector(".cardBox").getBoundingClientRect().top;

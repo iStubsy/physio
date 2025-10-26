@@ -180,6 +180,18 @@
         opacity: 0;
     }
 
+    .cardLeft {
+        opacity: 0;
+        transform: translate(-100px, 0);
+        transition: 1s;
+    }
+
+    .cardRight {
+        opacity: 0;
+        transform: translate(100px, 0);
+        transition: 1s;
+    }
+
     .cardUp_show {
         opacity: 1;
         transform: translate(0, 0px);
