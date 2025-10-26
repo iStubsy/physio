@@ -1128,6 +1128,7 @@ button {
 
 .cardBox {
     align-items: center;
+    gap: 2rem;
 }
 
 .box p,
