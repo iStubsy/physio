@@ -1157,9 +1157,9 @@ button {
 #regional img {
     //position: absolute;
     margin: 0 10px;
-    height: fit-content;
+    //height: fit-content;
     width: 60%;
-    max-width: 80px;
+
 }
 
 #regional .box:first-of-type {
