@@ -462,3 +462,35 @@ window.addEventListener("load", gridCardAnimation);
 
 window.addEventListener("scroll", goNormal);
 window.addEventListener("load", goNormal);
+
+
+const scrollBtn = document.getElementById('scrollToTop');
+const circle = scrollBtn.querySelector('.progress-ring__circle');
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+
+function setProgress(percent) {
+    const offset = circumference - (percent / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+}
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    setProgress(scrollPercent);
+
+    // Show button after scrolling down a bit
+    if (scrollTop > 200) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+});
+
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
