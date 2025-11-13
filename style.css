@@ -43,12 +43,89 @@ html {
 }
 
 section {
-    padding: 2.5rem;
+    padding: 2.5rem 1.8rem;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .dark {
     background-color: #f8f8f8;
+}
+
+.lightText {
+    color: rgba(255, 255, 255, 0.36);
+}
+
+.gradient {
+    background: linear-gradient(135deg, #172E60, #1E3A7A, #0F2040);
+    //background-color: #12295c;
+    background-size: 200% 200%;
+    animation: subtleGradientShift 15s ease infinite;
+    min-height: 0px;
+
+    height: 40vh;
+    min-height: 200px;
+    max-height: 1000px;
+
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 24% 100%, 0 93%);
+}
+
+.showcaseImgBox img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.innerSection-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.space-between {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.quoteBox {
+    position: relative;
+}
+
+.quoteBox p {
+    text-align: right;
+}
+
+.quoteSign {
+
+    position: absolute;
+    top: 35px;
+    left: -25px;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 8rem;
+    font-family: arial;
+    line-height: 0;
+
+    transform: translateY(100px);
+}
+
+.gradient > div {
+    margin: 0 auto;
+}
+
+@keyframes subtleGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /****** TYPOGRAPHY *********/
@@ -73,7 +150,7 @@ h2 {
     font-size: 1.4rem;
     font-weight: 600;
     text-align: left;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 h3 {
@@ -86,11 +163,17 @@ h3 {
 }
 
 h4 {
-    color: var(--mainColour);
-    font-size: 1.1rem;
+    color: var(--lightColour);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     font-family: var(--mainFont);
+    font-style: italic;
     font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 
+    transform: translateY(100px);
 }
 
 h5 {
@@ -109,7 +192,8 @@ p {
     font-weight: 480;
     line-height: 1.6rem;
     color: #414141;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(0, 0, 0, 0.70);
+    margin: 8px 0;
 }
 
 button {
@@ -675,6 +759,7 @@ button {
     height: 80%;
     display: flex;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 
@@ -801,12 +886,6 @@ button {
     display: none;
 }
 
-.tast > p {
-    text-align: left;
-    width: 100%;
-    max-width: 100%;
-}
-
 .physioHelps {
     text-align: center;
     display: flex;
@@ -816,6 +895,12 @@ button {
 #physioHelpsWrapper .line {
     background-color: var(--ultraDarkColour);
     margin: .6rem 0 .8rem 0;
+}
+
+.sectionInner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .sectionImagePadding {
@@ -1640,6 +1725,7 @@ button {
     transition: ease-out .1s;
     text-decoration: none;
     margin: 0 35px;
+    width: 80vw;
 }
 
 .rezension-top {

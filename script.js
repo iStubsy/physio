@@ -293,6 +293,58 @@ function goNormal() {
 }
 
 
+function goNormal() {
+    const cards = document.querySelectorAll(".cardUp, .cardDown, .cardLeft, .cardRight");
+    const windowHeight = window.innerHeight;
+    const elementVisible = 300;
+
+    cards.forEach(card => {
+        const elementTop = card.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - elementVisible) {
+            card.classList.add("wentNormal");
+        } else {
+            //card.classList.remove("wentNormal"); // optional if you want it to reset
+        }
+    });
+}
+
+
+function goNormal() {
+    const containers = document.querySelectorAll(".moveBox"); // each group in its own container
+    const windowHeight = window.innerHeight;
+    const elementVisible = 300;
+
+    containers.forEach(container => {
+        const containerTop = container.getBoundingClientRect().top;
+
+        if (containerTop < windowHeight - elementVisible) {
+            // animate all children in this container
+            const cards = container.querySelectorAll(".cardUp, .cardDown, .cardLeft, .cardRight");
+            cards.forEach(card => card.classList.add("wentNormal"));
+        } else {
+            const cards = container.querySelectorAll(".cardUp, .cardDown, .cardLeft, .cardRight");
+            //cards.forEach(card => card.classList.remove("wentNormal"));
+        }
+    });
+}
+
+
+function opacityReveal() {
+    var reveals = document.querySelectorAll(".opacityReveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 130;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+
 
 function borderReveal() {
     var borderRevealWrapper = document.querySelectorAll(".borderRevealWrapper");

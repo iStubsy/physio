@@ -537,7 +537,6 @@
         //padding-top: 71px;
     }
 
-    .aboutMeTextBox h4,
     .aboutMeTextBox h5,
     .aboutMeTextBox .text {
         color: #e0e0e0;
@@ -725,6 +724,10 @@
     .fa-location-dot {
         font-size: 1.4rem;
         color: white;
+    }
+
+    .innerSection-flex {
+        gap: 4rem;
     }
 
     #testSection {
