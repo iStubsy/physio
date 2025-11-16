@@ -202,3 +202,89 @@
     color: #00aaff;
     color: var(--mainColour);
 }
+
+
+
+
+
+/*
+
+.newBox div {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    //clip-path: polygon(0 0, 69% 0, 29% 100%, 0 100%);
+    //clip-path: polygon(0 0, 80% 0, 40% 60%, 0 60%);
+    clip-path: polygon(0 0, 82% 0, 50% 84%, 0 84%);
+    //object-fit: cover;
+    background-color: var(--ultraDarkColour);
+    background-color: red;
+}
+
+.newBox img {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    //clip-path: polygon(0 0, 81% 0, 49.5% 84%, 0 84%);
+    clip-path: polygon(0 0, 81% 0, 49.5% 83%, 0 83%);
+}
+
+.newBox div:nth-child(2) {
+    clip-path: polygon(71% 0, 100% 0, 100% 100%, 31% 100%);
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 20% 100%);
+    clip-path: polygon(71% 33%, 100% 33%, 100% 100%, 45% 100%);
+    background-color: blue;
+}
+
+*/
+
+.newBox {
+    position: relative;
+
+    width: 800px;
+    height: 450px;
+}
+
+.newBox_first {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: var(--ultraDarkColour);
+    width: 100%;
+    height: 100%;
+
+    clip-path: polygon(0 0, 82.5% 0, 50% 84%, 0 84%);
+}
+
+.newBox_first img {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    clip-path: polygon(0 0, 81% 0, 49.4% 82.5%, 0 82.5%);
+}
+
+.newBox_second {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: var(--ultraDarkColour);
+    width: 100%;
+    height: 100%;
+
+    clip-path: polygon(71% 33%, 100% 33%, 100% 100%, 45% 100%);
+}
+
+.newBox_second img {
+    position: absolute;
+    content: "";
+    bottom: .8%;
+    right: .35%;
+
+
+    width: 98%;
+    height: 98%;
+    clip-path: polygon(71% 33%, 100% 33%, 100% 100%, 45% 100%);
+
+}

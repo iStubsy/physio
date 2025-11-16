@@ -23,7 +23,7 @@
     //--mainFont: 'Josefin Sans', sans-serif;
     --contentWidth: 80%;
     --minWidth: 900px;
-    --maxWidth: 1200px;
+    --maxWidth: 1400px;
 }
 
 * {
@@ -143,6 +143,8 @@ h1 {
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
 }
+
+.bold {}
 
 h2 {
     font-family: var(--mainFont);

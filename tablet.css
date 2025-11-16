@@ -109,6 +109,10 @@
         gap: 3rem;
     }
 
+    #personal .box {
+        width: 35%;
+    }
+
     #regional .innerSection {
         flex-direction: row;
     }
@@ -297,6 +301,7 @@
         width: 80%;
         gap: 5rem;
         flex-direction: row;
+        padding: 10rem 0;
     }
 
     #greetings p {
