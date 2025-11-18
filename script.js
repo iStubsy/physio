@@ -1,6 +1,6 @@
 /***************** OVERLAY *****************/
 
-//document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
+document.getElementsByTagName("HTML")[0].style.overflow = "hidden";
 
 
 $(window).on("load", function () {
