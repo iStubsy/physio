@@ -69,13 +69,28 @@ section {
     min-height: 200px;
     max-height: 1000px;
 
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 24% 100%, 0 93%);
+    //clip-path: polygon(0 0, 100% 0, 100% 88%, 24% 100%, 0 93%);
 }
+
+.showcaseImgBox {
+    padding: 10px;
+
+    display: flex;
+    overflow: scroll;
+
+    gap: 2rem;
+}
+
 
 .showcaseImgBox img {
     object-fit: cover;
     max-width: 100%;
+
+    border: solid 2px var(--darkColour);
+    border-radius: 10px;
 }
+
+
 
 .innerSection-flex {
     display: flex;

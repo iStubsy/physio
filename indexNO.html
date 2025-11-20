@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="testSectionCss.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="animations.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- ANFÜHRUNGSZEICHEN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8fc67f8040.js" crossorigin="anonymous"></script>
+
+
+    <title>Praxis Weber</title>
+</head>
+
+<body>
+    <button id="scrollToTop">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle" stroke="currentColor" stroke-width="4" fill="transparent" r="22" cx="25" cy="25" />
+        </svg>
+        <span class="arrow">↑</span>
+    </button>
+    <div class="loader-wrapper">
+        <div class="loadImageWrapper">
+            <div class="blueDots">
+                <div class="blueDot1"></div>
+                <div class="blueDot2"></div>
+                <div class="blueDot3"></div>
+                <div class="blueDot4"></div>
+                <div class="blueDot5"></div>
+                <div class="blueDot6"></div>
+                <div class="blueDot7"></div>
+                <div class="blueDot8"></div>
+                <div class="blueDot9"></div>
+                <div class="blueDot10"></div>
+            </div>
+
+            <img class="loadImage" src="src/loading-logo.png" height="150px">
+        </div>
+        <div class="line-wobble"></div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlayInner">
+            <div class="closeButton">
+                <div class="closeButton_line1"></div>
+                <div class="closeButton_line2"></div>
+            </div>
+            <div class="overlayNavigation overlayAnimation">
+                <a class="overlayNavigation-item">Home</a>
+                <a class="overlayNavigation-item" href="anwendungsgebiete.html">Anwendungen</a>
+                <a class="overlayNavigation-item">Über</a>
+                <a class="overlayNavigation-item">Netzwerk</a>
+                <a class="overlayNavigation-item">Kontakt</a>
+            </div>
+            <div class="overlayFooter">
+                <div class="overlayFooter-social">
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-square-facebook"></i></a>
+                    <a><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="headerWrapper">
+
+        <div id="header-emptyTop"></div>
+        <div id="header">
+
+            <div class="navigationBar">
+                <div class="navigationBar_inner">
+                    <div id="navigationBar_logo">
+                        <div id="logo">
+                            <img src="src/logo.png" height="100%">
+                        </div>
+                        <div class="navigationBar_logoText">
+                            <div class="navigationBar_logoTextItem1">Physiotherapie</div>
+                            <div class="navigationBar_logoTextItem2">Praxis Weber</div>
+                        </div>
+                    </div>
+                    <div id="navigationBar_menu">
+                        <div id="navigationBar_menuItem">Home</div>
+                        <div id="navigationBar_menuItem"><a href="anwendungsgebiete.html">Anwendungen</a></div>
+                        <div id="navigationBar_menuItem">Über</div>
+                        <div id="navigationBar_menuItem">Netzwerk</div>
+                        <div id="navigationBar_menuItem">Kontakt</div>
+                    </div>
+                    <div class="hamburgerMenu">
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="header_inner">
+                <!--<div class="anotherBox">
+                    <img src="src/frederikEditLowQSquare.png" width="100%">
+                </div>-->
+                <!--<div class="testImgBox">
+                    <img src="src/frederiklowQSquare.jpg" width="100%">
+                </div>-->
+
+                <!-- <div class="boxi">
+                    <img src="src/frederiklowQSquare.jpg" width="100%">
+                </div>
+                <div class="testCircleWrapper">
+                    <div class="testCircle"></div>
+                </div>-->
+                <div id="header-left">
+                    <div class="imgBox">
+                        <img src="src/hero_img.webp">
+                        <!--<img src="../../Gemini_Generated_Image_2lzy5c2lzy5c2lzy.png">-->
+                        <div class="darkCircle"></div>
+                        <div class="brightCircle"></div>
+                        <!-- <img src="src/frederiklowQSquare.jpg"> -->
+                        <!-- <img src="src/IMG_3825edit.webp">-->
+                    </div>
+
+                    <div class="header-leftBG"></div>
+                    <div class="header-leftBG2"></div>
+                </div>
+                <div id="header-right">
+                    <div id="header_headlineWrapper" class="fromBottomWrapper">
+                        <div class="titleSubtitle">
+                            <h1 class="bold">Frederik Weber</h1>
+                            <div class="subTitle">
+                                <div class="line"></div>
+                                <p>Heilpraktiker für Physiotherapie </p>
+                            </div>
+                        </div>
+                        <p class="quote">„In der Liebe zum Ganzen tritt das Individuelle in Erscheinung.“ – Krishnamurti</p>
+
+                        <div class="headerItemWrapper">
+                            <div class="headerItem">
+                                <div class="headerItem-left"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="headerItem-right">
+                                    <h5>Adresse</h5>
+                                    <p>Crayenbühlstraße 1a</p>
+                                    <p>67295 Bolanden-Weierhof</p>
+                                </div>
+                            </div>
+                            <div class="headerItem">
+                                <div class="headerItem-left"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="headerItem-right">
+                                    <h5>Adresse</h5>
+                                    <p>Crayenbühlstraße 1a</p>
+                                    <p>67295 Bolanden-Weierhof</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="greetings" class="opacityReveal">
+        <div class="box">
+            <h5>Ein herzliches Hallo!</h5>
+            <p>Ich bin Frederik Weber und heiße Sie Willkommen zu meinem Onlineauftritt.<br><br>
+                Als Physiotherapeut und empathischer Mensch schätze ich vor allem den persönlichen Kontakt, möchte im wahrsten Sinne des Wortes in "Verbindung" treten.
+                Meine Webseite bietet mir zusätzlich die Möglichkeit auf virtuelle Weise mit Ihnen in Kontakt zu treten und Ihnen so einen kleinen Einblick in meine Praxis zu geben.<br><br>
+                Vom Kleinkind, über den Profisportler bis hin zum Senior durfte ich bereits viele Menschen auf ihrem Weg zu einer verbesserten Lebensqualität begleiten. Gerne begleite ich auch Sie bei Ihrem persönlichen Anliegen.</p>
+        </div>
+        <div class="box">
+            <div><img src="src/frontDoor.JPG" width="100%"></div>
+        </div>
+    </section>
+
+    <section class="praxis">
+        <div class="praxisInner">
+            <div class="left-container">
+                <div class="praxisBackground"></div>
+                <div class="leftInner fromBottomWrapper">
+                    <div class="titleSubtitle">
+                        <h5>Die Praxis</h5>
+                    </div>
+                    <p>Meine Praxis in Bolanden ist das Zentrum meiner Arbeit.<br>
+                        Aber auch darüber hinaus sehe ich mich als Wegbegleiter.<br>
+                        So durfte ich bereits bei mehreren Turnieren und Wettkämpfen hautnah dabei sein und meine Patienten dabei unterstützen das Beste aus sich herauszuholen. </p>
+
+                    <!-- <div class="adresse">
+                        <img class="icono" src="src/location.png" width="100%">
+                        <p>Bolandern-Weierhof</p>
+
+
+                    </div> -->
+                </div>
+            </div>
+            <div class="right-container fromBottomWrapper">
+                <!--<div class="imgBoxo"><img src="src/praxis1.JPG"></div>
+            <div class="imgBoxo toTheSide"><img src="src/praxis2.JPG"></div>
+            <div class="imgBoxo"><img src="src/praxis3.JPG"></div>-->
+                <!--<img src="src/praxis1.JPG">-->
+                <div class="praxisGridWrapper">
+                    <div class="praxisGridItem1">
+                        <div class="gridItemOverlay"></div>
+                        <img src="src/praxis1.JPG" height="100%">
+                    </div>
+                    <div class="praxisGridItem2">
+                        <div class="gridItemOverlay">
+                        </div><img src="src/praxis2.JPG" height="100%">
+                    </div>
+                    <div class="praxisGridItem3">
+                        <div class="gridItemOverlay"></div>
+                        <img src="src/praxis3.JPG" height="100%">
+                    </div>
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="image-carousel">
+                        <img src="src/praxis1.JPG" alt="Bild 1">
+                        <img src="src/praxis1.JPG" alt="Bild 2">
+                        <img src="src/praxis1.JPG" alt="Bild 3">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="praxis2">
+        <div class="praxis2Inner">
+            <div class="praxis2TextWrapper">
+                <div class="titleSubtitle">
+                    <h5>Die Praxis</h5>
+                </div>
+                <p>Meine Praxis in Bolanden ist das Zentrum meiner Arbeit.</p>
+                <p>Aber auch darüber hinaus sehe ich mich als Wegbegleiter.</p>
+                <p>So durfte ich bereits bei mehreren Turnieren und Wettkämpfen hautnah dabei sein und meine Patienten dabei unterstützen das Beste aus sich herauszuholen.</p>
+            </div>
+            <div class="praxis2ImgWrapper">
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis1.JPG" alt="">
+                </div>
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis2.JPG" alt="">
+                </div>
+                <div class="henry">
+                    <div class="praxisBackground"></div>
+                    <img src="src/praxis3.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<div class="sectionImagePadding">
+                <div class="sectionImage"></div>
+            </div>
+            <div class="physioHelps sectionWrapper">
+                <h5>Physiotherapie in Bolanden</h5>
+                <p>Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</p>
+                <div class="physioHelpsCards">
+                    <div class="physioHelpsCard opacityReveal fromBottomWrapper">
+                        <div class="physioHelpsCardIcon">
+                            <img src="src/pain.svg" height="100%">
+                            <div class="physioHelpsCardIconBG goActive"></div>
+                        </div>
+                        <div class="physioHelpsCardHeadline">Schmerzlinderung</div>
+                        <p>Physiotherapie kann chronische und akute Schmerzen reduzieren, indem gezielte Übungen und Techniken angewendet werden.</p>
+                    </div>
+                    <div class="physioHelpsCard opacityReveal fromBottomWrapper">
+                        <div class="physioHelpsCardIcon">
+                            <img src="src/running.png" height="100%">
+                            <div class="physioHelpsCardIconBG goActive"></div>
+                        </div>
+                        <div class="physioHelpsCardHeadline">Verbesserung der Mobilität</div>
+                        <p>Nach Verletzungen oder Operationen hilft Physiotherapie Patienten, ihre Beweglichkeit und Flexibilität wiederzuerlangen.</p>
+                    </div>
+                    <div class="physioHelpsCard opacityReveal fromBottomWrapper">
+                        <div class="physioHelpsCardIcon">
+                            <img src="src/run.svg" height="100%">
+                            <div class="physioHelpsCardIconBG goActive"></div>
+                        </div>
+                        <div class="physioHelpsCardHeadline">Rehabilitation nach Verletzungen </div>
+                        <p>Physiotherapie kann chronische und akute Schmerzen reduzieren, indem gezielte Übungen und Techniken angewendet werden.</p>
+                    </div>
+                </div>
+            </div> -->
+    <section id="newLeistungenWrapper">
+        <div class="newAbsolute"></div>
+        <div class="newLeistungen">
+            <div class="newLeistungenLeft">
+                <div class="newLeistungenLeftInner">
+                    <div class="titleSubtitle">
+                        <h5>Ganzheitlich<br>& individuell</h5>
+                    </div>
+                    <p>Vielseitige Therapieverfahren, Effektives Coaching und Fitnessberatung bilden die Basis meiner Arbeit. Darauf aufbauend erstelle ich ein individuelles Behandlungskonzept, das sich speziell nach Ihren Bedürfnissen richtet. </p>
+                    <button>mehr erfahren</button>
+                </div>
+            </div>
+            <div class="newLeistungenRight">
+                <div class="leistungenRightGrid">
+                    <div class="newLeistungen-card cardUp">
+                        <img src="src/behandlung_img.webp">
+                        <div class="newLeistungen-cardText">
+                            <div class="newLeistungen-cardTextHeadline">
+                                <div class="iconi">
+                                    <img src="/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/phone.png">
+                                </div>
+                                <h3><i>Vielseitige<br>
+                                        Therapieverfahren</i></h3>
+                            </div>
+                            <p>• Physiotherapie<br>
+                                • manueller Therapie<br>
+                                • Lymphdrainage<br>
+                                • neurologischen Konzepten (bereits ab dem Baby-/Kleinkindalter)</p>
+                        </div>
+                    </div>
+                    <div class="newLeistungen-card cardDown">
+                        <img src="src/training2.jpg">
+                        <div class="newLeistungen-cardText">
+                            <div class="newLeistungen-cardTextHeadline">
+                                <div class="iconi">
+                                    <img src="src/running.png">
+                                </div>
+                                <h3><i>Coaching und<br>
+                                        Fitnessberatung</i></h3>
+                            </div>
+                            <p>• Erstellung von Fitnessplänen
+                                • gemeinsames Training<br>
+                                • Personal Training<br>
+                                • Effektives Coaching im Bereich Schmerzpsychologie und Wahrnehmung</p>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="newLeistungen-card cardUp">
+                        <img src="src/anatomie.JPG">
+                        <div class="newLeistungen-cardText">
+                            <div class="newLeistungen-cardTextHeadline">
+                                <div class="iconi">
+                                    <img src="src/running.png">
+                                </div>
+                                <h3><i>Effektives<br>
+                                        Coaching</i></h3>
+                            </div>
+                            <p>im Bereich Schmerzpsychologie und Wahrnehmung</p>
+                        </div>
+                    </div>
+
+                    <div class="newLeistungen-card cardDown">
+                    <img src="src/frederikEditLowQ.jpg">
+                    <div class="newLeistungen-cardText">
+                        <div class="newLeistungen-cardTextHeadline">
+
+                            <div class="iconi">
+
+                            </div>
+                            <h3><i>Effektives<br>
+                                    Coaching</i></h3>
+                        </div>
+                        <p>im Bereich Schmerzpsychologie und Wahrnehmung</p>
+
+                    </div>
+                </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="dark opacityReveal">
+        <div class="innerSection">
+            <div class="box">
+                <h5>Ganzheitlich & Individuell</h5>
+                <p>Vielseitige Therapieverfahren, Effektives Coaching und Fitnessberatung bilden die Basis meiner Arbeit. Darauf aufbauend erstelle ich ein individuelles Behandlungskonzept, das sich speziell nach Ihren Bedürfnissen richtet. </p>
+                <button>Mehr erfahren!</button>
+            </div>
+            <div class="box cardBox moveBox exception">
+                <div class="newLeistungen-card cardUp">
+                    <img src="src/behandlung.jpg">
+                    <div class="newLeistungen-cardText">
+                        <div class="newLeistungen-cardTextHeadline">
+                            <div class="iconi">
+                                <img src="/Users/renebohn/Documents/Projekte/Frederik Weber Physio Design/phone.png">
+                            </div>
+                            <h3><i>Vielseitige<br>
+                                    Therapieverfahren</i></h3>
+                        </div>
+                        <p>• Physiotherapie<br>
+                            • manueller Therapie<br>
+                            • Lymphdrainage<br>
+                            • neurologischen Konzepten (bereits ab dem Baby-/Kleinkindalter)</p>
+                    </div>
+                </div>
+                <div class="newLeistungen-card cardDown">
+                    <img src="src/training2.jpg">
+                    <div class="newLeistungen-cardText">
+                        <div class="newLeistungen-cardTextHeadline">
+                            <div class="iconi">
+                                <img src="src/running.png">
+                            </div>
+                            <h3><i>Coaching und<br>
+                                    Fitnessberatung</i></h3>
+                        </div>
+                        <p>• Erstellung von Fitnessplänen
+                            • gemeinsames Training<br>
+                            • Personal Training<br>
+                            • Effektives Coaching im Bereich Schmerzpsychologie und Wahrnehmung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="regional" class="opacityReveal">
+        <div class="innerSection">
+            <div class="box cardBox moveBox">
+                <img class="firstImg cardLeft" src="src/HHG.png">
+                <img class="secondImg cardRight" src="src/teamKL.jpg">
+            </div>
+            <div class="box">
+                <h5>Regional<br>verbunden</h5>
+                <p>Ich folge einem inneren Antrieb, einen
+                    nachhaltigen Mehrwert zu bieten. Nicht nur für
+                    meine Patienten, sondern auch für die Region.
+                    Mein Engagement in Vereinen und öffentlichen
+                    Einrichtungen ist für mich ein wahres
+                    Herzensprojekt.
+                    In Form eines Netzwerkes pflege ich darüber
+                    hinaus stetigen Austausch mit meiner
+                    Berufsgruppe im regionalen Raum.</p>
+                <button>Mehr erfahren!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal" class="dark">
+        <div class="innerSection">
+            <div class="box">
+                <h5>Persönlich & empathisch</h5>
+                <p>Eine Krankheitsgeschichte will erzählt
+                    werden und ich höre Ihnen zu. Hierfür
+                    möchte ich mir Zeit nehmen, denn jeder ist
+                    ein Individuum und sollte daher auch eine
+                    individuelle Behandlung erhalten.
+                    Kontaktieren Sie mich gerne zur
+                    Vereinbarung eines Termins.</p>
+                <button>Kontakt</button>
+            </div>
+
+
+            <div class="newBox moveBox">
+                <div class="newBox_first cardLeft">
+                    <!--<img src="src/anatomie.jpg" alt="" width="100%" height="100%"-->
+                    <img src="src/IMG_3813_test.webp" alt="" width="100%" height="100%">
+                </div>
+                <div class="newBox_second cardRight">
+                    <img src="src/IMG_3880.webp" alt="" width="100%" height="100%">
+                </div>
+            </div>
+            <!--<div class="box moveBox">
+                <img src="src/anatomie.jpg" alt="" class="cardLeft" width="420px" height="180px">
+                <img src="src/IMG_3880.webp" alt="" class="cardRight" width="420px" height="180px">
+            </div> -->
+        </div>
+    </section>
+
+
+    <section id="firstSection">
+        <div class="firstSection-overlay"></div>
+        <div class="firstSection_inner">
+            <div class="sectionLeft">
+                <h5>Was ist Physiotherapie?</h5>
+                <div class="text">Die Physiotherapie behandelt Einschränkungen der Bewegungs- und Funktionsfähigkeit des Körpers und ist ein ärztlich verordnetes Heilmittel. Sie stellt eine sinnvolle Ergänzung und manchmal auch Alternative zu Operationen oder Medikamenten dar. Zur Physiotherapie zählen neben krankengymnastischen Übungen auch physikalische Maßnahmen, Massagen und manuelle Lymphdrainagen.</div>
+            </div>
+            <div class="sectionRight">
+                <img class="rotateOpacitySel" src="src/4.png" height="100%">
+            </div>
+        </div>
+    </section>
+    <div class="yPhysioWrapper sectionWrapper opacityReveal">
+        <div class="yPhysioHeader">Wieso Physiotherapie?</div>
+        <div class="text">Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</div>
+        <div class="yPhysioInner">
+
+            <div class="yPhysio">
+                <div class="headlineWrapper">
+                    <div class="headline moveDown">Schmerzlinderung</div>
+                </div>
+                <div class="yPhysioContent">Physiotherapie kann chronische und akute Schmerzen reduzieren, indem gezielte Übungen und Techniken angewendet werden.</div>
+                <div class="absoluteBox borderRevealWrapper">
+                    <div class="lineTop borderLines"></div>
+                    <div class="lineRight borderLines"></div>
+                    <div class="lineLeft borderLines"></div>
+                    <div class="lineBottom borderLines"></div>
+                </div>
+            </div>
+            <div class="yPhysio">
+                <div class="headlineWrapper">
+                    <div class="headline moveDown">Verbesserung der<br>Mobilität</div>
+                </div>
+                <div class="yPhysioContent">Physiotherapie kann chronische und akute Schmerzen reduzieren, indem gezielte Übungen und Techniken angewendet werden.</div>
+                <div class="absoluteBox borderRevealWrapper">
+                    <div class="lineTop borderLines"></div>
+                    <div class="lineRight borderLines"></div>
+                    <div class="lineLeft borderLines"></div>
+                    <div class="lineBottom borderLines"></div>
+                </div>
+            </div>
+            <div class="yPhysio">
+                <div class="headlineWrapper">
+                    <div class="headline moveDown">Rehabilitation nach<br>Verletzungen</div>
+                </div>
+                <div class="yPhysioContent">Physiotherapie kann chronische und akute Schmerzen reduzieren, indem gezielte Übungen und Techniken angewendet werden.</div>
+                <div class="absoluteBox borderRevealWrapper">
+                    <div class="lineTop borderLines"></div>
+                    <div class="lineRight borderLines"></div>
+                    <div class="lineLeft borderLines"></div>
+                    <div class="lineBottom borderLines"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section id="rezensionen">
+        <div class="rezensionenSlider">
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/5vo38hpVQ7MyLNAm9" target="_blank" class="rezension">
+                <div class="rezension-top">
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                    <div class="sterne"><img src="src/star.svg" width="100%"></div>
+                </div>
+                <div class="rezension-middle">
+                    <div class="zitat">"</div>
+                    <p>Ich war bei Hr. Weber nach meinem Soortunfall. Hr. Webers Behandlungen halfen mir sehr und beschleunigten merklich den Handlungsverlauf. Er beachtet den Körper als Ganzes und gibt auch Tipps für zuhause mit. Ich kann ihn jederzeit vorbehaltlos weiterempfehlen!
+                    </p>
+                </div>
+                <div class="rezension-bottom">
+                    <p>Sabrina</p>
+                    <p>vor 3 Monaten</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- <section id="contactWrapper">
+        <div id="contact">
+            <div class="contactHeadline">
+            </div>
+            <div class="contactRight">
+                <h5>Kontakt</h5>
+                <div class="contactRight-cards">
+                    <div class="contactRight-cardWrapper">
+                        <div class="contactRight-cardHeadline">
+                            <h3>&nbsp;</h3>
+                        </div>
+                        <div class="contactRight-card">
+                            <div class="contactRight-cardIcon">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </div>
+                            <div class="contactRight-cardContent">
+                                <p>Frederik Weber<br>
+                                    Physiotherapeut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactRight-cardWrapper">
+                        <div class="contactRight-cardHeadline">
+                            <h3>Telefon &amp; WhatsApp</h3>
+                        </div>
+                        <div class="contactRight-card">
+                            <div class="contactRight-cardIcon">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </div>
+                            <div class="contactRight-cardContent">
+                                <p>023182348 581858</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactRight-cardWrapper">
+                        <div class="contactRight-cardHeadline">
+                            <h3>Social</h3>
+                        </div>
+                        <div class="contactRight-card">
+                            <div class="contactRight-cardIcon">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </div>
+                            <div class="contactRight-cardContent">
+                                <p>023182348 581858</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactRight-cardWrapper">
+                        <div class="contactRight-cardHeadline">
+                            <h3>Telefon</h3>
+                        </div>
+                        <div class="contactRight-card">
+                            <div class="contactRight-cardIcon">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </div>
+                            <div class="contactRight-cardContent">
+                                <p>Frederik Weber<br>
+                                    Physiotherapeut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactRight-cardWrapper">
+                        <div class="contactRight-cardHeadline">
+                            <h3>Telefon</h3>
+                        </div>
+                        <div class="contactRight-card">
+                            <div class="contactRight-cardIcon">
+                                <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            </div>
+                            <div class="contactRight-cardContent">
+                                <p>Frederik Weber<br>
+                                    Physiotherapeut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactRight-social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <div id="physioHelpsWrapper" class="opacityReveal">
+        <div class="sectionImagePadding">
+            <div class="sectionImage"></div>
+        </div>
+        <div class="sectionWrapper">
+            <div class="titleSubtitle">
+                <h5>Unsere Partner</h5>
+            </div>
+            <p>Physiotherapie spielt eine entscheidende Rolle in der modernen Medizin und bietet zahlreiche Vorteile für Patienten mit verschiedenen Gesundheitsproblemen.</p>
+            <div class="flexBox">
+                <img src="src/HHG.png" height="150px">
+                <img src="src/teamKL.jpg" height="100px">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="footer">
+        <div class="footerAbsoluteBG"></div>
+        <div class="footer_inner">
+            <div class="footerBox">
+                <div class="footerHeadline">Datenschutz</div>
+                <!--<div class="footerHeadline">Kontakt</div>
+                    <div class="footerText">Inhaber B.Sc. Frederik Weber</div>
+                    <div class="footerText">Heilpraktiker für Physiotherapie</div>
+                    <div class="footerText">Crayenbühlstraße 1a</div>
+                    <div class="footerText">67295 Bolanden-Weierhof</div>
+                    -->
+
+            </div>
+            <div class="footerBox">
+                <div class="footerHeadline">Kontakt</div>
+                <!--<div class="footerHeadline">Telefon</div>
+                    <div class="footerText"><i class="fa-solid fa-phone-volume"></i>06352 7190327</div>
+                    <div class="footerText"><i class="fa-solid fa-mobile-screen"></i>01575 4365617</div>
+                    -->
+            </div>
+            <div class="footerBox">
+                <div class="footerHeadline">Impressum</div>
+                <!--<div class="footerHeadlineSocial">Social Media</div>
+                    <div class="footerSocialTabs">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    -->
+            </div>
+            <!--<div class="footerBox">
+                        <div class="footerLogo">
+                        <img src="src/LogoReworked.png" height="100%">
+                    </div>
+                </div>-->
+        </div>
+
+    </div>
+    <div class="backToTop"><i class="fa-solid fa-angle-up"></i></div>
+
+    <script>
+        function changeDots() {
+            for (let i = 0; i < document.querySelector(".blueDots").children.length; i++) {
+                document.querySelector(".blueDots").children[i].style.backgroundColor = "transparent";
+            }
+
+            for (let i = 0; i < document.querySelector(".blueDots").children.length; i++) {
+                document.querySelector(".blueDots").children[i].style.transition = ".2s";
+
+                setTimeout(() => {
+                    document.querySelector(".blueDots").children[i].style.backgroundColor = "var(--mainColour)";
+                }, i * 200); // Delay increases for each dot
+            }
+            setTimeout(changeDots, document.querySelector(".blueDots").children.length * 200);
+        }
+
+        changeDots();
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const track = document.querySelector(".image-carousel");
+            const images = track.querySelectorAll("img");
+            let index = 0;
+
+            function nextImage() {
+                if (window.innerWidth < 768) {
+                    index = (index + 1) % images.length;
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                } else {
+                    track.style.transform = "none";
+                }
+            }
+
+            setInterval(nextImage, 3000);
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 768) {
+                    track.style.transform = "none";
+                }
+            });
+        });
+
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
