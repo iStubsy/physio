@@ -72,13 +72,23 @@ section {
     //clip-path: polygon(0 0, 100% 0, 100% 88%, 24% 100%, 0 93%);
 }
 
+.noPadding {
+    padding: 0;
+}
+
 .showcaseImgBox {
     padding: 10px;
 
     display: flex;
     overflow: scroll;
 
-    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    margin: 2rem -2rem;
+
+    padding: 2rem;
+
+    gap: 3rem;
 }
 
 
@@ -88,6 +98,7 @@ section {
 
     border: solid 2px var(--darkColour);
     border-radius: 10px;
+    aspect-ratio: 3 / 3;
 }
 
 
