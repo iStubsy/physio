@@ -76,15 +76,18 @@ section {
     padding: 0;
 }
 
+.newBox {
+    width: 100%;
+    height: 300px;
+}
+
 .showcaseImgBox {
     padding: 10px;
 
     display: flex;
     overflow: scroll;
 
-    background-color: rgba(0, 0, 0, 0.05);
-    background-color: red;
-
+    background-color: rgba(0, 0, 0, 0.04);
     margin: 2rem -1.8rem;
 
     padding: 2rem;
@@ -964,6 +967,8 @@ button {
 #greetings img {
     aspect-ratio: 2/1.5;
     object-fit: cover;
+    border-radius: 10px;
+    border: solid 2px var(--ultraDarkColour);
 }
 
 .physioHelpsCardIcon {

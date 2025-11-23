@@ -269,6 +269,16 @@
         color: white;
     }
 
+    #navigationBar_menuItem a {
+        color: grey;
+        text-decoration: none;
+    }
+
+    #navigationBar_menuItem a:hover {
+        background-color: var(--ultraDarkColour);
+        color: white;
+    }
+
 
 
     .headerContactWrapper {

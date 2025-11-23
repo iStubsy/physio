@@ -241,17 +241,24 @@
 .newBox {
     position: relative;
 
-    width: 700px;
+    width: 650px;
     height: 450px;
+
+    //max-width: 600px;
 }
 
+.newBox img {
+    border: solid 2px var(--ultraDarkColour);
+    border-radius: 10px;
+}
+
+/*
 .newBox_first {
     position: absolute;
     top: 0rem;
     left: 0rem;
 
     background-color: var(--ultraDarkColour);
-    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
     clip-path: polygon(0 0, 82.5% 0, 50% 84%, 0 84%);
@@ -270,7 +277,6 @@
     right: 0;
 
     background-color: var(--ultraDarkColour);
-    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
 
@@ -287,5 +293,24 @@
     width: 98%;
     height: 98%;
     clip-path: polygon(71% 33%, 100% 33%, 100% 100%, 45% 100%);
+}
+*/
 
+
+.newBox_first img {
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.newBox_second {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.newBox_second img {
+    display: block;
 }
