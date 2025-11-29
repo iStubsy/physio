@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Praxis Weber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="testSectionCss.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="animations.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <button id="scrollToTop">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle" stroke="currentColor" stroke-width="4" fill="transparent" r="22" cx="25" cy="25" />
+        </svg>
+        <span class="arrow">↑</span>
+    </button>
+    <div class="loader-wrapper">
+        <div class="loadImageWrapper">
+            <div class="blueDots">
+                <div class="blueDot1"></div>
+                <div class="blueDot2"></div>
+                <div class="blueDot3"></div>
+                <div class="blueDot4"></div>
+                <div class="blueDot5"></div>
+                <div class="blueDot6"></div>
+                <div class="blueDot7"></div>
+                <div class="blueDot8"></div>
+                <div class="blueDot9"></div>
+                <div class="blueDot10"></div>
+            </div>
+
+            <img class="loadImage" src="src/loading-logo.png" height="150px">
+        </div>
+        <div class="line-wobble"></div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlayInner">
+            <div class="closeButton">
+                <div class="closeButton_line1"></div>
+                <div class="closeButton_line2"></div>
+            </div>
+            <div class="overlayNavigation overlayAnimation">
+                <a class="overlayNavigation-item">Home</a>
+                <a class="overlayNavigation-item" href="anwendungsgebiete.html">Anwendungen</a>
+                <a class="overlayNavigation-item">Über</a>
+                <a class="overlayNavigation-item">Netzwerk</a>
+                <a class="overlayNavigation-item">Kontakt</a>
+            </div>
+            <div class="overlayFooter">
+                <div class="overlayFooter-social">
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-square-facebook"></i></a>
+                    <a><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="headerWrapper">
+
+        <div id="header-emptyTop"></div>
+        <div id="header">
+
+            <div class="navigationBar">
+                <div class="navigationBar_inner">
+                    <div id="navigationBar_logo">
+                        <div id="logo">
+                            <img src="src/logo.png" height="100%">
+                        </div>
+                        <div class="navigationBar_logoText">
+                            <div class="navigationBar_logoTextItem1">Physiotherapie</div>
+                            <div class="navigationBar_logoTextItem2">Praxis Weber</div>
+                        </div>
+                    </div>
+                    <div id="navigationBar_menu">
+                        <div id="navigationBar_menuItem">Home</div>
+                        <div id="navigationBar_menuItem"><a href="anwendungsgebiete.html">Anwendungen</a></div>
+                        <div id="navigationBar_menuItem">Über</div>
+                        <div id="navigationBar_menuItem">Netzwerk</div>
+                        <div id="navigationBar_menuItem">Kontakt</div>
+                    </div>
+                    <div class="hamburgerMenu">
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                        <div class="hamburgerMenuLine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
