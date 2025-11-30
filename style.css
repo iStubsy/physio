@@ -304,6 +304,7 @@ button {
     //background-image: url("src/logo.png");
     background-image: url('./src/logo_edit.webp');
     font-family: var(--mainFont);
+    font-family: arial;
     background-size: cover;
 }
 
