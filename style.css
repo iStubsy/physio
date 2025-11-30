@@ -302,6 +302,7 @@ button {
     display: flex;
     flex-direction: column;
     //background-image: url("src/logo.png");
+    background-image: url('/Users/renebohn/Library/CloudStorage/Dropbox/Webseite_Frederik_Weber/Website/src/logo_edit.webp');
     background-size: cover;
 }
 
@@ -339,7 +340,7 @@ button {
     font-family: var(--mainFont);
     font-size: 1.6rem;
     font-weight: 500;
-    color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.6);
 
     opacity: 0;
     transform: translateY(100px);
@@ -790,7 +791,7 @@ button {
 #navigationBar_logo {
     height: 80%;
     display: flex;
-    margin-left: 5px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
@@ -861,7 +862,7 @@ button {
 }
 
 .hamburgerMenuLine {
-    height: 2.5px;
+    height: 3px;
     width: 34px;
     background-color: rgba(23, 46, 96, 0.95);
     border-radius: 3px;
