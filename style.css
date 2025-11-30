@@ -303,6 +303,7 @@ button {
     flex-direction: column;
     //background-image: url("src/logo.png");
     background-image: url('./src/logo_edit.webp');
+    font-family: var(--mainFont);
     background-size: cover;
 }
 
