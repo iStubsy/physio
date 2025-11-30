@@ -302,7 +302,7 @@ button {
     display: flex;
     flex-direction: column;
     //background-image: url("src/logo.png");
-    background-image: url('/Users/renebohn/Library/CloudStorage/Dropbox/Webseite_Frederik_Weber/Website/src/logo_edit.webp');
+    background-image: url('./src/logo_edit.webp');
     background-size: cover;
 }
 
