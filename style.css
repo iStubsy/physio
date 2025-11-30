@@ -334,8 +334,8 @@ button {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding: 35% 0px;
-    //height: 100vh;
+    //padding: 35% 0px;
+    height: 100vh;
 }
 
 .overlayNavigation-item {
@@ -358,22 +358,27 @@ button {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 70%;
+    //width: 70%;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: solid 1px white;
+    //border-top: solid 1px white;
 }
 
 .overlayFooter-social {
-    color: white;
-    padding: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 30px;
     display: flex;
     justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    width: 100%;
 }
 
 .overlayFooter-social a {
@@ -795,6 +800,8 @@ button {
     display: flex;
     margin-left: 15px;
     cursor: pointer;
+
+    font-family: var(--mainFont);
 }
 
 
