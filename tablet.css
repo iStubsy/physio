@@ -85,6 +85,10 @@
         aspect-ratio: auto;
     }
 
+    .smallImg {
+        width: 50%;
+    }
+
     .newBox {
         position: relative;
 

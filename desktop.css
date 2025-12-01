@@ -261,16 +261,17 @@
         -ms-align-items: center;
         align-items: center;
         color: grey;
-        border-top: solid 4px transparent;
-        border-bottom: solid 4px transparent;
+        //border-top: solid 4px transparent;
+        //border-bottom: solid 4px transparent;
     }
 
     #navigationBar_menuItem:hover {
         //background-color: var(--ultraDarkColour);
         color: #454545;
+        color: var(--ultraDarkColour);
 
 
-        border-bottom: solid 4px var(--darkColour);
+        //border-bottom: solid 4px var(--darkColour);
     }
 
     #navigationBar_menuItem a {
