@@ -609,7 +609,7 @@
         align-items: center;
         justify-content: space-around;
         width: 50%;
-        gap: 0;
+        gap: 2rem;
     }
 
     .exception {

@@ -56,6 +56,8 @@ section {
 
 .lightText {
     color: rgba(255, 255, 255, 0.36);
+    position: absolute;
+    right: 0;
 }
 
 .gradient {
@@ -66,7 +68,7 @@ section {
     min-height: 0px;
 
     height: 40vh;
-    min-height: 200px;
+    min-height: 330px;
     max-height: 1000px;
 
     //clip-path: polygon(0 0, 100% 0, 100% 88%, 24% 100%, 0 93%);
@@ -780,7 +782,6 @@ button {
 
     background-color: var(--lightColour);
     background-color: #F7F7F7;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.05);
 }
 
 .navigationBar_inner {
@@ -802,6 +803,10 @@ button {
     cursor: pointer;
 
     font-family: var(--mainFont);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
