@@ -326,8 +326,8 @@
 
 .slider-container {
     position: relative;
-    width: 100%;
     overflow: hidden;
+    margin: 2rem -1.8rem;
 }
 
 .slider {
@@ -336,6 +336,10 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    padding: 2rem;
+    gap: 3rem;
+    max-width: 800px;
+
 }
 
 .slider img {
@@ -365,7 +369,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .dots .dot {

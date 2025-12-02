@@ -389,17 +389,21 @@
 
 
 
+
+
     <script>
         const slider = document.getElementById("slider");
         const dotsContainer = document.getElementById("dots");
 
+
         const totalSlides = slider.children.length;
 
-        // Create dots
+
         for (let i = 0; i < totalSlides; i++) {
             const dot = document.createElement("div");
             dot.classList.add("dot");
             if (i === 0) dot.classList.add("active");
+
 
             dot.addEventListener("click", () => {
                 slider.scrollTo({
@@ -408,18 +412,33 @@
                 });
             });
 
+
             dotsContainer.appendChild(dot);
         }
 
+
         const dots = document.querySelectorAll(".dot");
+
 
         slider.addEventListener("scroll", () => {
             const index = Math.round(slider.scrollLeft / slider.clientWidth);
+
 
             dots.forEach((dot, i) => {
                 dot.classList.toggle("active", i === index);
             });
         });
+        // Autoplay every 3 seconds
+        setInterval(() => {
+            const index = Math.round(slider.scrollLeft / slider.clientWidth);
+            const nextIndex = (index + 1) % totalSlides;
+
+
+            slider.scrollTo({
+                left: slider.children[nextIndex].offsetLeft,
+                behavior: "smooth"
+            });
+        }, 8000);
 
     </script>
 

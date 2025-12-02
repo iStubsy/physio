@@ -61,11 +61,13 @@ section {
 }
 
 .gradient {
-    background: linear-gradient(135deg, #172E60, #1E3A7A, #0F2040);
+    //background: linear-gradient(135deg, #172E60, #1E3A7A, #0F2040);
     //background-color: #12295c;
     background-size: 200% 200%;
     animation: subtleGradientShift 15s ease infinite;
     min-height: 0px;
+
+    background-color: var(--ultraDarkColour);
 
     height: 40vh;
     min-height: 360px;
