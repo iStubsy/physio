@@ -144,6 +144,7 @@
             </div>
         </div>
     </section>
+    <!--
     <section class="dark">
         <div class="sectionInner">
             <p>Als besonders bereichernd empfinde ich die Begleitung von Schwangeren. Denn hier liegt der Ursprung des Lebens. Auch die Unterstützung von Babys und Kleinkindern liegt mir besonders am Herzen, da in dieser Lebensphase die wichtigsten motorischen Entwicklungen im Körper geschehen. Und so durfte ich mich in diesem Bereich immer mehr weiterbilden und mein Leistungsspektrum erweitern. </p>
@@ -161,6 +162,37 @@
             </div>
         </div>
     </section>
+    -->
+
+
+
+    <section class="dark">
+        <div class="sectionInner">
+            <p>Als besonders bereichernd empfinde ich die Begleitung von Schwangeren. Denn hier liegt der Ursprung des Lebens. Auch die Unterstützung von Babys und Kleinkindern liegt mir besonders am Herzen, da in dieser Lebensphase die wichtigsten motorischen Entwicklungen im Körper geschehen. Und so durfte ich mich in diesem Bereich immer mehr weiterbilden und mein Leistungsspektrum erweitern. </p>
+            <div class="innerSection-flex">
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <img src="src/IMG_3903_.webp" class="smallImg" alt="" />
+                        <img src="src/IMG_3936_.webp" class="smallImg" alt="" />
+                    </div>
+
+                    <div class="dots" id="dots"></div>
+                </div>
+
+                <div class="innerSection-box">
+                    <h2>Sanfte Behandlung von Schwangeren, Babys und Kleinkindern durch:</h2>
+                    <p>- Schwangerschaftsbegleitung aus einer Kombination von sanften und unterstützenden Techniken</p>
+                    <p>- Unterstützung der ideal motorischen Entwicklung von Babys bereits in den ersten Lebensmonaten</p>
+                    <p>- Anleitung von Techniken, mit denen Eltern die Entwicklung des Kindes zuhause unterstützen können</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     <section>
         <div class="sectionInner">
             <div class="innerSection-flex">
@@ -351,6 +383,43 @@
             }
 
         }
+
+    </script>
+
+
+
+
+    <script>
+        const slider = document.getElementById("slider");
+        const dotsContainer = document.getElementById("dots");
+
+        const totalSlides = slider.children.length;
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement("div");
+            dot.classList.add("dot");
+            if (i === 0) dot.classList.add("active");
+
+            dot.addEventListener("click", () => {
+                slider.scrollTo({
+                    left: slider.children[i].offsetLeft,
+                    behavior: "smooth"
+                });
+            });
+
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = document.querySelectorAll(".dot");
+
+        slider.addEventListener("scroll", () => {
+            const index = Math.round(slider.scrollLeft / slider.clientWidth);
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
+        });
 
     </script>
 

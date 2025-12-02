@@ -102,7 +102,6 @@ section {
     object-fit: cover;
     max-width: 100%;
 
-    border: solid 2px var(--darkColour);
     border-radius: 10px;
     aspect-ratio: 3 / 3;
 }
