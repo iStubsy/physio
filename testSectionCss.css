@@ -336,7 +336,7 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    padding: 2rem;
+    padding: 0 2rem;
     gap: 3rem;
     max-width: 800px;
 
@@ -369,7 +369,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .dots .dot {
